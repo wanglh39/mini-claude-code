@@ -859,10 +859,874 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        架构对比
+        目录
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 对比方法论
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 对比方法论">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 为什么对比有价值
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 对比的四个维度
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 "同构"的含义
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 架构对比深入
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 架构对比深入">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-agent-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Agent Loop 结构对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 核心循环代码对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 为什么说"同构"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 逐工具对比
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 逐工具对比">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-read_file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 read_file
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-write_file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 write_file
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-edit_file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 edit_file
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-bash" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 bash
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-glob" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 glob
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-grep" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 grep
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-task" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7 task（子智能体）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-system-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. System Prompt 对比
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. System Prompt 对比">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 长度与结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 动态注入对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-agentsmd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 AGENTS.md
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 项目类型检测
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 技能系统
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6 记忆系统
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 上下文管理对比
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 上下文管理对比">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 token 计数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 截断策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 压缩 prompt
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 阈值设计
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 状态显示
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 权限对比
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 权限对比">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 权限层级
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 确认方式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 危险检测
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 路径边界
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 子智能体对比
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 子智能体对比">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-subagent_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 subagent_type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 并行
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 工具集
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-system-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 system prompt
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#75" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.5 上下文限制
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 原版有而我们没做的
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 原版有而我们没做的">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-mcp-model-context-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 MCP (Model Context Protocol)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-ide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 IDE 集成
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 插件系统
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 配置继承
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 持久化记忆
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86-todowrite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 TodoWrite
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87-webfetch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7 WebFetch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88-codesemanticsearch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.8 CodeSemanticSearch
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. 我们简化但核心一致的
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. 我们简化但核心一致的">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 逐功能对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 "核心一致"的精确含义
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. 代码量分析
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. 代码量分析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 总量对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-mini-1061" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 Mini 的 1061 行分布
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103-49000" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3 差异的 49000 行是什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#104" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4 差异的性质
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#105-2000-vs-50000" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5 理解 2000 行 vs 理解 50000 行
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. 结论
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. 结论">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 核心论点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-2000" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 理解了 2000 行就理解了什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 没理解什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#114" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.4 学习路径建议
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. 扩展练习
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12. 扩展练习">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-mcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习 1：加 MCP 支持
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习 2：加并行子 Agent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-agentsmd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习 3：加 AGENTS.md
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习 4：加持久化记忆
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-todowrite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习 5：加 TodoWrite
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-webfetch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习 6：加 WebFetch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-tokenizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习 7：用 tokenizer 精确计数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习 8：加路径边界
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -870,19 +1734,19 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        功能对比
+        附录：快速对比速查表
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="功能对比">
+    <nav class="md-nav" aria-label="附录：快速对比速查表">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#agent-loop" class="md-nav__link">
+  <a href="#a1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Agent Loop
+        A.1 架构速查
       
     </span>
   </a>
@@ -890,10 +1754,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#a2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        工具系统
+        A.2 工具速查
       
     </span>
   </a>
@@ -901,43 +1765,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#system-prompt" class="md-nav__link">
+  <a href="#a3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        System Prompt
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        上下文管理
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        权限系统
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        子智能体
+        A.3 系统能力速查
       
     </span>
   </a>
@@ -946,111 +1777,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        原版有而我们没做的
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="原版有而我们没做的">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#mcp-model-context-protocol" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        MCP (Model Context Protocol)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ide" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        IDE 集成
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        插件系统
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        配置继承
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        持久化记忆
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        我们简化但核心一致的
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        结论
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_13" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        扩展练习
-      
-    </span>
-  </a>
   
 </li>
       
@@ -1092,10 +1818,874 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        架构对比
+        目录
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 对比方法论
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 对比方法论">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 为什么对比有价值
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 对比的四个维度
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 "同构"的含义
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 架构对比深入
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 架构对比深入">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-agent-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Agent Loop 结构对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 核心循环代码对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 为什么说"同构"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 逐工具对比
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 逐工具对比">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-read_file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 read_file
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-write_file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 write_file
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-edit_file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 edit_file
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-bash" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 bash
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-glob" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 glob
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-grep" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 grep
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-task" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7 task（子智能体）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-system-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. System Prompt 对比
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. System Prompt 对比">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 长度与结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 动态注入对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-agentsmd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 AGENTS.md
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 项目类型检测
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 技能系统
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6 记忆系统
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 上下文管理对比
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 上下文管理对比">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 token 计数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 截断策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 压缩 prompt
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 阈值设计
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 状态显示
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 权限对比
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 权限对比">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 权限层级
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 确认方式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 危险检测
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 路径边界
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 子智能体对比
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 子智能体对比">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-subagent_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 subagent_type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 并行
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 工具集
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-system-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 system prompt
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#75" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.5 上下文限制
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 原版有而我们没做的
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 原版有而我们没做的">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-mcp-model-context-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 MCP (Model Context Protocol)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-ide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 IDE 集成
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 插件系统
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 配置继承
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 持久化记忆
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86-todowrite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 TodoWrite
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87-webfetch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7 WebFetch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88-codesemanticsearch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.8 CodeSemanticSearch
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. 我们简化但核心一致的
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. 我们简化但核心一致的">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 逐功能对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 "核心一致"的精确含义
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. 代码量分析
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. 代码量分析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 总量对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-mini-1061" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 Mini 的 1061 行分布
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103-49000" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3 差异的 49000 行是什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#104" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4 差异的性质
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#105-2000-vs-50000" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5 理解 2000 行 vs 理解 50000 行
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. 结论
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. 结论">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 核心论点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-2000" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 理解了 2000 行就理解了什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 没理解什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#114" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.4 学习路径建议
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. 扩展练习
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12. 扩展练习">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-mcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习 1：加 MCP 支持
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习 2：加并行子 Agent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-agentsmd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习 3：加 AGENTS.md
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习 4：加持久化记忆
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-todowrite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习 5：加 TodoWrite
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-webfetch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习 6：加 WebFetch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-tokenizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习 7：用 tokenizer 精确计数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习 8：加路径边界
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1103,19 +2693,19 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        功能对比
+        附录：快速对比速查表
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="功能对比">
+    <nav class="md-nav" aria-label="附录：快速对比速查表">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#agent-loop" class="md-nav__link">
+  <a href="#a1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Agent Loop
+        A.1 架构速查
       
     </span>
   </a>
@@ -1123,10 +2713,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#a2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        工具系统
+        A.2 工具速查
       
     </span>
   </a>
@@ -1134,43 +2724,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#system-prompt" class="md-nav__link">
+  <a href="#a3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        System Prompt
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        上下文管理
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        权限系统
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        子智能体
+        A.3 系统能力速查
       
     </span>
   </a>
@@ -1179,111 +2736,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        原版有而我们没做的
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="原版有而我们没做的">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#mcp-model-context-protocol" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        MCP (Model Context Protocol)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ide" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        IDE 集成
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        插件系统
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        配置继承
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        持久化记忆
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        我们简化但核心一致的
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        结论
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_13" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        扩展练习
-      
-    </span>
-  </a>
   
 </li>
       
@@ -1309,17 +2761,2045 @@
 
 <h1 id="claude-code">与真实 Claude Code 全面对比<a class="headerlink" href="#claude-code" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p>本章对比 Mini Claude Code（Ch9 最终版）与 Anthropic 官方 Claude Code 的差异。
-目标不是追求功能对等，而是理解"我们简化了什么、原版多做了什么、为什么"。</p>
+<p>本章对比 Mini Claude Code（Ch9 最终版，约 1061 行核心代码）与 Anthropic 官方 Claude Code（约 50000 行）的差异。
+目标不是追求功能对等，而是理解"我们简化了什么、原版多做了什么、为什么"。
+面向初学者：每个对比点都解释<strong>为什么这样设计</strong>、<strong>简化会失去什么</strong>、<strong>原版多做的工程化打磨解决了什么真实问题</strong>。</p>
 </blockquote>
 <hr />
-<h2 id="_1">架构对比<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">目录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ol>
+<li><a href="#1-对比方法论">对比方法论</a></li>
+<li><a href="#2-架构对比深入">架构对比深入</a></li>
+<li><a href="#3-逐工具对比">逐工具对比</a></li>
+<li><a href="#4-system-prompt-对比">System Prompt 对比</a></li>
+<li><a href="#5-上下文管理对比">上下文管理对比</a></li>
+<li><a href="#6-权限对比">权限对比</a></li>
+<li><a href="#7-子智能体对比">子智能体对比</a></li>
+<li><a href="#8-原版有而我们没做的">原版有而我们没做的</a></li>
+<li><a href="#9-我们简化但核心一致的">我们简化但核心一致的</a></li>
+<li><a href="#10-代码量分析">代码量分析</a></li>
+<li><a href="#11-结论">结论</a></li>
+<li><a href="#12-扩展练习">扩展练习</a></li>
+</ol>
+<hr />
+<h2 id="1">1. 对比方法论<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<h3 id="11">1.1 为什么对比有价值<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
+<p>学习一个复杂系统有两种路径：</p>
+<ul>
+<li><strong>自顶向下</strong>：直接读 Claude Code 源码，5 万行 TypeScript，被工程细节淹没，看不到架构骨架。</li>
+<li><strong>自底向上</strong>：先写一个 2000 行的最小实现，再与原版对比，<strong>差异点就是学习点</strong>。</li>
+</ul>
+<p>对比的价值在于：<strong>差异是显式的</strong>。我们写了一个能跑的 Agent，原版也跑同样的 Agent Loop。两者都跑通"用户输入 → 模型思考 → 工具调用 → 结果回传"这条链路。差异不在"能不能跑"，而在"跑得多稳、多快、多安全、多好用"。</p>
+<p>这些差异恰好是工程化打磨的全部主题：错误恢复、性能优化、安全边界、用户体验、协议兼容、生态集成。<strong>理解差异 = 理解工程化 = 从"能跑"到"能用"的距离</strong>。</p>
+<h3 id="12">1.2 对比的四个维度<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>关心的问题</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>架构</strong></td>
+<td>核心循环结构是否相同？数据流是否一致？</td>
+<td>Agent Loop 两层嵌套、tool_use 协议、流式事件处理</td>
+</tr>
+<tr>
+<td><strong>功能</strong></td>
+<td>用户能做什么？工具覆盖哪些场景？</td>
+<td>read_file 是否支持 offset、bash 是否有工作目录注入</td>
+</tr>
+<tr>
+<td><strong>工程</strong></td>
+<td>错误处理、重试、日志、配置、测试</td>
+<td>网络失败重试、超时分级、配置继承、单元测试覆盖</td>
+</tr>
+<tr>
+<td><strong>性能</strong></td>
+<td>响应延迟、内存占用、token 消耗</td>
+<td>grep 用 ripgrep vs 手写遍历、glob 用 fast-glob vs 手写递归</td>
+</tr>
+</tbody>
+</table>
+<p>四个维度从上到下，<strong>越往上越接近"原理"，越往下越接近"打磨"</strong>。我们这 2000 行覆盖了架构维度的全部和功能维度的主干；工程和性能维度几乎全部交给原版。</p>
+<h3 id="13">1.3 "同构"的含义<a class="headerlink" href="#13" title="Permanent link">&para;</a></h3>
+<p>数学上，两个结构同构指的是存在一个保持结构的双射。在这里我们借用这个词：</p>
+<blockquote>
+<p><strong>Mini Claude Code 与 Claude Code 在架构上同构</strong>：存在一个从 Mini 的每个模块到 Claude Code 对应模块的映射，使得"用户输入 → Agent Loop → 工具调用 → 模型回传"这条主链路的执行顺序、数据形态、控制流结构完全对应。</p>
+</blockquote>
+<p>同构不意味着相等。同构忽略"边"上的差异（错误处理、UI、性能），只看"点"和"边的关系"。具体来说：</p>
+<ul>
+<li><strong>点对应</strong>：Mini 的 <code>runAgentLoop</code> ↔ Claude Code 的 <code>AgentLoop</code>；Mini 的 <code>executeTool</code> ↔ Claude Code 的 <code>ToolExecutor</code>；Mini 的 <code>ContextManager</code> ↔ Claude Code 的 <code>ContextManager</code>。</li>
+<li><strong>边对应</strong>：Mini 的"调用关系"和 Claude Code 的"调用关系"在拓扑上相同——都是 <code>Loop → Stream → Tool → Loop</code>。</li>
+</ul>
+<p>理解同构的意义：<strong>你读 Mini 的 2000 行时建立的 mental model，可以直接迁移到 Claude Code 的 5 万行上</strong>。原版多出来的 48000 行不是新的拓扑，而是同构映射下"点的内部实现"更复杂、多了很多不在主链路上的辅助点。</p>
+<hr />
+<h2 id="2">2. 架构对比深入<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="21-agent-loop">2.1 Agent Loop 结构对比<a class="headerlink" href="#21-agent-loop" title="Permanent link">&para;</a></h3>
+<p><strong>Mini Claude Code 的 Agent Loop</strong>（<code>src/agent-loop.ts</code>）：</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>runAgentLoop (外层)
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  └─ while (true)                    // 等用户输入
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>       ├─ readline("&gt; ")
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>       ├─ ctx.addMessage(user)
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>       └─ runInnerLoop (内层)
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>            └─ while (true)          // 跑工具直到 stop_reason !== "tool_use"
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>                 ├─ stream = client.messages.stream(...)
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>                 ├─ for await (event of stream)  // 处理流式事件
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>                 │    ├─ text_delta → process.stdout.write
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>                 │    └─ input_json_delta → 拼接工具入参
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>                 ├─ ctx.addMessage(assistant)
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>                 ├─ ctx.truncateToolResults()
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>                 ├─ if (ctx.isNearLimit()) ctx.compress()
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>                 └─ if (stop_reason === "tool_use")
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>                      ├─ for each tool_use block
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>                      │    ├─ perm.checkTool
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>                      │    ├─ executeTool / executeTask
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>                      │    └─ toolResults.push(...)
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>                      └─ ctx.addMessage(user: toolResults)
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>                    else break
+</span></code></pre></div>
+<p><strong>Claude Code 的 Agent Loop</strong>（伪代码，简化自实际源码结构）：</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>AgentLoop (外层)
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  └─ while (running)
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>       ├─ input = await readUserInput()       // 支持 / 命令、多行、粘贴
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>       ├─ if (isSlashCommand(input)) handleCommand(input)
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>       ├─ context.addUserMessage(input)
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>       ├─ await runConversationLoop (内层)
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>       │    └─ while (!shouldStop)
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>       │         ├─ try:
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>       │         │    ├─ stream = client.messages.stream({...})  // 带重试
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>       │         │    ├─ for await (event of stream)
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>       │         │    │    ├─ text_delta → renderMarkdown增量
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>       │         │    │    ├─ thinking_delta → renderThinking
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>       │         │    │    ├─ input_json_delta → 拼接
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>       │         │    │    └─ message_delta → 更新 usage
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>       │         │    ├─ context.addAssistantMessage(...)
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>       │         │    ├─ await context.maybeCompact()   // 多级阈值
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>       │         │    └─ if (stop_reason === "tool_use")
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>       │         │         ├─ for each tool_use (可并行)
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>       │         │         │    ├─ perm.check(tool, input)
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>       │         │         │    ├─ result = await executor.execute(tool, input)
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>       │         │         │    │    // 带 timeout、资源限制、沙箱
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>       │         │         │    ├─ toolResults.push(...)
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>       │         │         │    └─ telemetry.record(...)
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>       │         │         └─ context.addToolResults(toolResults)
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>       │         │    else break
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>       │         ├─ catch (err):
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>       │         │    ├─ if (isRetryable(err)) await retry()
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>       │         │    └─ else renderError(err)
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>       │         └─ if (context.overHardLimit()) await compactConversation()
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>       └─ persistSession()  // 可选会话持久化
+</span></code></pre></div>
+<p><strong>结构对比表</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>结构点</th>
+<th>Mini</th>
+<th>原版</th>
+<th>是否同构</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>外层循环</td>
+<td><code>while (true)</code> + readline</td>
+<td><code>while (running)</code> + readUserInput</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>内层循环</td>
+<td><code>while (true)</code> 按 stop_reason 分支</td>
+<td><code>while (!shouldStop)</code></td>
+<td>✓</td>
+</tr>
+<tr>
+<td>流式处理</td>
+<td><code>for await (event of stream)</code></td>
+<td>同</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>事件分发</td>
+<td>switch event.type</td>
+<td>同 + thinking_delta、message_stop</td>
+<td>✓（子集）</td>
+</tr>
+<tr>
+<td>工具执行</td>
+<td>串行 for</td>
+<td>可并行 for + Promise.all</td>
+<td>✓（串行是并行子集）</td>
+</tr>
+<tr>
+<td>上下文压缩</td>
+<td><code>isNearLimit</code> → <code>compress</code></td>
+<td>多级阈值 + 专用 prompt</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>错误处理</td>
+<td>try/catch 打印错误</td>
+<td>分类型重试 + 用户提示</td>
+<td>✗（简化）</td>
+</tr>
+<tr>
+<td>权限 gate</td>
+<td><code>perm.checkTool</code></td>
+<td>同 + 规则引擎</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>会话持久化</td>
+<td>无</td>
+<td>可选</td>
+<td>✗</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键观察</strong>：主链路上的每一个节点都有对应，差异只在"节点内部做了多少事"。Mini 的 <code>executeTool</code> 是 5 行函数调用；原版的 <code>executor.execute</code> 是一个带超时、沙箱、资源限制、日志、telemetry 的子系统。<strong>调用关系同构，实现深度不同</strong>。</p>
+<h3 id="22">2.2 核心循环代码对比<a class="headerlink" href="#22" title="Permanent link">&para;</a></h3>
+<p><strong>Mini 的内层循环核心</strong>（<code>agent-loop.ts:59-86</code>，精简）：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="kc">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">stream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">stream</span><span class="p">({</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nx">model</span><span class="p">,</span><span class="w"> </span><span class="nx">max_tokens</span><span class="p">,</span><span class="w"> </span><span class="nx">system</span><span class="p">,</span><span class="w"> </span><span class="nx">messages</span><span class="o">:</span><span class="w"> </span><span class="kt">ctx.getMessages</span><span class="p">(),</span><span class="w"> </span><span class="nx">tools</span><span class="p">,</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="p">});</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">event</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">stream</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="c1">// 处理 text_delta / input_json_delta / message_delta</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span><span class="nx">ctx</span><span class="p">.</span><span class="nx">addMessage</span><span class="p">({</span><span class="w"> </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">"assistant"</span><span class="p">,</span><span class="w"> </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="kt">contentBlocks</span><span class="w"> </span><span class="p">});</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">stopReason</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">"tool_use"</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">    </span><span class="c1">// 执行工具，收集 toolResults</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="nx">ctx</span><span class="p">.</span><span class="nx">addMessage</span><span class="p">({</span><span class="w"> </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">"user"</span><span class="p">,</span><span class="w"> </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="kt">toolResults</span><span class="w"> </span><span class="p">});</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">    </span><span class="k">break</span><span class="p">;</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>Claude Code 的内层循环核心</strong>（伪代码，等价结构）：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">shouldStop</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">stream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">stream</span><span class="p">({</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="nx">model</span><span class="p">,</span><span class="w"> </span><span class="nx">max_tokens</span><span class="p">,</span><span class="w"> </span><span class="nx">system</span><span class="o">:</span><span class="w"> </span><span class="kt">buildDynamicSystem</span><span class="p">(),</span><span class="w">  </span><span class="c1">// 动态 system prompt</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="nx">messages</span><span class="o">:</span><span class="w"> </span><span class="kt">ctx.getMessages</span><span class="p">(),</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="nx">tools</span><span class="o">:</span><span class="w"> </span><span class="kt">getEnabledTools</span><span class="p">(),</span><span class="w">  </span><span class="c1">// 按上下文动态启用</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="p">});</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">event</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">stream</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="c1">// 同样处理 text_delta / input_json_delta / message_delta</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="c1">// 多了 thinking_delta、多模态事件</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">  </span><span class="nx">ctx</span><span class="p">.</span><span class="nx">addAssistantMessage</span><span class="p">(</span><span class="nx">contentBlocks</span><span class="p">);</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">  </span><span class="k">await</span><span class="w"> </span><span class="nx">ctx</span><span class="p">.</span><span class="nx">maybeCompact</span><span class="p">();</span><span class="w">  </span><span class="c1">// 多级压缩</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">stopReason</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">"tool_use"</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">results</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nb">Promise</span><span class="p">.</span><span class="nx">allSettled</span><span class="p">(</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">      </span><span class="nx">contentBlocks</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">        </span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">b</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">b</span><span class="p">.</span><span class="kr">type</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">"tool_use"</span><span class="p">)</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">        </span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">b</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">executeWithSandbox</span><span class="p">(</span><span class="nx">b</span><span class="p">))</span><span class="w">  </span><span class="c1">// 并行 + 沙箱</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">    </span><span class="p">);</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">    </span><span class="nx">ctx</span><span class="p">.</span><span class="nx">addToolResults</span><span class="p">(</span><span class="nx">results</span><span class="p">);</span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">    </span><span class="k">break</span><span class="p">;</span>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>逐行对比</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>行为</th>
+<th>Mini</th>
+<th>原版</th>
+<th>差异性质</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>构造请求</td>
+<td>固定 system、tools</td>
+<td>动态 system、按上下文启用 tools</td>
+<td>工程增强</td>
+</tr>
+<tr>
+<td>流式迭代</td>
+<td><code>for await</code></td>
+<td>同</td>
+<td>同构</td>
+</tr>
+<tr>
+<td>事件处理</td>
+<td>3 种事件</td>
+<td>5+ 种事件</td>
+<td>功能扩展</td>
+</tr>
+<tr>
+<td>消息追加</td>
+<td><code>ctx.addMessage</code></td>
+<td><code>ctx.addAssistantMessage</code></td>
+<td>同构</td>
+</tr>
+<tr>
+<td>压缩</td>
+<td>单阈值</td>
+<td>多级阈值</td>
+<td>工程增强</td>
+</tr>
+<tr>
+<td>工具执行</td>
+<td>串行 for</td>
+<td><code>Promise.allSettled</code> 并行</td>
+<td>性能增强</td>
+</tr>
+<tr>
+<td>沙箱</td>
+<td>无</td>
+<td>有</td>
+<td>安全增强</td>
+</tr>
+<tr>
+<td>停止判断</td>
+<td><code>stop_reason</code></td>
+<td><code>shouldStop</code> 综合判断</td>
+<td>功能扩展</td>
+</tr>
+</tbody>
+</table>
+<h3 id="23">2.3 为什么说"同构"<a class="headerlink" href="#23" title="Permanent link">&para;</a></h3>
+<p>三个证据：</p>
+<ol>
+<li>
+<p><strong>控制流同构</strong>：两者都是"外层等用户 → 内层跑工具 → stop_reason 决定是否再循环"。把 Mini 的代码画成流程图，把原版的辅助分支（错误重试、命令处理、持久化）擦掉，<strong>剩下的框和箭头与原版完全一致</strong>。</p>
+</li>
+<li>
+<p><strong>数据流同构</strong>：两者都维护一个 <code>messages: MessageParam[]</code>，都按 <code>{role, content}</code> 追加，都把 <code>tool_result</code> 包成 <code>{role: "user", content: [...]}</code> 回传。<strong>Anthropic API 的消息格式是两者的共同契约</strong>，这个契约决定了数据流必须这样走。</p>
+</li>
+<li>
+<p><strong>协议同构</strong>：两者都实现 <code>tool_use</code> 协议——模型发 <code>tool_use</code> block，代码执行工具，回 <code>tool_result</code> block。这个协议是 Anthropic API 定义的，<strong>任何基于这个 API 的 Agent 都必须实现这个协议</strong>，所以协议层必然同构。</p>
+</li>
+</ol>
+<p>同构的实用意义：<strong>你修改 Mini 的某个模块时用的思路，可以直接套用到原版对应模块</strong>。比如你给 Mini 的 <code>executeBash</code> 加了工作目录注入，原版的 <code>BashTool</code> 也是同样的思路——只是它还多做了环境变量隔离、shell 配置、输出过滤。</p>
+<hr />
+<h2 id="3">3. 逐工具对比<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<h3 id="31-read_file">3.1 read_file<a class="headerlink" href="#31-read_file" title="Permanent link">&para;</a></h3>
+<p><strong>Mini 的实现</strong>（<code>src/tools/read.ts</code>，35 行）：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">export</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">executeRead</span><span class="p">(</span><span class="nx">input</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">path</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="p">})</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">filePath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">path</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="nx">input</span><span class="p">.</span><span class="nx">path</span><span class="p">);</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">fs</span><span class="p">.</span><span class="nx">existsSync</span><span class="p">(</span><span class="nx">filePath</span><span class="p">))</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="sb">`错误: 文件不存在`</span><span class="p">;</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">content</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="nx">filePath</span><span class="p">,</span><span class="w"> </span><span class="s2">"utf-8"</span><span class="p">);</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">lines</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">content</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">"\n"</span><span class="p">);</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">lines</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">2000</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">lines</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">2000</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="s2">"\n"</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="sb">`... (已截断)`</span><span class="p">;</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">content</span><span class="p">;</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>对比表</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>Mini</th>
+<th>原版</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>参数</td>
+<td><code>path</code></td>
+<td><code>path</code>, <code>offset</code>, <code>limit</code></td>
+</tr>
+<tr>
+<td>读取方式</td>
+<td><code>readFileSync</code> 全量</td>
+<td>流式 + offset/limit</td>
+</tr>
+<tr>
+<td>截断</td>
+<td>前 2000 行</td>
+<td>可控 offset/limit，默认 2000 行</td>
+</tr>
+<tr>
+<td>图片</td>
+<td>不支持</td>
+<td>支持，返回 base64 + 多模态 block</td>
+</tr>
+<tr>
+<td>PDF</td>
+<td>不支持</td>
+<td>支持，提取文本</td>
+</tr>
+<tr>
+<td>二进制</td>
+<td>不支持</td>
+<td>检测并提示</td>
+</tr>
+<tr>
+<td>行号</td>
+<td>不加</td>
+<td>每行加 <code>行号:</code> 前缀</td>
+</tr>
+<tr>
+<td>大文件</td>
+<td>全量读入内存再切片</td>
+<td>流式读取，内存友好</td>
+</tr>
+<tr>
+<td>符号链接</td>
+<td>跟随</td>
+<td>检测 + 安全处理</td>
+</tr>
+<tr>
+<td>错误</td>
+<td>返回字符串</td>
+<td>抛异常 + 结构化错误</td>
+</tr>
+</tbody>
+</table>
+<p><strong>为什么 Mini 这样简化</strong>：教学目标是展示"工具就是一个函数"，35 行足够。offset/limit、图片、PDF 都是"同一个函数的更多分支"，不影响对工具协议的理解。</p>
+<p><strong>简化失去什么</strong>：
+- 没有 offset/limit：读大文件只能拿前 2000 行，想看第 5000 行做不到。
+- 没有图片/PDF：多模态场景缺失（比如让 Agent 看截图调试 UI）。
+- 没有行号：模型定位代码时要多读一次来数行。</p>
+<p><strong>如果要做</strong>：加 <code>offset</code> 和 <code>limit</code> 参数，改成 <code>lines.slice(offset, offset + limit).map((l, i) =&gt;</code>${offset + i + 1}: ${l}<code>).join("\n")</code>，约 10 行代码。</p>
+<h3 id="32-write_file">3.2 write_file<a class="headerlink" href="#32-write_file" title="Permanent link">&para;</a></h3>
+<p><strong>Mini 的实现</strong>（<code>src/tools/write.ts</code>，36 行）：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">export</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">executeWrite</span><span class="p">(</span><span class="nx">input</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">path</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span><span class="w"> </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="p">})</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">filePath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">path</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="nx">input</span><span class="p">.</span><span class="nx">path</span><span class="p">);</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">path</span><span class="p">.</span><span class="nx">dirname</span><span class="p">(</span><span class="nx">filePath</span><span class="p">);</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">fs</span><span class="p">.</span><span class="nx">existsSync</span><span class="p">(</span><span class="nx">dir</span><span class="p">))</span><span class="w"> </span><span class="nx">fs</span><span class="p">.</span><span class="nx">mkdirSync</span><span class="p">(</span><span class="nx">dir</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">recursive</span><span class="o">:</span><span class="w"> </span><span class="kt">true</span><span class="w"> </span><span class="p">});</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">  </span><span class="nx">fs</span><span class="p">.</span><span class="nx">writeFileSync</span><span class="p">(</span><span class="nx">filePath</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">.</span><span class="nx">content</span><span class="p">,</span><span class="w"> </span><span class="s2">"utf-8"</span><span class="p">);</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="sb">`已成功写入文件: </span><span class="si">${</span><span class="nx">input</span><span class="p">.</span><span class="nx">path</span><span class="si">}</span><span class="sb"> (</span><span class="si">${</span><span class="nx">input</span><span class="p">.</span><span class="nx">content</span><span class="p">.</span><span class="nx">length</span><span class="si">}</span><span class="sb"> 字符)`</span><span class="p">;</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>对比表</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>Mini</th>
+<th>原版</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>参数</td>
+<td><code>path</code>, <code>content</code></td>
+<td><code>path</code>, <code>content</code>, <code>mode</code>(overwrite/create/update)</td>
+</tr>
+<tr>
+<td>存在性检查</td>
+<td>无（直接覆盖）</td>
+<td>按 mode 检查</td>
+</tr>
+<tr>
+<td>中间目录</td>
+<td><code>mkdirSync recursive</code></td>
+<td>同</td>
+</tr>
+<tr>
+<td>文件历史</td>
+<td>无</td>
+<td>记录前版本，可回滚</td>
+</tr>
+<tr>
+<td>原子写入</td>
+<td>无（直接 writeFileSync）</td>
+<td>先写临时文件再 rename</td>
+</tr>
+<tr>
+<td>权限</td>
+<td>依赖外层 perm</td>
+<td>内层再检查一次</td>
+</tr>
+<tr>
+<td>编码</td>
+<td>固定 utf-8</td>
+<td>检测 + 可指定</td>
+</tr>
+<tr>
+<td>大文件</td>
+<td>全量写入</td>
+<td>流式</td>
+</tr>
+<tr>
+<td>错误</td>
+<td>返回字符串</td>
+<td>结构化</td>
+</tr>
+</tbody>
+</table>
+<p><strong>简化失去什么</strong>：
+- 无 mode：不能"仅当不存在时创建"或"仅当存在时更新"，可能误覆盖。
+- 无文件历史：写错了不能回滚（原版可以撤销最近写入）。
+- 非原子：写到一半进程崩了，文件就坏了。</p>
+<p><strong>为什么这样简化</strong>：教学重点是"工具执行 = 调函数 + 返回字符串"。原子写入、文件历史是生产级需求，会引入临时文件、状态管理，偏离核心。</p>
+<h3 id="33-edit_file">3.3 edit_file<a class="headerlink" href="#33-edit_file" title="Permanent link">&para;</a></h3>
+<p><strong>Mini 的实现</strong>（<code>src/tools/edit.ts</code>，55 行核心）：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">occurrences</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">content</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="nx">input</span><span class="p">.</span><span class="nx">oldString</span><span class="p">).</span><span class="nx">length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">occurrences</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="sb">`错误: 未找到匹配`</span><span class="p">;</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">occurrences</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">1</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="sb">`错误: 找到 </span><span class="si">${</span><span class="nx">occurrences</span><span class="si">}</span><span class="sb"> 处匹配，不唯一`</span><span class="p">;</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">newContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">content</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">input</span><span class="p">.</span><span class="nx">oldString</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">.</span><span class="nx">newString</span><span class="p">);</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="nx">fs</span><span class="p">.</span><span class="nx">writeFileSync</span><span class="p">(</span><span class="nx">filePath</span><span class="p">,</span><span class="w"> </span><span class="nx">newContent</span><span class="p">,</span><span class="w"> </span><span class="s2">"utf-8"</span><span class="p">);</span>
+</span></code></pre></div>
+<p><strong>对比表</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>Mini</th>
+<th>原版</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>参数</td>
+<td><code>path</code>, <code>oldString</code>, <code>newString</code></td>
+<td>+ <code>replaceAll</code>, <code>strict</code></td>
+</tr>
+<tr>
+<td>匹配</td>
+<td>唯一匹配替换</td>
+<td>唯一 or replaceAll</td>
+</tr>
+<tr>
+<td>多文件</td>
+<td>不支持</td>
+<td>一次编辑多个文件</td>
+</tr>
+<tr>
+<td>行范围</td>
+<td>不支持</td>
+<td>可指定行范围</td>
+</tr>
+<tr>
+<td>正则匹配</td>
+<td>不支持</td>
+<td>可选</td>
+</tr>
+<tr>
+<td>编辑前读取</td>
+<td>要求模型先 read</td>
+<td>内部自动 read（强制）</td>
+</tr>
+<tr>
+<td>编辑后验证</td>
+<td>无</td>
+<td>可选 lint / typecheck</td>
+</tr>
+<tr>
+<td>撤销</td>
+<td>无</td>
+<td>记录前版本</td>
+</tr>
+<tr>
+<td>错误信息</td>
+<td>简单字符串</td>
+<td>带行号、上下文、建议</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Mini 的关键设计</strong>：<code>occurrences</code> 唯一性检查。这是 edit_file 最重要的安全机制——<strong>防止模型用模糊的 oldString 误改多处</strong>。原版也有这个检查，我们保留了这个核心。</p>
+<p><strong>简化失去什么</strong>：
+- 无 replaceAll：要批量替换得多次调用 edit_file。
+- 无多文件：重构跨文件改名很繁琐。
+- 不强制先 read：模型可能凭记忆编辑，导致 oldString 不匹配（原版强制先 read，保证模型见过最新内容）。</p>
+<h3 id="34-bash">3.4 bash<a class="headerlink" href="#34-bash" title="Permanent link">&para;</a></h3>
+<p><strong>Mini 的实现</strong>（<code>src/tools/bash.ts</code>，44 行）：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nx">exec</span><span class="p">(</span><span class="nx">input</span><span class="p">.</span><span class="nx">command</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">timeout</span><span class="p">,</span><span class="w"> </span><span class="nx">maxBuffer</span><span class="o">:</span><span class="w"> </span><span class="kt">1024</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">1024</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">,</span><span class="w"> </span><span class="nx">stdout</span><span class="p">,</span><span class="w"> </span><span class="nx">stderr</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">""</span><span class="p">;</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">stdout</span><span class="p">)</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nx">stdout</span><span class="p">;</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">stderr</span><span class="p">)</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="sb">`\n[stderr]\n</span><span class="si">${</span><span class="nx">stderr</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="sb">`\n[exit code: </span><span class="si">${</span><span class="nx">error</span><span class="p">.</span><span class="nx">code</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="mf">1</span><span class="si">}</span><span class="sb">]`</span><span class="p">;</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">  </span><span class="nx">resolve</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="p">});</span>
+</span></code></pre></div>
+<p><strong>对比表</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>Mini</th>
+<th>原版</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>参数</td>
+<td><code>command</code>, <code>timeout</code></td>
+<td>+ <code>cwd</code>, <code>env</code>, <code>shell</code>, <code>runInSandbox</code></td>
+</tr>
+<tr>
+<td>执行</td>
+<td><code>exec</code></td>
+<td><code>spawn</code> 或沙箱</td>
+</tr>
+<tr>
+<td>工作目录</td>
+<td>继承 process.cwd()</td>
+<td>可注入</td>
+</tr>
+<tr>
+<td>环境变量</td>
+<td>继承</td>
+<td>可覆盖、可隔离</td>
+</tr>
+<tr>
+<td>shell</td>
+<td>系统默认</td>
+<td>可选 bash/zsh/powershell</td>
+</tr>
+<tr>
+<td>超时</td>
+<td>单级 120s</td>
+<td>分级 + 可配置</td>
+</tr>
+<tr>
+<td>输出</td>
+<td>全量返回</td>
+<td>分页 + 过滤 + ANSI 处理</td>
+</tr>
+<tr>
+<td>maxBuffer</td>
+<td>10MB</td>
+<td>可配置 + 流式</td>
+</tr>
+<tr>
+<td>后台进程</td>
+<td>不支持</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>信号处理</td>
+<td>无</td>
+<td>SIGINT/SIGTERM 处理</td>
+</tr>
+<tr>
+<td>沙箱</td>
+<td>无</td>
+<td>可选 Docker/沙箱</td>
+</tr>
+<tr>
+<td>危险检测</td>
+<td>外层 perm 正则</td>
+<td>内层命令解析 + 模式匹配</td>
+</tr>
+</tbody>
+</table>
+<p><strong>简化失去什么</strong>：
+- 无工作目录注入：所有命令都在 process.cwd() 跑，不能在子目录里跑。
+- 无环境变量隔离：可能泄露宿主机环境变量。
+- 无沙箱：<code>rm -rf /</code> 如果用户误确认就真的执行了（虽然有正则检测，但绕过容易）。
+- 无后台进程：长时间运行的命令（如 dev server）会阻塞。</p>
+<p><strong>为什么这样简化</strong>：bash 工具的核心是"exec + 收 stdout/stderr + 返回字符串"。沙箱、环境隔离、后台进程都是生产级安全需求，教学版用正则检测 + 用户确认已经够展示"权限 gate"的概念。</p>
+<h3 id="35-glob">3.5 glob<a class="headerlink" href="#35-glob" title="Permanent link">&para;</a></h3>
+<p><strong>Mini 的实现</strong>（<code>src/tools/glob.ts</code>，67 行，手写递归 + 正则匹配）：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">matchGlob</span><span class="p">(</span><span class="nx">filePath</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">pattern</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">regex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">pattern</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">    </span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/\./g</span><span class="p">,</span><span class="w"> </span><span class="s2">"\\."</span><span class="p">)</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">    </span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/\*\*/g</span><span class="p">,</span><span class="w"> </span><span class="s2">"&lt;&lt;&lt;GLOBSTAR&gt;&gt;&gt;"</span><span class="p">)</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">    </span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/\*/g</span><span class="p">,</span><span class="w"> </span><span class="s2">"[^/]*"</span><span class="p">)</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">    </span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/&lt;&lt;&lt;GLOBSTAR&gt;&gt;&gt;/g</span><span class="p">,</span><span class="w"> </span><span class="s2">".*"</span><span class="p">);</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">RegExp</span><span class="p">(</span><span class="sb">`^</span><span class="si">${</span><span class="nx">regex</span><span class="si">}</span><span class="sb">$`</span><span class="p">).</span><span class="nx">test</span><span class="p">(</span><span class="nx">filePath</span><span class="p">);</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="p">}</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="kd">function</span><span class="w"> </span><span class="nx">walkDir</span><span class="p">(</span><span class="nx">dir</span><span class="p">,</span><span class="w"> </span><span class="nx">baseDir</span><span class="p">,</span><span class="w"> </span><span class="nx">results</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">  </span><span class="c1">// 递归遍历，跳过 node_modules / .git</span>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>对比表</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>Mini</th>
+<th>原版</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>实现</td>
+<td>手写递归 + 正则</td>
+<td>fast-glob 库</td>
+</tr>
+<tr>
+<td>性能</td>
+<td>O(n) 全遍历</td>
+<td>O(match) 增量</td>
+</tr>
+<tr>
+<td>语法</td>
+<td><code>**</code>, <code>*</code></td>
+<td>完整 glob 语法（<code>?</code>, <code>[abc]</code>, <code>{a,b}</code>）</td>
+</tr>
+<tr>
+<td>忽略</td>
+<td>硬编码 node_modules/.git</td>
+<td>.gitignore + 自定义</td>
+</tr>
+<tr>
+<td>排序</td>
+<td>字母序</td>
+<td>修改时间序（更常用）</td>
+</tr>
+<tr>
+<td>限制</td>
+<td>前 100 个</td>
+<td>可配置</td>
+</tr>
+<tr>
+<td>符号链接</td>
+<td>跟随</td>
+<td>可配置</td>
+</tr>
+<tr>
+<td>大仓库</td>
+<td>慢（全遍历）</td>
+<td>快（增量）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>性能差异有多大</strong>：在一个 10 万文件的 monorepo 里，Mini 的 glob 要遍历全部 10 万文件再正则过滤，约 2-5 秒；fast-glob 利用模式剪枝，只遍历可能匹配的子树，约 100-300ms。<strong>10-20 倍差距</strong>。</p>
+<p><strong>为什么这样简化</strong>：手写递归能展示"glob 工具的原理"——遍历目录树 + 模式匹配。用 fast-glob 是一行 <code>import</code> 的事，但学不到原理。</p>
+<h3 id="36-grep">3.6 grep<a class="headerlink" href="#36-grep" title="Permanent link">&para;</a></h3>
+<p><strong>Mini 的实现</strong>（<code>src/tools/grep.ts</code>，85 行，手写遍历 + <code>RegExp</code>）：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">filePath</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">allFiles</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">content</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="nx">filePath</span><span class="p">,</span><span class="w"> </span><span class="s2">"utf-8"</span><span class="p">);</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">lines</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">content</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">"\n"</span><span class="p">);</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">lines</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">regex</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">lines</span><span class="p">[</span><span class="nx">i</span><span class="p">]))</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">      </span><span class="nx">results</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">relPath</span><span class="si">}</span><span class="sb">:</span><span class="si">${</span><span class="nx">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="si">}</span><span class="sb">: </span><span class="si">${</span><span class="nx">lines</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">trim</span><span class="p">()</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>对比表</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>Mini</th>
+<th>原版</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>实现</td>
+<td>手写遍历 + RegExp</td>
+<td>ripgrep (rg)</td>
+</tr>
+<tr>
+<td>性能</td>
+<td>O(n) 单线程</td>
+<td>多线程 + SIMD</td>
+</tr>
+<tr>
+<td>二进制文件</td>
+<td>会乱码</td>
+<td>自动跳过</td>
+</tr>
+<tr>
+<td>大文件</td>
+<td>全量读入</td>
+<td>流式</td>
+</tr>
+<tr>
+<td>编码</td>
+<td>utf-8</td>
+<td>自动检测</td>
+</tr>
+<tr>
+<td>.gitignore</td>
+<td>不尊重</td>
+<td>尊重</td>
+</tr>
+<tr>
+<td>上下文行</td>
+<td>无</td>
+<td>-A/-B/-C</td>
+</tr>
+<tr>
+<td>高亮</td>
+<td>无</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>结果限制</td>
+<td>200 条</td>
+<td>可配置</td>
+</tr>
+</tbody>
+</table>
+<p><strong>性能差异</strong>：ripgrep 是 Rust 写的，多线程 + SIMD + 智能跳过。在 10 万文件仓库里搜一个常见词，Mini 约 10-30 秒，rg 约 0.5-2 秒。<strong>10-50 倍差距</strong>。</p>
+<p><strong>为什么这样简化</strong>：同 glob——手写遍历展示原理，调用 rg 是一行 spawn 的事。</p>
+<h3 id="37-task">3.7 task（子智能体）<a class="headerlink" href="#37-task" title="Permanent link">&para;</a></h3>
+<p><strong>Mini 的实现</strong>（<code>src/subagent.ts</code>，111 行，串行 + 单一 prompt）：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">subTools</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">tools</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">t</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">t</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="s2">"task"</span><span class="p">);</span><span class="w">  </span><span class="c1">// 排除 task 防递归</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nx">iteration</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">maxIterations</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">create</span><span class="p">({...});</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">stop_reason</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">"tool_use"</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">    </span><span class="c1">// 执行工具</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">text</span><span class="p">;</span><span class="w">  </span><span class="c1">// 返回文本给父 Agent</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>对比表</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>Mini</th>
+<th>原版</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>subagent_type</td>
+<td>无分类</td>
+<td>explore, general, code-reviewer, ...</td>
+</tr>
+<tr>
+<td>并行</td>
+<td>串行</td>
+<td>最多 10 个并行</td>
+</tr>
+<tr>
+<td>工具集</td>
+<td>排除 task</td>
+<td>按 type 配置</td>
+</tr>
+<tr>
+<td>system prompt</td>
+<td>固定一段</td>
+<td>按 type 定制</td>
+</tr>
+<tr>
+<td>上下文限制</td>
+<td>20 次迭代</td>
+<td>token 限制 + 压缩</td>
+</tr>
+<tr>
+<td>返回</td>
+<td>文本</td>
+<td>结构化结果</td>
+</tr>
+<tr>
+<td>递归深度</td>
+<td>1 层（子不能再 spawn）</td>
+<td>多层</td>
+</tr>
+<tr>
+<td>进度反馈</td>
+<td>console.log</td>
+<td>流式回传父 Agent</td>
+</tr>
+<tr>
+<td>失败处理</td>
+<td>返回错误字符串</td>
+<td>重试 + 降级</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Mini 的关键设计</strong>：<code>subTools = tools.filter(t =&gt; t.name !== "task")</code>——<strong>排除 task 防止无限递归</strong>。这是子智能体最重要的安全机制，原版也有类似限制（通过配置允许的 toolset）。</p>
+<p><strong>简化失去什么</strong>：
+- 无 subagent_type：所有子任务用同一个 prompt，不能按场景定制。
+- 串行：多个独立子任务不能并行跑，慢。
+- 无流式反馈：父 Agent 要等子 Agent 完全跑完才能看到结果。</p>
+<hr />
+<h2 id="4-system-prompt">4. System Prompt 对比<a class="headerlink" href="#4-system-prompt" title="Permanent link">&para;</a></h2>
+<h3 id="41">4.1 长度与结构<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
+<p><strong>Mini 的 system prompt</strong>（<code>src/prompts/system.ts</code>，约 400 字）：</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>你是一个代码助手，帮助用户完成软件工程任务。
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>## 工具使用规则
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>- read_file: 读取文件内容
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>- write_file: 写入文件（覆盖）
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>- edit_file: 精确编辑文件
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>- bash: 执行 shell 命令
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>- glob: 按模式搜索文件
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>- grep: 搜索文件内容
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>使用原则：
+</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a>- 读取单个文件用 read_file，搜索代码用 grep
+</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>- 修改已有文件优先用 edit_file，新建文件用 write_file
+</span><span id="__span-11-14"><a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a>- ...
+</span><span id="__span-11-15"><a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a>
+</span><span id="__span-11-16"><a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a>## 代码风格
+</span><span id="__span-11-17"><a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a>- 不添加多余注释
+</span><span id="__span-11-18"><a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a>- 遵循项目现有代码风格
+</span><span id="__span-11-19"><a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a>
+</span><span id="__span-11-20"><a id="__codelineno-11-20" name="__codelineno-11-20" href="#__codelineno-11-20"></a>## 安全约束
+</span><span id="__span-11-21"><a id="__codelineno-11-21" name="__codelineno-11-21" href="#__codelineno-11-21"></a>- 不执行 rm -rf
+</span><span id="__span-11-22"><a id="__codelineno-11-22" name="__codelineno-11-22" href="#__codelineno-11-22"></a>- 不修改 .git
+</span><span id="__span-11-23"><a id="__codelineno-11-23" name="__codelineno-11-23" href="#__codelineno-11-23"></a>- 不提交代码
+</span><span id="__span-11-24"><a id="__codelineno-11-24" name="__codelineno-11-24" href="#__codelineno-11-24"></a>
+</span><span id="__span-11-25"><a id="__codelineno-11-25" name="__codelineno-11-25" href="#__codelineno-11-25"></a>## 环境信息
+</span><span id="__span-11-26"><a id="__codelineno-11-26" name="__codelineno-11-26" href="#__codelineno-11-26"></a>- 工作目录: ${cwd}
+</span><span id="__span-11-27"><a id="__codelineno-11-27" name="__codelineno-11-27" href="#__codelineno-11-27"></a>- 项目名称: ${dirName}
+</span><span id="__span-11-28"><a id="__codelineno-11-28" name="__codelineno-11-28" href="#__codelineno-11-28"></a>- 操作系统: ${platform}
+</span><span id="__span-11-29"><a id="__codelineno-11-29" name="__codelineno-11-29" href="#__codelineno-11-29"></a>- 日期: ${date}
+</span><span id="__span-11-30"><a id="__codelineno-11-30" name="__codelineno-11-30" href="#__codelineno-11-30"></a>- Git: ${gitInfo}
+</span></code></pre></div>
+<p><strong>Claude Code 的 system prompt</strong>（数千字，结构化）：</p>
+<ul>
+<li><strong>身份与使命</strong>：详细描述 Claude 是什么、行为准则、语气风格</li>
+<li><strong>工具使用规则</strong>：每个工具有 1-3 段详细规则（何时用、何时不该用、参数选择策略）</li>
+<li><strong>代码风格</strong>：详细到命名约定、注释策略、import 顺序</li>
+<li><strong>安全约束</strong>：具体到每类危险操作的处理方式</li>
+<li><strong>环境信息</strong>：cwd、git、os、date、shell、package.json、目录结构、最近改动</li>
+<li><strong>项目感知</strong>：检测到的项目类型（npm/cargo/go/maven）、对应约定</li>
+<li><strong>AGENTS.md</strong>：如果存在，合并项目级规则</li>
+<li><strong>技能系统</strong>：加载的 Skills 及触发条件</li>
+<li><strong>记忆系统</strong>：持久化 memory 的内容</li>
+<li><strong>动态上下文</strong>：当前打开的文件、光标位置、最近编辑</li>
+</ul>
+<h3 id="42">4.2 动态注入对比<a class="headerlink" href="#42" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>注入项</th>
+<th>Mini</th>
+<th>原版</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cwd</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>platform</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>date</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>git 分支</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>git 变更数</td>
+<td>✓</td>
+<td>✓ + 详细 status</td>
+</tr>
+<tr>
+<td>项目名</td>
+<td>✓（dirName）</td>
+<td>✓ + package.json name</td>
+</tr>
+<tr>
+<td>shell</td>
+<td>✗</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>package.json</td>
+<td>✗</td>
+<td>✓（检测项目类型）</td>
+</tr>
+<tr>
+<td>目录结构</td>
+<td>✗</td>
+<td>✓（顶层 ls）</td>
+</tr>
+<tr>
+<td>最近改动</td>
+<td>✗</td>
+<td>✓（git log --oneline -5）</td>
+</tr>
+<tr>
+<td>打开文件</td>
+<td>✗</td>
+<td>✓（IDE 集成时）</td>
+</tr>
+<tr>
+<td>光标位置</td>
+<td>✗</td>
+<td>✓（IDE 集成时）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Mini 的动态注入</strong>（<code>system.ts:5-28</code>）：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cwd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">process</span><span class="p">.</span><span class="nx">cwd</span><span class="p">();</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">process</span><span class="p">.</span><span class="nx">platform</span><span class="p">;</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">date</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">().</span><span class="nx">toISOString</span><span class="p">().</span><span class="nx">split</span><span class="p">(</span><span class="s2">"T"</span><span class="p">)[</span><span class="mf">0</span><span class="p">];</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">dirName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">path</span><span class="p">.</span><span class="nx">basename</span><span class="p">(</span><span class="nx">cwd</span><span class="p">);</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="kd">let</span><span class="w"> </span><span class="nx">gitInfo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"非 Git 仓库"</span><span class="p">;</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">branch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">execSync</span><span class="p">(</span><span class="s2">"git rev-parse --abbrev-ref HEAD"</span><span class="p">,</span><span class="w"> </span><span class="p">{...}).</span><span class="nx">trim</span><span class="p">();</span>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">statusOut</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">execSync</span><span class="p">(</span><span class="s2">"git status --porcelain"</span><span class="p">,</span><span class="w"> </span><span class="p">{...}).</span><span class="nx">trim</span><span class="p">();</span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="w">  </span><span class="c1">// ...</span>
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>原版多注入的信息有什么用</strong>：
+- <strong>package.json</strong>：让模型知道这是 npm 项目，建议用 <code>npm test</code> 而不是 <code>make test</code>。
+- <strong>目录结构</strong>：让模型一眼看到有哪些模块，不用先 glob。
+- <strong>最近改动</strong>：让模型了解最近在做什么，上下文更连贯。
+- <strong>打开文件 / 光标</strong>：IDE 集成时，模型知道用户在看什么，回答更相关。</p>
+<h3 id="43-agentsmd">4.3 AGENTS.md<a class="headerlink" href="#43-agentsmd" title="Permanent link">&para;</a></h3>
+<p><strong>Mini</strong>：不支持。</p>
+<p><strong>原版</strong>：如果项目根目录有 <code>AGENTS.md</code>，其内容会合并到 system prompt。这是一个<strong>项目级规则覆盖机制</strong>：</p>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="gh"># AGENTS.md 示例</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="gu">## 测试命令</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="k">-</span><span class="w"> </span>运行测试：`pnpm test`
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="k">-</span><span class="w"> </span>类型检查：`pnpm typecheck`
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="gu">## 代码约定</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="k">-</span><span class="w"> </span>用 ESM import，不用 CommonJS
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="k">-</span><span class="w"> </span>测试文件放 <span class="gs">__tests__</span>/ 镜像目录
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="k">-</span><span class="w"> </span>提交前必须跑 lint
+</span></code></pre></div>
+<p><strong>为什么 Mini 没做</strong>：合并 AGENTS.md 就是"读文件 + 字符串拼接"，约 10 行代码。但教学重点是"system prompt 是动态构造的"，AGENTS.md 是这个机制的一个应用，不是新原理。留作扩展练习。</p>
+<h3 id="44">4.4 项目类型检测<a class="headerlink" href="#44" title="Permanent link">&para;</a></h3>
+<p><strong>Mini</strong>：不检测。system prompt 只说"遵循项目现有代码风格"，不告诉模型项目是什么类型。</p>
+<p><strong>原版</strong>：检测 <code>package.json</code>、<code>Cargo.toml</code>、<code>go.mod</code>、<code>pom.xml</code>、<code>build.gradle</code> 等，注入项目类型相关建议：</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>检测到 npm 项目：
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>- 用 npm run &lt;script&gt; 执行脚本
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>- 测试用 npm test
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>- lint 用 npm run lint（如果存在）
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>检测到 cargo 项目：
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>- 用 cargo build / cargo test
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>- 依赖在 Cargo.toml
+</span></code></pre></div>
+<p><strong>为什么重要</strong>：不同项目的命令不同。npm 项目用 <code>npm test</code>，cargo 项目用 <code>cargo test</code>。不检测的话，模型可能建议 <code>make test</code>，用户得纠正。</p>
+<h3 id="45">4.5 技能系统<a class="headerlink" href="#45" title="Permanent link">&para;</a></h3>
+<p><strong>Mini</strong>：无。</p>
+<p><strong>原版</strong>：Skills 是可加载的领域知识包。比如 <code>hmos-atomic-dev</code> 技能加载后，system prompt 注入鸿蒙开发的相关规则、API 参考、最佳实践。技能可以按触发条件自动加载，也可以用户手动加载。</p>
+<p><strong>技能系统的本质</strong>：<strong>按需注入的 system prompt 片段</strong>。不加载技能时，prompt 短；加载后，prompt 变长但获得领域知识。这是控制 prompt 长度和领域专精的平衡机制。</p>
+<h3 id="46">4.6 记忆系统<a class="headerlink" href="#46" title="Permanent link">&para;</a></h3>
+<p><strong>Mini</strong>：无。每次启动都是全新会话。</p>
+<p><strong>原版</strong>：有持久化 memory，跨会话记住用户偏好。比如用户说过"用 pnpm 不用 npm"，下次会话模型还记得。</p>
+<p><strong>记忆系统的本质</strong>：<strong>一个追加到 system prompt 的持久化字符串</strong>。实现上就是读写一个 <code>~/.claude/memory.md</code> 文件，每次启动读出来拼到 prompt 里。约 30 行代码。留作扩展练习。</p>
+<hr />
+<h2 id="5">5. 上下文管理对比<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<h3 id="51-token">5.1 token 计数<a class="headerlink" href="#51-token" title="Permanent link">&para;</a></h3>
+<p><strong>Mini</strong>（<code>src/context.ts:29-35</code>）：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nx">getTokenCount</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">lastUsage</span><span class="p">.</span><span class="nx">input_tokens</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">lastUsage</span><span class="p">.</span><span class="nx">output_tokens</span><span class="p">;</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="p">}</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="nx">getInputTokenCount</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">lastUsage</span><span class="p">.</span><span class="nx">input_tokens</span><span class="p">;</span><span class="w">  </span><span class="c1">// 来自 API 返回的 usage</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>Mini 的策略</strong>：直接用 API 返回的 <code>usage.input_tokens</code>。<strong>优点是零成本、精确</strong>（API 自己算的）；<strong>缺点是只有请求后才知道</strong>，不能提前预估。</p>
+<p><strong>原版</strong>：用 tokenizer（如 <code>@anthropic-ai/tokenizer</code>）本地精确计数，可以在请求前预估。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>Mini</th>
+<th>原版</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>计数方式</td>
+<td>API usage 返回</td>
+<td>本地 tokenizer</td>
+</tr>
+<tr>
+<td>时机</td>
+<td>请求后</td>
+<td>任意时刻</td>
+</tr>
+<tr>
+<td>精度</td>
+<td>精确（API 算的）</td>
+<td>精确</td>
+</tr>
+<tr>
+<td>成本</td>
+<td>0</td>
+<td>依赖 tokenizer 库</td>
+</tr>
+<tr>
+<td>预估能力</td>
+<td>无</td>
+<td>有（请求前预估是否超限）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>为什么 Mini 这样选</strong>：教学目标是展示"上下文管理需要 token 计数"，用 API 返回值是最简单的精确方案。引入 tokenizer 会增加依赖、偏离"最小实现"。</p>
+<h3 id="52">5.2 截断策略<a class="headerlink" href="#52" title="Permanent link">&para;</a></h3>
+<p><strong>Mini 的工具结果截断</strong>（<code>context.ts:51-71</code>）：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="nx">truncateToolResults</span><span class="p">(</span><span class="nx">maxResultLength</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10000</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="ow">void</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">  </span><span class="c1">// 对超长 tool_result，保留头尾各 5000 字符</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">head</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">block</span><span class="p">.</span><span class="nx">content</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="nx">maxResultLength</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2</span><span class="p">);</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">tail</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">block</span><span class="p">.</span><span class="nx">content</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="o">-</span><span class="nx">maxResultLength</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2</span><span class="p">);</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="w">  </span><span class="nx">block</span><span class="p">.</span><span class="nx">content</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">head</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="sb">`... (已截断) ...`</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">tail</span><span class="p">;</span>
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>Mini 的历史截断</strong>（<code>context.ts:73-81</code>）：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="nx">truncateHistory</span><span class="p">(</span><span class="nx">keepRecent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">removed</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="w">  </span><span class="k">this</span><span class="p">.</span><span class="nx">messages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="o">-</span><span class="nx">keepRecent</span><span class="p">);</span><span class="w">  </span><span class="c1">// 只留最近 10 条</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>对比表</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>Mini</th>
+<th>原版</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>工具结果截断</td>
+<td>头尾保留</td>
+<td>智能截断（保留关键信息）</td>
+</tr>
+<tr>
+<td>历史截断</td>
+<td>保留最近 N 条</td>
+<td>按重要性保留</td>
+</tr>
+<tr>
+<td>截断时机</td>
+<td>每次工具调用后</td>
+<td>多级阈值触发</td>
+</tr>
+<tr>
+<td>截断粒度</td>
+<td>消息级</td>
+<td>block 级</td>
+</tr>
+<tr>
+<td>信息损失</td>
+<td>大（整条消息丢）</td>
+<td>小（block 级保留）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Mini 的头尾保留策略为什么合理</strong>：工具结果通常是文件内容或命令输出。头部有开头（import、声明），尾部有结尾（错误、结果摘要），中间是重复性内容。<strong>头尾保留在经验上保留了 80% 的有用信息</strong>。</p>
+<p><strong>原版的智能截断</strong>：会识别 tool_result 里的关键信息（错误信息、diff、文件路径），优先保留这些，截断重复性内容。更精细，但实现复杂。</p>
+<h3 id="53-prompt">5.3 压缩 prompt<a class="headerlink" href="#53-prompt" title="Permanent link">&para;</a></h3>
+<p><strong>Mini 的压缩</strong>（<code>context.ts:83-128</code>）：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="k">async</span><span class="w"> </span><span class="nx">compress</span><span class="p">(</span><span class="nx">client</span><span class="p">,</span><span class="w"> </span><span class="nx">model</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="kt">boolean</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">toCompress</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">4</span><span class="p">);</span><span class="w">  </span><span class="c1">// 压缩除最近 4 条外的全部</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">recent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="o">-</span><span class="mf">4</span><span class="p">);</span>
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">summaryMessages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[{</span>
+</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="w">    </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">"user"</span><span class="p">,</span>
+</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="w">    </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="sb">`请简要总结以下对话的关键信息，保留重要的上下文和决策：\n</span><span class="si">${</span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">toCompress</span><span class="p">)</span><span class="si">}</span><span class="sb">`</span>
+</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="w">  </span><span class="p">}];</span>
+</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">create</span><span class="p">({...});</span>
+</span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="w">  </span><span class="k">this</span><span class="p">.</span><span class="nx">messages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">"user"</span><span class="p">,</span><span class="w"> </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="sb">`[之前的对话总结]\n</span><span class="si">${</span><span class="nx">summary</span><span class="si">}</span><span class="sb">`</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-18-11"><a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">"assistant"</span><span class="p">,</span><span class="w"> </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="s2">"好的，我已了解..."</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-18-12"><a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a><span class="w">    </span><span class="p">...</span><span class="nx">recent</span><span class="p">,</span>
+</span><span id="__span-18-13"><a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a><span class="w">  </span><span class="p">];</span>
+</span><span id="__span-18-14"><a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>原版的压缩</strong>：用专门的 <code>compactConversation</code> prompt，明确指示模型保留：用户意图、关键决策、未完成的任务、重要的文件路径和代码片段、错误和解决方案。<strong>不是泛泛的"总结"，而是结构化的信息提取</strong>。</p>
+<p><strong>对比</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>Mini</th>
+<th>原版</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>压缩 prompt</td>
+<td>"请简要总结关键信息"</td>
+<td>结构化指令（保留什么、丢弃什么）</td>
+</tr>
+<tr>
+<td>保留条数</td>
+<td>最近 4 条</td>
+<td>动态决定</td>
+</tr>
+<tr>
+<td>压缩后格式</td>
+<td>一段总结文本</td>
+<td>结构化（决策列表 + 待办 + 上下文）</td>
+</tr>
+<tr>
+<td>信息损失</td>
+<td>较大</td>
+<td>较小</td>
+</tr>
+<tr>
+<td>触发条件</td>
+<td>80% 阈值</td>
+<td>多级阈值</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Mini 的压缩 prompt 的问题</strong>："请简要总结"太泛，模型可能丢掉关键信息（比如"用户说要改 auth 模块"这种关键意图）。原版的 prompt 会明确说"保留用户的所有明确要求和未完成的任务"。</p>
+<h3 id="54">5.4 阈值设计<a class="headerlink" href="#54" title="Permanent link">&para;</a></h3>
+<p><strong>Mini</strong>（<code>context.ts:37-43</code>）：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="nx">isNearLimit</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">getInputTokenCount</span><span class="p">()</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">maxTokens</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">0.8</span><span class="p">;</span><span class="w">  </span><span class="c1">// 80% 预警</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="p">}</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="nx">isOverLimit</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">getInputTokenCount</span><span class="p">()</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">maxTokens</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">0.95</span><span class="p">;</span><span class="w">  </span><span class="c1">// 95% 硬限</span>
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>原版</strong>：多级阈值：</p>
+<table>
+<thead>
+<tr>
+<th>阈值</th>
+<th>行为</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>60%</td>
+<td>显示提示</td>
+</tr>
+<tr>
+<td>70%</td>
+<td>建议压缩</td>
+</tr>
+<tr>
+<td>80%</td>
+<td>自动压缩</td>
+</tr>
+<tr>
+<td>90%</td>
+<td>强制压缩 + 警告</td>
+</tr>
+<tr>
+<td>95%</td>
+<td>拒绝新输入 + 必须压缩</td>
+</tr>
+</tbody>
+</table>
+<p><strong>为什么多级</strong>：给用户和模型渐进的信号，避免到 95% 才突然压缩（信息损失大）。Mini 的单级 80% 在大多数场景够用，但接近极限时会显得仓促。</p>
+<h3 id="55">5.5 状态显示<a class="headerlink" href="#55" title="Permanent link">&para;</a></h3>
+<p><strong>Mini</strong>（<code>context.ts:45-49</code>）：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="nx">getStatus</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">pct</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">((</span><span class="nx">tokens</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">maxTokens</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">100</span><span class="p">).</span><span class="nx">toFixed</span><span class="p">(</span><span class="mf">1</span><span class="p">);</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="sb">`[上下文] </span><span class="si">${</span><span class="nx">tokens</span><span class="si">}</span><span class="sb"> / </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">maxTokens</span><span class="si">}</span><span class="sb"> tokens (</span><span class="si">${</span><span class="nx">pct</span><span class="si">}</span><span class="sb">%)`</span><span class="p">;</span>
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>输出示例：<code>[上下文] 165432 / 200000 tokens (82.7%)</code></p>
+<p><strong>原版</strong>：除了数字，还有进度条、颜色、压缩状态、预计剩余轮次。<strong>信息相同，表达更友好</strong>。</p>
+<hr />
+<h2 id="6">6. 权限对比<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+<h3 id="61">6.1 权限层级<a class="headerlink" href="#61" title="Permanent link">&para;</a></h3>
+<p><strong>Mini</strong>（<code>src/permission.ts</code>）：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">SAFE_TOOLS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"read_file"</span><span class="p">,</span><span class="w"> </span><span class="s2">"glob"</span><span class="p">,</span><span class="w"> </span><span class="s2">"grep"</span><span class="p">];</span><span class="w">  </span><span class="c1">// 安全工具，免确认</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">DANGEROUS_PATTERNS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="w">                        </span><span class="c1">// 危险命令正则</span>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="w">  </span><span class="sr">/rm\s+-rf/i</span><span class="p">,</span><span class="w"> </span><span class="sr">/git\s+push\s+--force/i</span><span class="p">,</span><span class="w"> </span><span class="sr">/git\s+reset\s+--hard/i</span><span class="p">,</span>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="w">  </span><span class="sr">/DROP\s+TABLE/i</span><span class="p">,</span><span class="w"> </span><span class="sr">/DELETE\s+FROM/i</span><span class="p">,</span><span class="w"> </span><span class="sr">/format\s+[Cc]:/i</span><span class="p">,</span>
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="w">  </span><span class="sr">/mkfs/i</span><span class="p">,</span><span class="w"> </span><span class="sr">/dd\s+if=/i</span><span class="p">,</span><span class="w"> </span><span class="sr">/:\(\)\s*\{\s*:\|:&amp;\s*\};\s*:/i</span><span class="p">,</span><span class="w">  </span><span class="c1">// fork bomb</span>
+</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="p">];</span>
+</span></code></pre></div>
+<p>三层：</p>
+<ol>
+<li><strong>安全工具</strong>（read_file, glob, grep）：免确认</li>
+<li><strong>普通工具</strong>（write_file, edit_file, bash 普通命令）：首次确认，可选"本次会话自动允许"</li>
+<li><strong>危险命令</strong>（匹配 DANGEROUS_PATTERNS）：醒目确认，不能"自动允许"</li>
+</ol>
+<p><strong>原版</strong>：细粒度规则引擎：</p>
+<table>
+<thead>
+<tr>
+<th>规则类型</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>工具级</td>
+<td><code>read_file</code> 允许，<code>bash</code> 需确认</td>
+</tr>
+<tr>
+<td>参数级</td>
+<td><code>bash</code> 执行 <code>npm test</code> 允许，<code>bash</code> 执行 <code>rm</code> 需确认</td>
+</tr>
+<tr>
+<td>路径级</td>
+<td><code>write_file</code> 到 <code>src/</code> 允许，到 <code>~/.ssh/</code> 拒绝</td>
+</tr>
+<tr>
+<td>命令级</td>
+<td><code>git status</code> 允许，<code>git push</code> 需确认</td>
+</tr>
+<tr>
+<td>会话级</td>
+<td>本次会话所有 <code>read_file</code> 免确认</td>
+</tr>
+<tr>
+<td>全局级</td>
+<td>永久允许某规则</td>
+</tr>
+<tr>
+<td>项目级</td>
+<td>AGENTS.md 定义项目规则</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Mini 的三层 vs 原版的规则引擎</strong>：Mini 是硬编码的三层，原版是可配置的规则引擎。<strong>核心一致</strong>：都是"执行前检查 + 用户确认 gate"。差异在可配置性和粒度。</p>
+<h3 id="62">6.2 确认方式<a class="headerlink" href="#62" title="Permanent link">&para;</a></h3>
+<p><strong>Mini</strong>（<code>permission.ts:38-66</code>）：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="k">async</span><span class="w"> </span><span class="nx">checkTool</span><span class="p">(</span><span class="nx">toolName</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="kt">boolean</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">autoApprove</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span><span class="w">          </span><span class="c1">// --auto 模式</span>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">SAFE_TOOLS</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="nx">toolName</span><span class="p">))</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span><span class="w">  </span><span class="c1">// 安全工具</span>
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">approvedTools</span><span class="p">.</span><span class="nx">has</span><span class="p">(</span><span class="nx">toolName</span><span class="p">))</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span><span class="w">  </span><span class="c1">// 已批准</span>
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>
+</span><span id="__span-22-6"><a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">toolName</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">"bash"</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">isDangerousCommand</span><span class="p">(</span><span class="nx">input</span><span class="p">.</span><span class="nx">command</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-22-7"><a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a><span class="w">    </span><span class="c1">// 危险命令：醒目确认</span>
+</span><span id="__span-22-8"><a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">answer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">confirm</span><span class="p">(</span><span class="sb">`这看起来是一个危险命令。确定要执行吗？(yes/no):`</span><span class="p">);</span>
+</span><span id="__span-22-9"><a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">answer</span><span class="p">;</span>
+</span><span id="__span-22-10"><a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-22-11"><a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a>
+</span><span id="__span-22-12"><a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a><span class="w">  </span><span class="c1">// 普通工具：确认 + 可选"本次会话自动允许"</span>
+</span><span id="__span-22-13"><a id="__codelineno-22-13" name="__codelineno-22-13" href="#__codelineno-22-13"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">answer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">confirm</span><span class="p">(</span><span class="sb">`即将执行: </span><span class="si">${</span><span class="nx">desc</span><span class="si">}</span><span class="sb">\n允许？(yes/no):`</span><span class="p">);</span>
+</span><span id="__span-22-14"><a id="__codelineno-22-14" name="__codelineno-22-14" href="#__codelineno-22-14"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">answer</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-22-15"><a id="__codelineno-22-15" name="__codelineno-22-15" href="#__codelineno-22-15"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">always</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">confirm</span><span class="p">(</span><span class="sb">`本次会话后续都自动允许 </span><span class="si">${</span><span class="nx">toolName</span><span class="si">}</span><span class="sb">？(yes/no):`</span><span class="p">);</span>
+</span><span id="__span-22-16"><a id="__codelineno-22-16" name="__codelineno-22-16" href="#__codelineno-22-16"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">always</span><span class="p">)</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">approvedTools</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">toolName</span><span class="p">);</span>
+</span><span id="__span-22-17"><a id="__codelineno-22-17" name="__codelineno-22-17" href="#__codelineno-22-17"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-22-18"><a id="__codelineno-22-18" name="__codelineno-22-18" href="#__codelineno-22-18"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">answer</span><span class="p">;</span>
+</span><span id="__span-22-19"><a id="__codelineno-22-19" name="__codelineno-22-19" href="#__codelineno-22-19"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>对比表</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>Mini</th>
+<th>原版</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>确认方式</td>
+<td>y/n</td>
+<td>y/n + "始终允许" + "仅本次" + 规则配置</td>
+</tr>
+<tr>
+<td>批准粒度</td>
+<td>工具级</td>
+<td>工具级 + 参数级 + 路径级</td>
+</tr>
+<tr>
+<td>批准范围</td>
+<td>本次会话</td>
+<td>本次会话 + 永久 + 项目级</td>
+</tr>
+<tr>
+<td>危险检测</td>
+<td>正则</td>
+<td>命令解析 + 模式匹配 + 启发式</td>
+</tr>
+<tr>
+<td>拒绝处理</td>
+<td>返回拒绝信息</td>
+<td>同 + 记录 + 学习用户偏好</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Mini 的"本次会话自动允许"</strong>（<code>approvedTools</code> Set）：用户确认一次后，本次会话后续同类工具免确认。这是<strong>便利性和安全性的平衡</strong>——不至于每个工具都要确认（烦），也不至于永久放行（危险）。</p>
+<h3 id="63">6.3 危险检测<a class="headerlink" href="#63" title="Permanent link">&para;</a></h3>
+<p><strong>Mini 的正则</strong>：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">DANGEROUS_PATTERNS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="w">  </span><span class="sr">/rm\s+-rf/i</span><span class="p">,</span><span class="w">           </span><span class="c1">// rm -rf</span>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="w">  </span><span class="sr">/git\s+push\s+--force/i</span><span class="p">,</span><span class="w">  </span><span class="c1">// 强制推送</span>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="w">  </span><span class="sr">/git\s+reset\s+--hard/i</span><span class="p">,</span><span class="w">  </span><span class="c1">// 硬重置</span>
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="w">  </span><span class="sr">/DROP\s+TABLE/i</span><span class="p">,</span><span class="w">       </span><span class="c1">// 删表</span>
+</span><span id="__span-23-6"><a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a><span class="w">  </span><span class="sr">/DELETE\s+FROM/i</span><span class="p">,</span><span class="w">      </span><span class="c1">// 删数据</span>
+</span><span id="__span-23-7"><a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a><span class="w">  </span><span class="sr">/format\s+[Cc]:/i</span><span class="p">,</span><span class="w">     </span><span class="c1">// 格式化 C 盘</span>
+</span><span id="__span-23-8"><a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a><span class="w">  </span><span class="sr">/mkfs/i</span><span class="p">,</span><span class="w">               </span><span class="c1">// 创建文件系统</span>
+</span><span id="__span-23-9"><a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a><span class="w">  </span><span class="sr">/dd\s+if=/i</span><span class="p">,</span><span class="w">           </span><span class="c1">// dd 写入</span>
+</span><span id="__span-23-10"><a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a><span class="w">  </span><span class="sr">/:\(\)\s*\{\s*:\|:&amp;\s*\};\s*:/i</span><span class="p">,</span><span class="w">  </span><span class="c1">// fork bomb</span>
+</span><span id="__span-23-11"><a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a><span class="p">];</span>
+</span></code></pre></div>
+<p><strong>正则检测的局限</strong>：
+- <code>rm -rf /</code> 能检测，但 <code>rm -rf ${HOME}</code> 检测不到（变量）。
+- <code>git push --force</code> 能检测，但 <code>git push -f</code> 检测不到（短选项）。
+- <code>rm -r --force /</code> 能被 <code>rm\s+-rf</code> 漏掉（选项顺序）。</p>
+<p><strong>原版的命令解析</strong>：用 shell parser 解析命令成 AST，再匹配模式。能处理变量展开、选项顺序、管道、子命令。<strong>更准确，但实现复杂得多</strong>。</p>
+<p><strong>教学取舍</strong>：正则检测能展示"危险检测"的概念，且 10 行代码搞定。命令解析要引入 shell parser，偏离核心。</p>
+<h3 id="64">6.4 路径边界<a class="headerlink" href="#64" title="Permanent link">&para;</a></h3>
+<p><strong>Mini</strong>：无路径边界。<code>write_file</code> 可以写任意路径，包括 <code>~/.ssh/authorized_keys</code>。</p>
+<p><strong>原版</strong>：限制工具只能操作工作目录内的文件（可配置例外）。</p>
+<p><strong>为什么 Mini 没做</strong>：路径边界检查约 15 行代码（<code>path.relative(cwd, target)</code> 判断是否以 <code>..</code> 开头）。但教学重点是"权限 gate"的概念，路径边界是 gate 的一个具体应用。留作扩展练习。</p>
+<hr />
+<h2 id="7">7. 子智能体对比<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
+<h3 id="71-subagent_type">7.1 subagent_type<a class="headerlink" href="#71-subagent_type" title="Permanent link">&para;</a></h3>
+<p><strong>Mini</strong>：无分类。所有子任务用同一段 <code>SUBAGENT_SYSTEM_PROMPT</code>：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">SUBAGENT_SYSTEM_PROMPT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`你是一个子智能体，负责完成父智能体分配的特定任务。</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="sb">## 规则</span>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="sb">- 专注于完成分配的任务，不要偏离主题</span>
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="sb">- 使用提供的工具完成任务</span>
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a><span class="sb">- 完成后用简洁的语言总结结果</span>
+</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a><span class="sb">- 不要执行破坏性操作`</span><span class="p">;</span>
+</span></code></pre></div>
+<p><strong>原版</strong>：多种 subagent_type，每种有定制的 prompt 和工具集：</p>
+<table>
+<thead>
+<tr>
+<th>subagent_type</th>
+<th>prompt 重点</th>
+<th>工具集</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>explore</code></td>
+<td>快速探索，不修改</td>
+<td>read_file, glob, grep（只读）</td>
+</tr>
+<tr>
+<td><code>general</code></td>
+<td>通用多步骤任务</td>
+<td>全工具</td>
+</tr>
+<tr>
+<td><code>code-reviewer</code></td>
+<td>审查代码质量</td>
+<td>read_file, grep + 审查规则</td>
+</tr>
+<tr>
+<td><code>bug-fixer</code></td>
+<td>定位并修复 bug</td>
+<td>全工具 + 调试规则</td>
+</tr>
+<tr>
+<td><code>test-writer</code></td>
+<td>写测试</td>
+<td>read_file, write_file, edit_file, bash</td>
+</tr>
+</tbody>
+</table>
+<p><strong>subagent_type 的本质</strong>：<strong>按任务类型定制子 Agent 的 system prompt 和工具集</strong>。实现上就是一个 <code>{ [type]: { prompt, tools } }</code> 的配置表。约 50 行代码。</p>
+<p><strong>为什么重要</strong>：不同任务需要不同的工具和规则。探索任务不该修改文件（只给 read 工具）；审查任务需要审查规则（注入到 prompt）。不分类的话，子 Agent 用通用 prompt，在特定任务上表现差。</p>
+<h3 id="72">7.2 并行<a class="headerlink" href="#72" title="Permanent link">&para;</a></h3>
+<p><strong>Mini</strong>：串行。父 Agent 一次只 spawn 一个子 Agent，等它跑完再 spawn 下一个。</p>
+<p><strong>原版</strong>：支持最多 10 个并行。父 Agent 可以一次 spawn 多个子 Agent，用 <code>Promise.all</code> 等全部完成。</p>
+<p><strong>串行 vs 并行的差异</strong>：</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>场景：要分析 3 个独立模块的代码质量
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>Mini（串行）：  [子1: 30s] → [子2: 30s] → [子3: 30s]  总计 90s
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>原版（并行）：  [子1: 30s]
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>                [子2: 30s]  总计 30s
+</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>                [子3: 30s]
+</span></code></pre></div>
+<p><strong>为什么 Mini 串行</strong>：串行实现简单（for 循环），并行要处理 <code>Promise.all</code>、结果顺序、部分失败。教学重点是"子 Agent 是独立循环"，串行已经能展示这个概念。</p>
+<h3 id="73">7.3 工具集<a class="headerlink" href="#73" title="Permanent link">&para;</a></h3>
+<p><strong>Mini</strong>（<code>subagent.ts:48-50</code>）：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">subTools</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">tools</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">t</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">t</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="s2">"task"</span><span class="p">);</span><span class="w">  </span><span class="c1">// 排除 task 防递归</span>
+</span></code></pre></div>
+<p><strong>统一排除 task</strong>：所有子 Agent 都不能用 task，防止无限递归（子 Agent spawn 子 Agent spawn 子 Agent...）。</p>
+<p><strong>原版</strong>：按 subagent_type 配置工具集。<code>explore</code> 类型只有只读工具，<code>general</code> 有全工具，<code>code-reviewer</code> 有审查专用工具。<strong>更精细，但核心都是"子 Agent 的工具集是父 Agent 工具集的子集"</strong>。</p>
+<h3 id="74-system-prompt">7.4 system prompt<a class="headerlink" href="#74-system-prompt" title="Permanent link">&para;</a></h3>
+<p><strong>Mini</strong>：固定一段通用 prompt。</p>
+<p><strong>原版</strong>：按 subagent_type 注入不同 prompt。比如 <code>code-reviewer</code> 的 prompt 会注入审查标准、常见问题清单、报告格式要求。</p>
+<h3 id="75">7.5 上下文限制<a class="headerlink" href="#75" title="Permanent link">&para;</a></h3>
+<p><strong>Mini</strong>（<code>subagent.ts:52-54</code>）：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">iteration</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span>
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">maxIterations</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">20</span><span class="p">;</span><span class="w">  </span><span class="c1">// 最多 20 次迭代</span>
+</span></code></pre></div>
+<p><strong>用迭代次数限制</strong>：简单直接，但不够精确——20 次迭代如果每次工具结果很长，可能早就超 token 了。</p>
+<p><strong>原版</strong>：token 限制 + 压缩。子 Agent 也有自己的 ContextManager，接近 token 限制时压缩。<strong>更精确，但实现复杂</strong>。</p>
+<hr />
+<h2 id="8">8. 原版有而我们没做的<a class="headerlink" href="#8" title="Permanent link">&para;</a></h2>
+<h3 id="81-mcp-model-context-protocol">8.1 MCP (Model Context Protocol)<a class="headerlink" href="#81-mcp-model-context-protocol" title="Permanent link">&para;</a></h3>
+<p><strong>MCP 是什么</strong>：一个标准协议，让外部工具能接入 Agent。比如 GitHub MCP server 让 Agent 能操作 issue/PR，数据库 MCP server 让 Agent 能查 SQL，Slack MCP server 让 Agent 能发消息。</p>
+<p><strong>MCP 的核心</strong>：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="c1">// MCP 协议简化</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="kd">interface</span><span class="w"> </span><span class="nx">MCPTool</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="w">  </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+</span><span id="__span-28-5"><a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a><span class="w">  </span><span class="nx">input_schema</span><span class="o">:</span><span class="w"> </span><span class="kt">JSONSchema</span><span class="p">;</span>
+</span><span id="__span-28-6"><a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a><span class="p">}</span>
+</span><span id="__span-28-7"><a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a>
+</span><span id="__span-28-8"><a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a><span class="kd">interface</span><span class="w"> </span><span class="nx">MCPServer</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-28-9"><a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a><span class="w">  </span><span class="nx">listTools</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">MCPTool</span><span class="p">[]</span><span class="o">&gt;</span><span class="p">;</span><span class="w">           </span><span class="c1">// 列出工具</span>
+</span><span id="__span-28-10"><a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a><span class="w">  </span><span class="nx">callTool</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span><span class="p">;</span><span class="w">    </span><span class="c1">// 调用工具</span>
+</span><span id="__span-28-11"><a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a><span class="p">}</span>
+</span><span id="__span-28-12"><a id="__codelineno-28-12" name="__codelineno-28-12" href="#__codelineno-28-12"></a>
+</span><span id="__span-28-13"><a id="__codelineno-28-13" name="__codelineno-28-13" href="#__codelineno-28-13"></a><span class="c1">// Agent 集成 MCP</span>
+</span><span id="__span-28-14"><a id="__codelineno-28-14" name="__codelineno-28-14" href="#__codelineno-28-14"></a><span class="kd">const</span><span class="w"> </span><span class="nx">mcpTools</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">mcpServer</span><span class="p">.</span><span class="nx">listTools</span><span class="p">();</span>
+</span><span id="__span-28-15"><a id="__codelineno-28-15" name="__codelineno-28-15" href="#__codelineno-28-15"></a><span class="kd">const</span><span class="w"> </span><span class="nx">allTools</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[...</span><span class="nx">builtinTools</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="nx">mcpTools</span><span class="p">];</span><span class="w">  </span><span class="c1">// 合并到工具列表</span>
+</span><span id="__span-28-16"><a id="__codelineno-28-16" name="__codelineno-28-16" href="#__codelineno-28-16"></a><span class="c1">// 执行时：if (mcpTools.includes(tool)) await mcpServer.callTool(tool, input);</span>
+</span></code></pre></div>
+<p><strong>为什么没做</strong>：MCP 是一个完整协议（JSON-RPC over stdio/SSE），实现一个 MCP 客户端约 300-500 行代码。教学重点是 Agent 核心循环，MCP 是生态扩展，不是架构原理。</p>
+<p><strong>如果要做</strong>：
+1. 实现 JSON-RPC 客户端（约 100 行）
+2. 实现 MCP 协议握手（约 50 行）
+3. 实现 tool list 同步（约 50 行）
+4. 实现 tool call 转发（约 50 行）
+5. 配置文件管理（约 100 行）</p>
+<p><strong>做 MCP 能学到什么</strong>：协议设计、进程间通信、工具动态注册。这些是生产级 Agent 的必要能力，但不是理解 Agent Loop 的前提。</p>
+<h3 id="82-ide">8.2 IDE 集成<a class="headerlink" href="#82-ide" title="Permanent link">&para;</a></h3>
+<p><strong>原版有什么</strong>：VS Code 插件，能在编辑器内使用 Claude Code。核心功能：
+- 在编辑器侧边栏对话
+- 看到当前打开的文件、光标位置
+- 直接应用 Agent 的编辑建议到编辑器
+- 显示 diff 预览</p>
+<p><strong>为什么没做</strong>：IDE 插件是一个完整的前端项目（VS Code extension API + React UI），与 Agent 核心架构无关。我们的 CLI 界面已经能展示 Agent Loop。</p>
+<p><strong>如果要做</strong>：
+1. VS Code extension 脚手架（package.json + activation events）
+2. Webview UI（React + 通信层）
+3. 与 Agent 进程的 IPC（stdio 或 WebSocket）
+4. 编辑器状态同步（打开文件、光标、选区）
+5. Diff 预览和应用</p>
+<p><strong>做 IDE 集成能学到什么</strong>：进程间通信、UI 状态管理、编辑器 API。这些是前端工程，不是 Agent 原理。</p>
+<h3 id="83">8.3 插件系统<a class="headerlink" href="#83" title="Permanent link">&para;</a></h3>
+<p><strong>原版有什么</strong>：支持插件扩展 Agent 行为。插件可以：
+- 注册新工具
+- 修改 system prompt
+- 拦截工具调用
+- 添加命令</p>
+<p><strong>为什么没做</strong>：插件系统需要定义扩展点、加载机制、生命周期管理、隔离/沙箱。约 500-1000 行代码。这是工程化需求，不是架构原理。</p>
+<p><strong>如果要做</strong>：
+1. 定义插件接口（<code>Plugin { name, tools?, promptHook?, toolHook? }</code>）
+2. 插件加载器（从 node_modules 或目录加载）
+3. 钩子链（按优先级执行 hooks）
+4. 插件隔离（try/catch + 超时）</p>
+<h3 id="84">8.4 配置继承<a class="headerlink" href="#84" title="Permanent link">&para;</a></h3>
+<p><strong>原版有什么</strong>：配置可以继承。全局配置 → 项目配置 → AGENTS.md → 命令行参数，后者覆盖前者。</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>~/.claude/config.json    （全局）
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>  └─ .claude/config.json （项目级，覆盖全局）
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>      └─ AGENTS.md        （项目规则，合并到 prompt）
+</span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>          └─ CLI args     （命令行，最高优先级）
+</span></code></pre></div>
+<p><strong>为什么没做</strong>：配置继承约 50 行代码（读多个文件 + merge），但教学重点是"配置加载"，单文件 .env 已经能展示。留作扩展练习。</p>
+<p><strong>如果要做</strong>：
+1. 定义配置优先级链
+2. 实现深度 merge
+3. AGENTS.md 读取和合并
+4. 配置校验</p>
+<h3 id="85">8.5 持久化记忆<a class="headerlink" href="#85" title="Permanent link">&para;</a></h3>
+<p><strong>原版有什么</strong>：跨会话记忆。用户偏好、项目上下文、历史决策都持久化到 <code>~/.claude/memory.md</code>，下次会话自动加载。</p>
+<p><strong>为什么没做</strong>：需要存储层（文件或数据库）+ 记忆管理（什么时候存、存什么、怎么淘汰）。核心是"一个追加到 system prompt 的持久化字符串"，约 30 行代码。但记忆管理（存什么、丢什么）是开放问题，教学版不展开。</p>
+<p><strong>如果要做</strong>：
+1. 启动时读 <code>~/.claude/memory.md</code>，拼到 system prompt
+2. 会话结束时，让模型决定"这次有什么值得记住的"，追加到文件
+3. 文件过大时，让模型总结旧记忆 + 保留最近</p>
+<h3 id="86-todowrite">8.6 TodoWrite<a class="headerlink" href="#86-todowrite" title="Permanent link">&para;</a></h3>
+<p><strong>原版有什么</strong>：TodoWrite 工具，让 Agent 维护一个任务列表。Agent 把复杂任务拆成多个 todo，逐个完成，用户能看到进度。</p>
+<p><strong>为什么没做</strong>：TodoWrite 本质是"一个存在内存里的字符串数组 + 一个工具来修改它"，约 40 行代码。但它是 UI/UX 增强，不是架构原理。</p>
+<p><strong>如果要做</strong>：
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">todos</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">text</span><span class="p">,</span><span class="w"> </span><span class="nx">status</span><span class="o">:</span><span class="w"> </span><span class="s2">"pending"</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s2">"in_progress"</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s2">"done"</span><span class="w"> </span><span class="p">}[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[];</span>
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">todoTool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a><span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">"TodoWrite"</span><span class="p">,</span>
+</span><span id="__span-30-5"><a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a><span class="w">  </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="s2">"更新任务列表"</span><span class="p">,</span>
+</span><span id="__span-30-6"><a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a><span class="w">  </span><span class="nx">input_schema</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">todos</span><span class="o">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nx">text</span><span class="p">,</span><span class="w"> </span><span class="nx">status</span><span class="w"> </span><span class="p">}]</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-30-7"><a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a><span class="p">};</span>
+</span><span id="__span-30-8"><a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a><span class="kd">function</span><span class="w"> </span><span class="nx">executeTodoWrite</span><span class="p">(</span><span class="nx">input</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-30-9"><a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a><span class="w">  </span><span class="nx">todos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span><span class="p">.</span><span class="nx">todos</span><span class="p">;</span>
+</span><span id="__span-30-10"><a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a><span class="w">  </span><span class="nx">renderTodos</span><span class="p">();</span><span class="w">  </span><span class="c1">// 渲染到 UI</span>
+</span><span id="__span-30-11"><a id="__codelineno-30-11" name="__codelineno-30-11" href="#__codelineno-30-11"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="s2">"已更新任务列表"</span><span class="p">;</span>
+</span><span id="__span-30-12"><a id="__codelineno-30-12" name="__codelineno-30-12" href="#__codelineno-30-12"></a><span class="p">}</span>
+</span></code></pre></div></p>
+<h3 id="87-webfetch">8.7 WebFetch<a class="headerlink" href="#87-webfetch" title="Permanent link">&para;</a></h3>
+<p><strong>原版有什么</strong>：WebFetch 工具，抓取网页内容并转成 markdown 给 Agent。</p>
+<p><strong>为什么没做</strong>：需要 HTTP 客户端 + HTML 解析 + markdown 转换，约 100 行代码。教学重点是本地代码操作，WebFetch 是信息获取扩展。</p>
+<p><strong>如果要做</strong>：
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">fetch</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"node-fetch"</span><span class="p">;</span>
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">convert</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"html-to-markdown"</span><span class="p">;</span>
+</span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>
+</span><span id="__span-31-4"><a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">executeWebFetch</span><span class="p">(</span><span class="nx">input</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="p">})</span><span class="o">:</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-31-5"><a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span><span class="nx">input</span><span class="p">.</span><span class="nx">url</span><span class="p">);</span>
+</span><span id="__span-31-6"><a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">html</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">res</span><span class="p">.</span><span class="nx">text</span><span class="p">();</span>
+</span><span id="__span-31-7"><a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">convert</span><span class="p">(</span><span class="nx">html</span><span class="p">);</span><span class="w">  </span><span class="c1">// 转 markdown</span>
+</span><span id="__span-31-8"><a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a><span class="p">}</span>
+</span></code></pre></div></p>
+<h3 id="88-codesemanticsearch">8.8 CodeSemanticSearch<a class="headerlink" href="#88-codesemanticsearch" title="Permanent link">&para;</a></h3>
+<p><strong>原版有什么</strong>：语义搜索工具。不只是正则匹配，而是"找语义相关的代码"。比如搜"用户认证逻辑"，能找到 <code>verifyCredentials</code> 函数，即使没有"认证"这两个字。</p>
+<p><strong>为什么没做</strong>：语义搜索需要 embedding 模型 + 向量索引。这是一个完整的子系统（embedding API 调用 + 向量存储 + 相似度计算），约 300-500 行代码 + 外部依赖。</p>
+<p><strong>如果要做</strong>：
+1. 用 embedding API 把代码块编码成向量
+2. 建向量索引（如 hnswlib）
+3. 查询时把 query 编码，找最近邻
+4. 返回最近的代码块</p>
+<p><strong>做语义搜索能学到什么</strong>：向量检索、embedding、近似最近邻。这些是 RAG 的核心，但不是 Agent Loop 的核心。</p>
+<hr />
+<h2 id="9">9. 我们简化但核心一致的<a class="headerlink" href="#9" title="Permanent link">&para;</a></h2>
+<h3 id="91">9.1 逐功能对比<a class="headerlink" href="#91" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>功能</th>
+<th>我们的简化点</th>
+<th>保留的核心</th>
+<th>原版多做的</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Agent Loop</strong></td>
+<td>无错误重试、无命令系统</td>
+<td>✓ 两层循环结构</td>
+<td>重试、/ 命令、会话持久化</td>
+</tr>
+<tr>
+<td><strong>工具执行</strong></td>
+<td>无参数校验、无沙箱</td>
+<td>✓ tool_use 协议</td>
+<td>参数校验、沙箱、资源限制</td>
+</tr>
+<tr>
+<td><strong>流式输出</strong></td>
+<td>无 markdown 渲染、无 thinking</td>
+<td>✓ 事件处理</td>
+<td>markdown、thinking、多模态</td>
+</tr>
+<tr>
+<td><strong>read_file</strong></td>
+<td>无 offset/limit、无图片</td>
+<td>✓ 读取 + 截断</td>
+<td>offset/limit、图片、PDF</td>
+</tr>
+<tr>
+<td><strong>write_file</strong></td>
+<td>无 mode、无历史</td>
+<td>✓ 写入 + 创建目录</td>
+<td>mode、原子写入、历史</td>
+</tr>
+<tr>
+<td><strong>edit_file</strong></td>
+<td>无 replaceAll、无多文件</td>
+<td>✓ 唯一匹配替换</td>
+<td>replaceAll、多文件、行范围</td>
+</tr>
+<tr>
+<td><strong>bash</strong></td>
+<td>无工作目录注入、无沙箱</td>
+<td>✓ exec + 超时</td>
+<td>cwd、env、沙箱、后台</td>
+</tr>
+<tr>
+<td><strong>glob</strong></td>
+<td>手写递归、性能慢</td>
+<td>✓ 模式匹配</td>
+<td>fast-glob、性能、更多语法</td>
+</tr>
+<tr>
+<td><strong>grep</strong></td>
+<td>手写遍历、性能慢</td>
+<td>✓ 正则搜索</td>
+<td>ripgrep、性能、上下文行</td>
+</tr>
+<tr>
+<td><strong>task</strong></td>
+<td>串行、无 type</td>
+<td>✓ 独立循环 + 上下文隔离</td>
+<td>并行、subagent_type、流式反馈</td>
+</tr>
+<tr>
+<td><strong>上下文管理</strong></td>
+<td>无 tokenizer、单阈值</td>
+<td>✓ 截断 + 压缩策略</td>
+<td>tokenizer、多级阈值、智能截断</td>
+</tr>
+<tr>
+<td><strong>权限系统</strong></td>
+<td>无路径边界、正则检测</td>
+<td>✓ 确认 gate + 危险检测</td>
+<td>路径边界、命令解析、规则引擎</td>
+</tr>
+<tr>
+<td><strong>子智能体</strong></td>
+<td>串行、无 type</td>
+<td>✓ 独立循环 + 上下文隔离</td>
+<td>并行、type、定制 prompt</td>
+</tr>
+<tr>
+<td><strong>System Prompt</strong></td>
+<td>400 字、无 AGENTS.md</td>
+<td>✓ 动态注入环境信息</td>
+<td>数千字、AGENTS.md、技能、记忆</td>
+</tr>
+</tbody>
+</table>
+<h3 id="92">9.2 "核心一致"的精确含义<a class="headerlink" href="#92" title="Permanent link">&para;</a></h3>
+<p>每个功能，我们保留的"核心"是<strong>这个功能存在的理由</strong>：</p>
+<ul>
+<li><strong>Agent Loop 的核心</strong>是"两层循环"——外层等用户，内层跑工具。错误重试是增强，不是核心。</li>
+<li><strong>工具执行的核心</strong>是"tool_use 协议"——模型发 tool_use，代码执行，回 tool_result。参数校验是增强，不是核心。</li>
+<li><strong>流式输出的核心</strong>是"事件处理"——逐 token 推送，碎片拼接。markdown 渲染是 UI，不是核心。</li>
+<li><strong>read_file 的核心</strong>是"读取 + 截断"——读文件内容，太长就截。offset/limit 是增强，不是核心。</li>
+<li><strong>edit_file 的核心</strong>是"唯一匹配替换"——找到唯一位置，替换。replaceAll 是增强，不是核心。</li>
+<li><strong>权限系统的核心</strong>是"确认 gate"——执行前问用户。路径边界是 gate 的一个应用，不是核心。</li>
+<li><strong>子智能体的核心</strong>是"独立循环 + 上下文隔离"——子 Agent 有自己的 messages，不污染父 Agent。并行是增强，不是核心。</li>
+</ul>
+<p><strong>一句话</strong>：<strong>我们保留了每个功能的"为什么存在"，简化了每个功能的"如何做得更好"</strong>。</p>
+<hr />
+<h2 id="10">10. 代码量分析<a class="headerlink" href="#10" title="Permanent link">&para;</a></h2>
+<h3 id="101">10.1 总量对比<a class="headerlink" href="#101" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Mini</th>
+<th>原版</th>
+<th>差异</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心代码</td>
+<td>~1061 行</td>
+<td>~50000 行</td>
+<td>~49000 行</td>
+</tr>
+<tr>
+<td>测试代码</td>
+<td>~200 行</td>
+<td>~10000 行</td>
+<td>~9800 行</td>
+</tr>
+<tr>
+<td>配置/构建</td>
+<td>~50 行</td>
+<td>~5000 行</td>
+<td>~4950 行</td>
+</tr>
+<tr>
+<td>总计</td>
+<td>~1300 行</td>
+<td>~65000 行</td>
+<td>~63700 行</td>
+</tr>
+</tbody>
+</table>
+<h3 id="102-mini-1061">10.2 Mini 的 1061 行分布<a class="headerlink" href="#102-mini-1061" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>文件</th>
+<th>行数</th>
+<th>职责</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>agent-loop.ts</code></td>
+<td>187</td>
+<td>Agent Loop 核心</td>
+</tr>
+<tr>
+<td><code>context.ts</code></td>
+<td>128</td>
+<td>上下文管理</td>
+</tr>
+<tr>
+<td><code>subagent.ts</code></td>
+<td>110</td>
+<td>子智能体</td>
+</tr>
+<tr>
+<td><code>permission.ts</code></td>
+<td>89</td>
+<td>权限系统</td>
+</tr>
+<tr>
+<td><code>grep.ts</code></td>
+<td>84</td>
+<td>grep 工具</td>
+</tr>
+<tr>
+<td><code>system.ts</code></td>
+<td>67</td>
+<td>System Prompt</td>
+</tr>
+<tr>
+<td><code>glob.ts</code></td>
+<td>66</td>
+<td>glob 工具</td>
+</tr>
+<tr>
+<td><code>cli.ts</code></td>
+<td>64</td>
+<td>CLI 解析</td>
+</tr>
+<tr>
+<td><code>edit.ts</code></td>
+<td>54</td>
+<td>edit 工具</td>
+</tr>
+<tr>
+<td><code>config.ts</code></td>
+<td>52</td>
+<td>配置加载</td>
+</tr>
+<tr>
+<td><code>bash.ts</code></td>
+<td>43</td>
+<td>bash 工具</td>
+</tr>
+<tr>
+<td><code>read.ts</code></td>
+<td>34</td>
+<td>read 工具</td>
+</tr>
+<tr>
+<td><code>write.ts</code></td>
+<td>35</td>
+<td>write 工具</td>
+</tr>
+<tr>
+<td><code>tools/index.ts</code></td>
+<td>36</td>
+<td>工具注册</td>
+</tr>
+<tr>
+<td><code>main.ts</code></td>
+<td>12</td>
+<td>入口</td>
+</tr>
+</tbody>
+</table>
+<h3 id="103-49000">10.3 差异的 49000 行是什么<a class="headerlink" href="#103-49000" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>估计行数</th>
+<th>具体内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>工具增强</strong></td>
+<td>~8000</td>
+<td>offset/limit、图片、PDF、replaceAll、沙箱、工作目录、ripgrep 集成、fast-glob 集成</td>
+</tr>
+<tr>
+<td><strong>错误处理</strong></td>
+<td>~5000</td>
+<td>重试、超时分级、网络错误、API 限流、部分失败、降级策略</td>
+</tr>
+<tr>
+<td><strong>UI/渲染</strong></td>
+<td>~6000</td>
+<td>markdown 渲染、语法高亮、进度条、diff 预览、交互式确认、帮助系统</td>
+</tr>
+<tr>
+<td><strong>MCP 协议</strong></td>
+<td>~4000</td>
+<td>JSON-RPC 客户端、server 管理、tool 同步、配置</td>
+</tr>
+<tr>
+<td><strong>IDE 集成</strong></td>
+<td>~5000</td>
+<td>VS Code 插件、Webview、IPC、编辑器状态同步</td>
+</tr>
+<tr>
+<td><strong>插件系统</strong></td>
+<td>~3000</td>
+<td>插件接口、加载器、钩子链、隔离</td>
+</tr>
+<tr>
+<td><strong>配置/规则</strong></td>
+<td>~3000</td>
+<td>配置继承、AGENTS.md、规则引擎、项目类型检测</td>
+</tr>
+<tr>
+<td><strong>记忆/技能</strong></td>
+<td>~2000</td>
+<td>持久化记忆、技能加载、按需注入</td>
+</tr>
+<tr>
+<td><strong>上下文优化</strong></td>
+<td>~2000</td>
+<td>tokenizer、智能截断、多级阈值、专用压缩 prompt</td>
+</tr>
+<tr>
+<td><strong>测试</strong></td>
+<td>~8000</td>
+<td>单元测试、集成测试、e2e 测试、fixture</td>
+</tr>
+<tr>
+<td><strong>构建/打包</strong></td>
+<td>~3000</td>
+<td>构建配置、打包、发布、CI</td>
+</tr>
+<tr>
+<td><strong>其他</strong></td>
+<td>~3000</td>
+<td>日志、telemetry、analytics、文档</td>
+</tr>
+</tbody>
+</table>
+<h3 id="104">10.4 差异的性质<a class="headerlink" href="#104" title="Permanent link">&para;</a></h3>
+<p>这 49000 行差异，按性质分：</p>
+<ul>
+<li><strong>工程化打磨</strong>（~60%）：错误处理、重试、日志、测试、构建。让系统更稳定、更可维护。</li>
+<li><strong>功能扩展</strong>（~25%）：MCP、IDE、插件、新工具。让系统能做更多事。</li>
+<li><strong>性能优化</strong>（~10%）：ripgrep、fast-glob、tokenizer、流式。让系统更快。</li>
+<li><strong>UI/UX</strong>（~5%）：渲染、交互、帮助。让系统更好用。</li>
+</ul>
+<p><strong>关键观察</strong>：<strong>没有一行是架构创新</strong>。所有差异都是在同构的骨架上加肉。原版的 Agent Loop 和 Mini 的 Agent Loop 拓扑相同，原版只是每个节点内部做了更多事。</p>
+<h3 id="105-2000-vs-50000">10.5 理解 2000 行 vs 理解 50000 行<a class="headerlink" href="#105-2000-vs-50000" title="Permanent link">&para;</a></h3>
+<p>理解 Mini 的 1061 行，你理解了：</p>
+<ul>
+<li>Agent Loop 的两层循环结构（外层等用户，内层跑工具）</li>
+<li>tool_use 协议（模型请求 → 代码执行 → 结果回传）</li>
+<li>流式输出（事件处理 + 碎片拼接）</li>
+<li>System Prompt 构造（静态规则 + 动态环境信息）</li>
+<li>上下文管理（token 计数 + 截断 + 压缩）</li>
+<li>权限系统（确认 gate + 危险检测）</li>
+<li>子智能体（独立循环 + 上下文隔离）</li>
+</ul>
+<p><strong>这些是所有 AI Agent 产品的通用骨架</strong>。Cursor、GitHub Copilot Chat、Continue、Aider——它们的内核都是这个结构。</p>
+<p>理解原版的 50000 行，你额外理解了：</p>
+<ul>
+<li>如何让 Agent 在生产环境稳定运行（错误处理、重试、降级）</li>
+<li>如何让 Agent 接入外部生态（MCP、插件）</li>
+<li>如何让 Agent 与编辑器深度集成（IDE 插件）</li>
+<li>如何让 Agent 更快（ripgrep、fast-glob、tokenizer）</li>
+<li>如何让 Agent 更好用（UI、渲染、交互）</li>
+</ul>
+<p><strong>这些是"从能跑到好用"的工程化路径</strong>。重要，但不是架构。</p>
+<hr />
+<h2 id="11_1">11. 结论<a class="headerlink" href="#11_1" title="Permanent link">&para;</a></h2>
+<h3 id="111">11.1 核心论点<a class="headerlink" href="#111" title="Permanent link">&para;</a></h3>
+<p><strong>Mini Claude Code 的 1061 行代码包含了 Claude Code 架构的全部核心设计。</strong></p>
+<p>这不是夸张。我们逐一验证：</p>
+<ol>
+<li>
+<p><strong>Agent Loop</strong> — <code>agent-loop.ts</code> 的 187 行实现了两层循环、流式处理、stop_reason 分支、工具执行。原版的 <code>AgentLoop</code> 在拓扑上完全一致，只是每个分支多了错误处理、重试、UI 更新。</p>
+</li>
+<li>
+<p><strong>tool_use 协议</strong> — <code>tools/index.ts</code> 的 36 行 + 各工具文件实现了工具注册和执行。原版的 <code>ToolExecutor</code> 做的事更多（沙箱、资源限制），但协议层一致。</p>
+</li>
+<li>
+<p><strong>流式输出</strong> — <code>agent-loop.ts:73-126</code> 的 <code>for await (event of stream)</code> 实现了事件处理。原版多了 thinking_delta、多模态事件，但 <code>text_delta</code> 和 <code>input_json_delta</code> 的处理逻辑一致。</p>
+</li>
+<li>
+<p><strong>System Prompt</strong> — <code>prompts/system.ts</code> 的 67 行实现了静态规则 + 动态环境信息注入。原版多了 AGENTS.md、技能、记忆，但"动态构造 prompt"的机制一致。</p>
+</li>
+<li>
+<p><strong>上下文管理</strong> — <code>context.ts</code> 的 128 行实现了 token 计数、截断、压缩。原版用 tokenizer、多级阈值、智能截断，但"监控 token → 截断 → 压缩"的策略一致。</p>
+</li>
+<li>
+<p><strong>权限系统</strong> — <code>permission.ts</code> 的 89 行实现了确认 gate、危险检测、会话级批准。原版有规则引擎、路径边界，但"执行前检查 + 用户确认"的机制一致。</p>
+</li>
+<li>
+<p><strong>子智能体</strong> — <code>subagent.ts</code> 的 111 行实现了独立循环、上下文隔离、工具集限制。原版有并行、subagent_type，但"子 Agent 是独立 Agent Loop"的核心一致。</p>
+</li>
+</ol>
+<h3 id="112-2000">11.2 理解了 2000 行就理解了什么<a class="headerlink" href="#112-2000" title="Permanent link">&para;</a></h3>
+<p>理解了这 1061 行，你就理解了：</p>
+<ul>
+<li><strong>所有 AI Agent 产品的通用骨架</strong>：Cursor、Copilot、Aider、Continue 的内核都是 Agent Loop + tool_use。</li>
+<li><strong>LLM API 的使用模式</strong>：stream、messages、tools、system——这些是 Anthropic API 的核心概念，也是 OpenAI API 的对应概念。</li>
+<li><strong>工具的设计原则</strong>：每个工具是一个函数，有 schema、有执行、有错误处理。这是所有工具系统的通用模式。</li>
+<li><strong>上下文的本质</strong>：一个 <code>messages</code> 数组，按 role 追加，超限就压缩。这是所有对话式 AI 的通用模式。</li>
+<li><strong>权限的本质</strong>：执行前的 gate。这是所有需要人类确认的系统的通用模式。</li>
+</ul>
+<h3 id="113">11.3 没理解什么<a class="headerlink" href="#113" title="Permanent link">&para;</a></h3>
+<p>理解了这 1061 行，你<strong>没</strong>理解：</p>
+<ul>
+<li><strong>生产级错误处理</strong>：网络抖动、API 限流、部分失败、降级策略。这些要读原版的 retry 逻辑。</li>
+<li><strong>MCP 协议细节</strong>：JSON-RPC、server 生命周期、tool 同步。这些要读原版的 MCP 客户端。</li>
+<li><strong>IDE 集成</strong>：编辑器 API、Webview、IPC。这些要读原版的 VS Code 插件。</li>
+<li><strong>性能优化</strong>：ripgrep 集成、fast-glob、tokenizer。这些要读原版的工具实现。</li>
+<li><strong>插件系统</strong>：扩展点、加载器、隔离。这些要读原版的插件框架。</li>
+</ul>
+<p><strong>但这些都是在理解了骨架之后才能理解的"增强"</strong>。先理解骨架，再理解增强，顺序不能反。</p>
+<h3 id="114">11.4 学习路径建议<a class="headerlink" href="#114" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>先读 Mini 的 1061 行</strong>，建立 Agent Loop 的 mental model。</li>
+<li><strong>跑通 Mini</strong>，看 Agent 如何处理一个真实任务（比如"读一个文件，改一行，跑测试"）。</li>
+<li><strong>读本章对比</strong>，理解每个简化点失去什么、原版多做什么。</li>
+<li><strong>选一个扩展练习做</strong>（比如加 AGENTS.md 或加并行子 Agent），亲手体验"从简化到完整"。</li>
+<li><strong>读原版对应模块</strong>，比如读完 Mini 的 <code>agent-loop.ts</code> 后读原版的 <code>AgentLoop.ts</code>，对比着看。</li>
+<li><strong>读原版的 MCP 客户端</strong>，理解生态扩展。</li>
+<li><strong>读原版的 IDE 插件</strong>，理解深度集成。</li>
+</ol>
+<hr />
+<h2 id="12_1">12. 扩展练习<a class="headerlink" href="#12_1" title="Permanent link">&para;</a></h2>
+<p>每个练习都标注了：<strong>学什么</strong>（做完能理解什么）、<strong>难度</strong>、<strong>约多少行代码</strong>、<strong>提示</strong>。</p>
+<h3 id="1-mcp">练习 1：加 MCP 支持<a class="headerlink" href="#1-mcp" title="Permanent link">&para;</a></h3>
+<p><strong>学什么</strong>：协议设计、进程间通信、工具动态注册。</p>
+<p><strong>难度</strong>：中高。<strong>约 300-500 行</strong>。</p>
+<p><strong>提示</strong>：
+1. MCP 用 JSON-RPC 2.0 over stdio。server 是一个子进程。
+2. 握手：client 发 <code>initialize</code>，server 回 capabilities。
+3. 同步工具：client 发 <code>tools/list</code>，server 回工具列表。
+4. 调用工具：client 发 <code>tools/call</code>，server 回结果。
+5. 把 MCP 工具合并到 <code>allTools</code>，执行时转发到 server。</p>
+<p><strong>验证</strong>：写一个 echo MCP server（Node.js），列出 1 个工具 <code>echo</code>，用 Mini 调用它。</p>
+<h3 id="2-agent">练习 2：加并行子 Agent<a class="headerlink" href="#2-agent" title="Permanent link">&para;</a></h3>
+<p><strong>学什么</strong>：Promise.all、部分失败处理、结果聚合。</p>
+<p><strong>难度</strong>：中。<strong>约 50 行</strong>。</p>
+<p><strong>提示</strong>：
+1. 修改 <code>task</code> 工具的 schema，支持 <code>tasks: [{ description, prompt }]</code> 数组。
+2. 用 <code>Promise.allSettled</code> 并行 spawn 多个子 Agent。
+3. 聚合结果：成功的返回文本，失败的返回错误。
+4. 限制最多 10 个并行（防止资源爆炸）。</p>
+<p><strong>验证</strong>：让 Agent 同时分析 3 个文件，看是否并行执行（时间应接近单个，而非 3 倍）。</p>
+<h3 id="3-agentsmd">练习 3：加 AGENTS.md<a class="headerlink" href="#3-agentsmd" title="Permanent link">&para;</a></h3>
+<p><strong>学什么</strong>：项目级规则覆盖、配置合并。</p>
+<p><strong>难度</strong>：低。<strong>约 30 行</strong>。</p>
+<p><strong>提示</strong>：
+1. 在 <code>buildSystemPrompt</code> 里，检查 <code>cwd/AGENTS.md</code> 是否存在。
+2. 如果存在，读内容，拼到 system prompt 末尾。
+3. 加一个 <code>--no-agents-md</code> 参数可禁用。</p>
+<p><strong>验证</strong>：在项目根目录放一个 AGENTS.md 写"用 pnpm 不用 npm"，看 Agent 是否遵循。</p>
+<h3 id="4">练习 4：加持久化记忆<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<p><strong>学什么</strong>：跨会话状态、存储层、记忆管理。</p>
+<p><strong>难度</strong>：中。<strong>约 80 行</strong>。</p>
+<p><strong>提示</strong>：
+1. 启动时读 <code>~/.mini-claude/memory.md</code>，拼到 system prompt。
+2. 加一个 <code>/remember &lt;内容&gt;</code> 命令，追加到 memory 文件。
+3. 会话结束时，让模型决定"有什么值得记住的"，可选追加。
+4. 文件超过 5000 字时，让模型总结旧记忆。</p>
+<p><strong>验证</strong>：第一次会话告诉 Agent"我用 pnpm"，结束。第二次会话问"用什么包管理器"，应回答 pnpm。</p>
+<h3 id="5-todowrite">练习 5：加 TodoWrite<a class="headerlink" href="#5-todowrite" title="Permanent link">&para;</a></h3>
+<p><strong>学什么</strong>：任务分解、进度展示、状态管理。</p>
+<p><strong>难度</strong>：低。<strong>约 60 行</strong>。</p>
+<p><strong>提示</strong>：
+1. 维护 <code>todos: { text, status }[]</code> 数组。
+2. <code>TodoWrite</code> 工具接收 <code>{ todos }</code> 参数，替换整个数组。
+3. 每次更新后渲染到终端（pending/in_progress/done 用不同符号）。
+4. 在 system prompt 里加"复杂任务先用 TodoWrite 拆解"。</p>
+<p><strong>验证</strong>：让 Agent 实现"给项目加测试"，看它是否先建 todo 列表再逐个完成。</p>
+<h3 id="6-webfetch">练习 6：加 WebFetch<a class="headerlink" href="#6-webfetch" title="Permanent link">&para;</a></h3>
+<p><strong>学什么</strong>：HTTP 抓取、HTML 解析、内容转换。</p>
+<p><strong>难度</strong>：低。<strong>约 80 行</strong>。</p>
+<p><strong>提示</strong>：
+1. 用 <code>node-fetch</code> 或内置 <code>fetch</code>（Node 18+）。
+2. 用 <code>cheerio</code> 或正则提取文本（cheerio 更稳）。
+3. 转 markdown：<code>&lt;h1&gt;</code> → <code>#</code>，<code>&lt;code&gt;</code> → <code>`</code>，<code>&lt;pre&gt;</code> → <code></code>。
+4. 限制抓取大小（如 100KB）和超时（如 10s）。</p>
+<p><strong>验证</strong>：让 Agent 抓取一个文档页面，总结内容。</p>
+<h3 id="7-tokenizer">练习 7：用 tokenizer 精确计数<a class="headerlink" href="#7-tokenizer" title="Permanent link">&para;</a></h3>
+<p><strong>学什么</strong>：token 概念、本地计数、预估。</p>
+<p><strong>难度</strong>：低。<strong>约 40 行</strong>。</p>
+<p><strong>提示</strong>：
+1. 安装 <code>@anthropic-ai/tokenizer</code>。
+2. 在 <code>ContextManager</code> 加 <code>estimateTokens(text): number</code> 方法。
+3. 请求前预估 <code>messages</code> 的 token 数，超限先压缩。
+4. 与 API 返回的 <code>usage</code> 对比，看预估准不准。</p>
+<p><strong>验证</strong>：构造一个接近极限的对话，看预估是否在 API 返回的 ±10% 内。</p>
+<h3 id="8_1">练习 8：加路径边界<a class="headerlink" href="#8_1" title="Permanent link">&para;</a></h3>
+<p><strong>学什么</strong>：安全边界、路径解析、沙箱概念。</p>
+<p><strong>难度</strong>：中。<strong>约 60 行</strong>。</p>
+<p><strong>提示</strong>：
+1. 在 <code>PermissionManager</code> 加 <code>allowedPaths: string[]</code>，默认 <code>[cwd]</code>。
+2. <code>checkTool</code> 里，对 <code>read_file</code>/<code>write_file</code>/<code>edit_file</code>，检查 <code>path.resolve(input.path)</code> 是否在 <code>allowedPaths</code> 内。
+3. 用 <code>path.relative(allowed, target)</code> 判断是否以 <code>..</code> 开头（不在边界内）。
+4. bash 命令里的路径较难检查，可先只检查文件工具。</p>
+<p><strong>验证</strong>：让 Agent 尝试读 <code>/etc/passwd</code>，应被拒绝；读 <code>cwd</code> 内文件应正常。</p>
+<hr />
+<h2 id="_2">附录：快速对比速查表<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="a1">A.1 架构速查<a class="headerlink" href="#a1" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
 <th>方面</th>
-<th>Mini Claude Code</th>
-<th>Claude Code</th>
+<th>Mini</th>
+<th>原版</th>
 </tr>
 </thead>
 <tbody>
@@ -1330,7 +4810,7 @@
 </tr>
 <tr>
 <td>代码量</td>
-<td>~2000 行</td>
+<td>~1061 行</td>
 <td>~50000 行</td>
 </tr>
 <tr>
@@ -1343,356 +4823,173 @@
 <td>Node.js</td>
 <td>Node.js</td>
 </tr>
-</tbody>
-</table>
-<p><strong>核心架构完全同构</strong>。差异在工程复杂度和功能覆盖面。</p>
-<hr />
-<h2 id="_2">功能对比<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<h3 id="agent-loop">Agent Loop<a class="headerlink" href="#agent-loop" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
 <tr>
-<th>方面</th>
-<th>Mini</th>
-<th>原版</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>外层循环</td>
-<td><code>while (true)</code> + readline</td>
-<td>同</td>
-</tr>
-<tr>
-<td>内层循环</td>
-<td><code>stop_reason</code> 分支</td>
-<td>同</td>
-</tr>
-<tr>
-<td>流式处理</td>
-<td><code>for await (event of stream)</code></td>
-<td>同</td>
-</tr>
-<tr>
-<td>事件类型</td>
-<td>text_delta, input_json_delta</td>
-<td>同 + 更多事件处理</td>
+<td>依赖</td>
+<td>anthropic SDK + dotenv</td>
+<td>+ fast-glob, ripgrep, tokenizer, ...</td>
 </tr>
 </tbody>
 </table>
-<h3 id="_3">工具系统<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h3 id="a2">A.2 工具速查<a class="headerlink" href="#a2" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
 <th>工具</th>
 <th>Mini</th>
 <th>原版</th>
+<th>同构</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>read_file</td>
 <td>基本读取 + 2000 行截断</td>
-<td>支持 offset/limit、图片读取、PDF</td>
+<td>offset/limit、图片、PDF</td>
+<td>✓（子集）</td>
 </tr>
 <tr>
 <td>write_file</td>
 <td>覆盖写入</td>
-<td>同 + 文件历史</td>
+<td>mode、原子写入、历史</td>
+<td>✓</td>
 </tr>
 <tr>
 <td>edit_file</td>
 <td>唯一匹配替换</td>
-<td>同 + replaceAll、多文件编辑</td>
+<td>replaceAll、多文件</td>
+<td>✓</td>
 </tr>
 <tr>
 <td>bash</td>
 <td>exec + timeout</td>
-<td>有工作目录注入、环境变量、shell 配置、输出过滤</td>
+<td>cwd、env、沙箱、后台</td>
+<td>✓</td>
 </tr>
 <tr>
 <td>glob</td>
 <td>手写递归</td>
-<td>用 fast-glob，支持更多语法</td>
+<td>fast-glob</td>
+<td>✓</td>
 </tr>
 <tr>
 <td>grep</td>
 <td>手写遍历</td>
-<td>用 ripgrep（rg），更快</td>
+<td>ripgrep</td>
+<td>✓</td>
 </tr>
 <tr>
 <td>task</td>
 <td>串行子 Agent</td>
-<td>并行（最多 10 个），多种 subagent_type</td>
+<td>并行、subagent_type</td>
+<td>✓（串行子集）</td>
 </tr>
 <tr>
 <td>MCP</td>
 <td>无</td>
-<td>支持 Model Context Protocol</td>
+<td>有</td>
+<td>✗</td>
 </tr>
 <tr>
 <td>TodoWrite</td>
 <td>无</td>
 <td>有</td>
+<td>✗</td>
 </tr>
 <tr>
 <td>WebFetch</td>
 <td>无</td>
 <td>有</td>
+<td>✗</td>
 </tr>
 <tr>
 <td>Question</td>
 <td>无</td>
 <td>有</td>
+<td>✗</td>
 </tr>
 </tbody>
 </table>
-<h3 id="system-prompt">System Prompt<a class="headerlink" href="#system-prompt" title="Permanent link">&para;</a></h3>
+<h3 id="a3">A.3 系统能力速查<a class="headerlink" href="#a3" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th>方面</th>
+<th>能力</th>
 <th>Mini</th>
 <th>原版</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>长度</td>
-<td>~400 字</td>
-<td>数千字</td>
-</tr>
-<tr>
-<td>工具规则</td>
-<td>基本原则</td>
-<td>每个工具有详细使用规则</td>
-</tr>
-<tr>
-<td>项目感知</td>
-<td>git 分支 + 变更数</td>
-<td>检测 npm/cargo/go 等项目类型</td>
-</tr>
-<tr>
-<td>AGENTS.md</td>
-<td>无</td>
-<td>支持项目级 prompt 覆盖</td>
-</tr>
-<tr>
-<td>动态注入</td>
-<td>cwd, git, os, date</td>
-<td>+ package.json, 目录结构, 最近改动</td>
-</tr>
-<tr>
-<td>技能系统</td>
-<td>无</td>
-<td>Skills 加载</td>
-</tr>
-<tr>
-<td>记忆系统</td>
-<td>无</td>
-<td>持久化 memory</td>
-</tr>
-</tbody>
-</table>
-<h3 id="_4">上下文管理<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>方面</th>
-<th>Mini</th>
-<th>原版</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>token 计数</td>
-<td>API usage 返回</td>
-<td>用 tokenizer 精确计数</td>
-</tr>
-<tr>
-<td>截断策略</td>
-<td>头尾保留</td>
-<td>智能截断（保留关键信息）</td>
-</tr>
-<tr>
-<td>压缩</td>
-<td>用模型总结</td>
-<td><code>compactConversation</code> 专用 prompt</td>
-</tr>
-<tr>
-<td>触发时机</td>
-<td>80% 预警</td>
-<td>多级阈值</td>
-</tr>
-<tr>
-<td>状态显示</td>
-<td>token 数 + 百分比</td>
-<td>同</td>
-</tr>
-</tbody>
-</table>
-<h3 id="_5">权限系统<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>方面</th>
-<th>Mini</th>
-<th>原版</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>权限层级</td>
-<td>安全/危险两类</td>
-<td>细粒度规则配置</td>
-</tr>
-<tr>
-<td>确认方式</td>
-<td>y/n</td>
-<td>y/n + "始终允许" + 规则配置</td>
-</tr>
-<tr>
-<td>危险检测</td>
-<td>正则模式匹配</td>
-<td>命令解析 + 模式匹配</td>
-</tr>
-<tr>
-<td>路径边界</td>
-<td>无</td>
-<td>工作目录限制</td>
-</tr>
-<tr>
-<td>拒绝处理</td>
-<td>返回拒绝信息</td>
-<td>同</td>
-</tr>
-</tbody>
-</table>
-<h3 id="_6">子智能体<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>方面</th>
-<th>Mini</th>
-<th>原版</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>subagent_type</td>
-<td>无分类</td>
-<td>explore, general, code-reviewer 等</td>
-</tr>
-<tr>
-<td>并行</td>
-<td>串行</td>
-<td>支持最多 10 个并行</td>
-</tr>
-<tr>
-<td>工具集</td>
-<td>排除 task</td>
-<td>按 subagent_type 配置</td>
-</tr>
-<tr>
-<td>system prompt</td>
-<td>通用</td>
-<td>按 subagent_type 定制</td>
-</tr>
-<tr>
-<td>上下文限制</td>
-<td>20 次迭代</td>
-<td>有 token 限制 + 压缩</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="_7">原版有而我们没做的<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
-<h3 id="mcp-model-context-protocol">MCP (Model Context Protocol)<a class="headerlink" href="#mcp-model-context-protocol" title="Permanent link">&para;</a></h3>
-<p>MCP 是一个标准协议，让外部工具能接入 Agent。Claude Code 支持 MCP，可以接入 GitHub、Slack、数据库等外部服务。</p>
-<p>我们没做：MCP 是一个完整的协议实现，超出教学范围。</p>
-<h3 id="ide">IDE 集成<a class="headerlink" href="#ide" title="Permanent link">&para;</a></h3>
-<p>Claude Code 有 VS Code 插件，能在编辑器内使用。</p>
-<p>我们没做：需要 IDE 插件开发，不是 Agent 核心架构。</p>
-<h3 id="_8">插件系统<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
-<p>Claude Code 支持插件扩展。</p>
-<p>我们没做：插件系统是工程化需求，不是架构原理。</p>
-<h3 id="_9">配置继承<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
-<p>Claude Code 有 AGENTS.md 机制，项目可以定义自己的规则覆盖默认行为。</p>
-<p>我们没做：可以作为扩展练习。</p>
-<h3 id="_10">持久化记忆<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
-<p>Claude Code 有 memory 系统，跨会话记住用户偏好。</p>
-<p>我们没做：需要存储层，不是 Agent 核心循环。</p>
-<hr />
-<h2 id="_11">我们简化但核心一致的<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>功能</th>
-<th>简化点</th>
-<th>核心一致</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Agent Loop</td>
-<td>无错误重试</td>
-<td>✓ 两层循环结构</td>
-</tr>
-<tr>
-<td>工具执行</td>
-<td>无参数校验</td>
-<td>✓ tool_use 协议</td>
+<td>✓</td>
+<td>✓</td>
 </tr>
 <tr>
 <td>流式输出</td>
-<td>无 markdown 渲染</td>
-<td>✓ 事件处理</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>System Prompt</td>
+<td>✓（基础）</td>
+<td>✓（丰富）</td>
 </tr>
 <tr>
 <td>上下文管理</td>
-<td>无 tokenizer</td>
-<td>✓ 截断+压缩策略</td>
+<td>✓</td>
+<td>✓</td>
 </tr>
 <tr>
 <td>权限系统</td>
-<td>无路径边界</td>
-<td>✓ 确认 gate</td>
+<td>✓</td>
+<td>✓</td>
 </tr>
 <tr>
 <td>子智能体</td>
-<td>串行</td>
-<td>✓ 独立循环+上下文隔离</td>
+<td>✓（串行）</td>
+<td>✓（并行）</td>
+</tr>
+<tr>
+<td>MCP</td>
+<td>✗</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>IDE 集成</td>
+<td>✗</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>插件系统</td>
+<td>✗</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>持久化记忆</td>
+<td>✗</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>技能系统</td>
+<td>✗</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>AGENTS.md</td>
+<td>✗</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>项目类型检测</td>
+<td>✗</td>
+<td>✓</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="_12">结论<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
-<p><strong>Mini Claude Code 的 2000 行代码包含了 Claude Code 架构的全部核心设计。</strong></p>
-<p>理解了这 2000 行，你就理解了：</p>
-<ol>
-<li><strong>Agent Loop</strong> — 两层循环，外层等用户，内层跑工具</li>
-<li><strong>tool_use 协议</strong> — 模型请求 → 代码执行 → 结果回传</li>
-<li><strong>流式输出</strong> — 逐 token 推送，碎片拼接</li>
-<li><strong>System Prompt</strong> — 规则注入，约束行为</li>
-<li><strong>上下文管理</strong> — token 计数，截断，压缩</li>
-<li><strong>权限系统</strong> — 安全 gate，危险检测</li>
-<li><strong>子智能体</strong> — 独立循环，上下文隔离</li>
-</ol>
-<p>这些是所有 AI Agent 产品的通用骨架。Claude Code 的 48000 行差异，主要是工程化打磨（错误处理、UI 渲染、MCP 协议、IDE 集成、插件系统等），而非架构创新。</p>
-<hr />
-<h2 id="_13">扩展练习<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
-<p>如果你想继续深入，可以尝试：</p>
-<ol>
-<li><strong>加 MCP 支持</strong> — 实现一个简单的 MCP 客户端，接入外部工具</li>
-<li><strong>加并行子 Agent</strong> — 用 Promise.all 实现并行 spawn</li>
-<li><strong>加 AGENTS.md</strong> — 读取项目根目录的 AGENTS.md，合并到 system prompt</li>
-<li><strong>加 memory</strong> — 用文件存储跨会话记忆</li>
-<li><strong>加 TodoWrite</strong> — 实现任务列表工具</li>
-<li><strong>加 WebFetch</strong> — 实现网页抓取工具</li>
-<li><strong>用 tokenizer</strong> — 用 @anthropic-ai/tokenizer 精确计数 token</li>
-<li><strong>加路径边界</strong> — 限制工具只能操作工作目录内的文件</li>
-</ol>
-<p>每个扩展练习都能让你更深入理解 Claude Code 的某个方面。</p>
+<blockquote>
+<p><strong>最后一句话</strong>：Mini Claude Code 是 Claude Code 的"骨架"，Claude Code 是 Mini 的"血肉"。理解骨架，你理解了所有 Agent 的原理；理解血肉，你理解了工程化的全部艺术。两者都值得理解，但顺序是先骨架，后血肉。</p>
+</blockquote>
 
 
 

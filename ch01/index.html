@@ -618,7 +618,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        目标
+        目录
       
     </span>
   </a>
@@ -626,22 +626,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        核心原理
+        1. 本章目标
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="核心原理">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 前置知识
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 前置知识">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#messages" class="md-nav__link">
+  <a href="#21-sdk" class="md-nav__link">
     <span class="md-ellipsis">
       
-        多轮对话 = 累积 messages 数组
+        2.1 什么是 SDK
       
     </span>
   </a>
@@ -649,10 +660,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#agent-loop" class="md-nav__link">
+  <a href="#22-messages" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Agent Loop 的两层结构
+        2.2 什么是 messages 数组
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 什么是"无状态"
       
     </span>
   </a>
@@ -665,43 +687,585 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 多轮对话的本质
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 多轮对话的本质">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 一个反直觉的事实
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 messages 数组是唯一状态
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 为什么必须带完整历史
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-agent-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Agent Loop 的两层结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 完整代码
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 代码逐行讲解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 代码逐行讲解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-import" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 import 三行
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-dotenvconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 dotenv.config()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-anthropic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Anthropic 客户端初始化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-model-maxtokens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 model 与 maxTokens 常量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 messages 数组声明
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#56-readline-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.6 readline 与 prompt 函数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#57-main" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.7 main 函数与欢迎语
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#58-while" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.8 while 循环：外层骨架
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#59-messagespushuser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.9 messages.push(user)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#510-clientmessagescreate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.10 client.messages.create()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#511" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.11 提取文本
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#512-messagespushassistant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.12 messages.push(assistant)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#513-trycatch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.13 try/catch 错误处理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#514-main" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.14 main() 启动
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-readline-inquirer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 为什么用 readline 而非 inquirer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 为什么用 readline 而非 inquirer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 教学向：理解底层
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 零依赖原则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-claude-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Claude Code 真实选择
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-inquirer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 什么时候该换 inquirer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 环境变量配置原理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 环境变量配置原理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-dotenv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 dotenv 做了什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-baseurl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 baseURL 切换原理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 为什么用环境变量而非硬编码
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-stop_reason" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. stop_reason 的含义
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. 完整运行流程时序图
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. 常见陷阱
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. 常见陷阱">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-api-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 API Key 忘填或填错
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 messages 格式错误
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103-asyncawait" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3 async/await 理解不到位
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#104-max_tokens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4 max_tokens 太小
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#105" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5 网络代理问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#106" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.6 中文输入乱码
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#107-ctrlc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.7 Ctrl+C 退出时残留
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-claude-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. 与真实 Claude Code 对比
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. 下一章预告
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. 动手练习
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13. 动手练习">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习 1：改欢迎语（5 分钟）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-token-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习 2：打印 token 用量（10 分钟）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-deepseek10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习 3：切换到 DeepSeek（10 分钟）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-system-prompt15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习 4：加 system prompt（15 分钟）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-exit-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习 5：实现 "exit" 时保存对话（20 分钟）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        附录：本章关键概念速查
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        代码逐行讲解
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        运行方式
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#claude-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        与真实 Claude Code 对比
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        下一章预告
+        附录：扩展阅读
       
     </span>
   </a>
@@ -989,7 +1553,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        目标
+        目录
       
     </span>
   </a>
@@ -997,22 +1561,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        核心原理
+        1. 本章目标
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="核心原理">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 前置知识
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 前置知识">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#messages" class="md-nav__link">
+  <a href="#21-sdk" class="md-nav__link">
     <span class="md-ellipsis">
       
-        多轮对话 = 累积 messages 数组
+        2.1 什么是 SDK
       
     </span>
   </a>
@@ -1020,10 +1595,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#agent-loop" class="md-nav__link">
+  <a href="#22-messages" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Agent Loop 的两层结构
+        2.2 什么是 messages 数组
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 什么是"无状态"
       
     </span>
   </a>
@@ -1036,43 +1622,585 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 多轮对话的本质
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 多轮对话的本质">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 一个反直觉的事实
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 messages 数组是唯一状态
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 为什么必须带完整历史
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-agent-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Agent Loop 的两层结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 完整代码
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 代码逐行讲解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 代码逐行讲解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-import" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 import 三行
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-dotenvconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 dotenv.config()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-anthropic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Anthropic 客户端初始化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-model-maxtokens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 model 与 maxTokens 常量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 messages 数组声明
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#56-readline-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.6 readline 与 prompt 函数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#57-main" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.7 main 函数与欢迎语
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#58-while" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.8 while 循环：外层骨架
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#59-messagespushuser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.9 messages.push(user)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#510-clientmessagescreate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.10 client.messages.create()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#511" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.11 提取文本
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#512-messagespushassistant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.12 messages.push(assistant)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#513-trycatch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.13 try/catch 错误处理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#514-main" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.14 main() 启动
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-readline-inquirer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 为什么用 readline 而非 inquirer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 为什么用 readline 而非 inquirer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 教学向：理解底层
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 零依赖原则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-claude-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Claude Code 真实选择
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-inquirer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 什么时候该换 inquirer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 环境变量配置原理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 环境变量配置原理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-dotenv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 dotenv 做了什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-baseurl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 baseURL 切换原理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 为什么用环境变量而非硬编码
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-stop_reason" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. stop_reason 的含义
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. 完整运行流程时序图
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. 常见陷阱
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. 常见陷阱">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-api-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 API Key 忘填或填错
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 messages 格式错误
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103-asyncawait" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3 async/await 理解不到位
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#104-max_tokens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4 max_tokens 太小
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#105" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5 网络代理问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#106" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.6 中文输入乱码
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#107-ctrlc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.7 Ctrl+C 退出时残留
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-claude-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. 与真实 Claude Code 对比
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. 下一章预告
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. 动手练习
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13. 动手练习">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习 1：改欢迎语（5 分钟）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-token-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习 2：打印 token 用量（10 分钟）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-deepseek10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习 3：切换到 DeepSeek（10 分钟）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-system-prompt15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习 4：加 system prompt（15 分钟）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-exit-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习 5：实现 "exit" 时保存对话（20 分钟）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        附录：本章关键概念速查
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        代码逐行讲解
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        运行方式
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#claude-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        与真实 Claude Code 对比
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        下一章预告
+        附录：扩展阅读
       
     </span>
   </a>
@@ -1101,123 +2229,1095 @@
 
 <h1 id="cli">第一章：最小可对话 CLI<a class="headerlink" href="#cli" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p>50 行代码，跑通 Anthropic SDK 调用，实现多轮对话。
-这是整个 Agent Loop 的最简骨架——没有工具、没有流式、没有 system prompt。</p>
+<p><strong>50 行代码，跑通 Anthropic SDK 调用，实现多轮对话。</strong>
+这是整个 Agent Loop 的最简骨架——没有工具、没有流式、没有 system prompt。
+看懂这一章，你就看懂了所有 LLM 聊天应用的底层原理。</p>
 </blockquote>
-<h2 id="_1">目标<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>理解三件事：
-1. <strong>Anthropic SDK 怎么调</strong> — <code>client.messages.create()</code>
-2. <strong>多轮对话的本质</strong> — 一个 <code>messages</code> 数组，每次把 user 和 assistant 消息追加进去
-3. <strong>Agent Loop 的外层</strong> — <code>while (true)</code> 等待用户输入，调 API，输出结果</p>
-<h2 id="_2">核心原理<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<h3 id="messages">多轮对话 = 累积 messages 数组<a class="headerlink" href="#messages" title="Permanent link">&para;</a></h3>
-<p>大模型 API 是<strong>无状态</strong>的。每次调用，服务端不记得上一次说了什么。所谓"多轮对话"，就是把历史对话完整地放在 <code>messages</code> 数组里，每次请求都带上：</p>
-<div class="language-typescript highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">messages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[];</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1">// 第一轮</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nx">messages</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="w"> </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">"user"</span><span class="p">,</span><span class="w"> </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="s2">"你好"</span><span class="w"> </span><span class="p">});</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kd">const</span><span class="w"> </span><span class="nx">resp1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span><span class="w"> </span><span class="nx">model</span><span class="p">,</span><span class="w"> </span><span class="nx">messages</span><span class="w"> </span><span class="p">});</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nx">messages</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="w"> </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">"assistant"</span><span class="p">,</span><span class="w"> </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="kt">resp1.content</span><span class="w"> </span><span class="p">});</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1">// 第二轮 — messages 里已经有第一轮的完整历史</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="nx">messages</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="w"> </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">"user"</span><span class="p">,</span><span class="w"> </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="s2">"刚才我说了什么？"</span><span class="w"> </span><span class="p">});</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="kd">const</span><span class="w"> </span><span class="nx">resp2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span><span class="w"> </span><span class="nx">model</span><span class="p">,</span><span class="w"> </span><span class="nx">messages</span><span class="w"> </span><span class="p">});</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="c1">// 模型能回答"你说了你好"，因为它看到了 messages 里的历史</span>
+<hr />
+<h2 id="_1">目录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#第一章最小可对话-cli">第一章：最小可对话 CLI</a></li>
+<li><a href="#目录">目录</a></li>
+<li><a href="#1-本章目标">1. 本章目标</a></li>
+<li><a href="#2-前置知识">2. 前置知识</a><ul>
+<li><a href="#21-什么是-sdk">2.1 什么是 SDK</a></li>
+<li><a href="#22-什么是-messages-数组">2.2 什么是 messages 数组</a></li>
+<li><a href="#23-什么是无状态">2.3 什么是"无状态"</a></li>
+</ul>
+</li>
+<li><a href="#3-多轮对话的本质">3. 多轮对话的本质</a><ul>
+<li><a href="#31-一个反直觉的事实">3.1 一个反直觉的事实</a></li>
+<li><a href="#32-messages-数组是唯一状态">3.2 messages 数组是唯一状态</a></li>
+<li><a href="#33-为什么必须带完整历史">3.3 为什么必须带完整历史</a></li>
+<li><a href="#34-agent-loop-的两层结构">3.4 Agent Loop 的两层结构</a></li>
+</ul>
+</li>
+<li><a href="#4-完整代码">4. 完整代码</a></li>
+<li><a href="#5-代码逐行讲解">5. 代码逐行讲解</a><ul>
+<li><a href="#51-import-三行">5.1 import 三行</a></li>
+<li><a href="#52-dotenvconfig">5.2 dotenv.config()</a></li>
+<li><a href="#53-anthropic-客户端初始化">5.3 Anthropic 客户端初始化</a></li>
+<li><a href="#54-model-与-maxtokens-常量">5.4 model 与 maxTokens 常量</a></li>
+<li><a href="#55-messages-数组声明">5.5 messages 数组声明</a></li>
+<li><a href="#56-readline-与-prompt-函数">5.6 readline 与 prompt 函数</a></li>
+<li><a href="#57-main-函数与欢迎语">5.7 main 函数与欢迎语</a></li>
+<li><a href="#58-while-循环外层骨架">5.8 while 循环：外层骨架</a></li>
+<li><a href="#59-messagespushuser">5.9 messages.push(user)</a></li>
+<li><a href="#510-clientmessagescreate">5.10 client.messages.create()</a></li>
+<li><a href="#511-提取文本">5.11 提取文本</a></li>
+<li><a href="#512-messagespushassistant">5.12 messages.push(assistant)</a></li>
+<li><a href="#513-trycatch-错误处理">5.13 try/catch 错误处理</a></li>
+<li><a href="#514-main-启动">5.14 main() 启动</a></li>
+</ul>
+</li>
+<li><a href="#6-为什么用-readline-而非-inquirer">6. 为什么用 readline 而非 inquirer</a><ul>
+<li><a href="#61-教学向理解底层">6.1 教学向：理解底层</a></li>
+<li><a href="#62-零依赖原则">6.2 零依赖原则</a></li>
+<li><a href="#63-claude-code-真实选择">6.3 Claude Code 真实选择</a></li>
+<li><a href="#64-什么时候该换-inquirer">6.4 什么时候该换 inquirer</a></li>
+</ul>
+</li>
+<li><a href="#7-环境变量配置原理">7. 环境变量配置原理</a><ul>
+<li><a href="#71-dotenv-做了什么">7.1 dotenv 做了什么</a></li>
+<li><a href="#72-baseurl-切换原理">7.2 baseURL 切换原理</a></li>
+<li><a href="#73-为什么用环境变量而非硬编码">7.3 为什么用环境变量而非硬编码</a></li>
+</ul>
+</li>
+<li><a href="#8-stop_reason-的含义">8. stop_reason 的含义</a></li>
+<li><a href="#9-完整运行流程时序图">9. 完整运行流程时序图</a></li>
+<li><a href="#10-常见陷阱">10. 常见陷阱</a><ul>
+<li><a href="#101-api-key-忘填或填错">10.1 API Key 忘填或填错</a></li>
+<li><a href="#102-messages-格式错误">10.2 messages 格式错误</a></li>
+<li><a href="#103-asyncawait-理解不到位">10.3 async/await 理解不到位</a></li>
+<li><a href="#104-max_tokens-太小">10.4 max_tokens 太小</a></li>
+<li><a href="#105-网络代理问题">10.5 网络代理问题</a></li>
+<li><a href="#106-中文输入乱码">10.6 中文输入乱码</a></li>
+<li><a href="#107-ctrlc-退出时残留">10.7 Ctrl+C 退出时残留</a></li>
+</ul>
+</li>
+<li><a href="#11-与真实-claude-code-对比">11. 与真实 Claude Code 对比</a></li>
+<li><a href="#12-下一章预告">12. 下一章预告</a></li>
+<li><a href="#13-动手练习">13. 动手练习</a><ul>
+<li><a href="#练习-1改欢迎语5-分钟">练习 1：改欢迎语（5 分钟）</a></li>
+<li><a href="#练习-2打印-token-用量10-分钟">练习 2：打印 token 用量（10 分钟）</a></li>
+<li><a href="#练习-3切换到-deepseek10-分钟">练习 3：切换到 DeepSeek（10 分钟）</a></li>
+<li><a href="#练习-4加-system-prompt15-分钟">练习 4：加 system prompt（15 分钟）</a></li>
+<li><a href="#练习-5实现-exit-时保存对话20-分钟">练习 5：实现 "exit" 时保存对话（20 分钟）</a></li>
+</ul>
+</li>
+<li><a href="#附录本章关键概念速查">附录：本章关键概念速查</a></li>
+<li><a href="#附录扩展阅读">附录：扩展阅读</a></li>
+</ul>
+<hr />
+<h2 id="1">1. 本章目标<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<p>读完这一章，你应该能<strong>清楚地回答</strong>以下三个问题：</p>
+<ol>
+<li><strong>Anthropic SDK 怎么调？</strong> —— <code>client.messages.create()</code> 这一个调用背后发生了什么。</li>
+<li><strong>多轮对话的本质是什么？</strong> —— 一个 <code>messages</code> 数组，每次把 user 和 assistant 消息追加进去，再整体发给 API。</li>
+<li><strong>Agent Loop 的外层长什么样？</strong> —— <code>while (true)</code> 等待用户输入、调 API、输出结果，再回到起点。</li>
+</ol>
+<p><strong>更重要的事</strong>：这一章建立的"心智模型"是后续所有章节的地基。第二章加工具、第三章加流式、第四章加 system prompt、第五章加上下文压缩——所有这些复杂功能，本质上都只是在<strong>操作同一个 <code>messages</code> 数组</strong>和<strong>扩展同一个 <code>while</code> 循环</strong>。如果这一章没看懂，后面会越看越糊涂；如果看懂了，后面每一步都只是"在已知骨架上加东西"。</p>
+<p>本章<strong>不</strong>涉及：工具调用（Ch2）、流式输出（Ch3）、system prompt（Ch4）、上下文压缩（Ch5）、权限确认（Ch6）。这是<strong>故意</strong>的。教学的最小可复现单元（Minimal Reproducible Unit）原则：每次只引入一个新概念。本章的新概念就是"messages 数组 + while 循环"，仅此而已。</p>
+<hr />
+<h2 id="2">2. 前置知识<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<p>在写代码之前，先讲清楚三个会被反复用到、但很多教程默认你已经懂了的概念。</p>
+<h3 id="21-sdk">2.1 什么是 SDK<a class="headerlink" href="#21-sdk" title="Permanent link">&para;</a></h3>
+<p><strong>SDK</strong> = Software Development Kit，软件开发工具包。</p>
+<p>你完全可以不用 SDK，直接用 <code>fetch</code> 调 Anthropic 的 HTTP API：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// 不用 SDK，直接 fetch（伪代码，省略错误处理）</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">resp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span><span class="s2">"https://api.anthropic.com/v1/messages"</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nx">method</span><span class="o">:</span><span class="w"> </span><span class="s2">"POST"</span><span class="p">,</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nx">headers</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="s2">"x-api-key"</span><span class="o">:</span><span class="w"> </span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">API_KEY</span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="s2">"anthropic-version"</span><span class="o">:</span><span class="w"> </span><span class="s2">"2023-06-01"</span><span class="p">,</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="s2">"content-type"</span><span class="o">:</span><span class="w"> </span><span class="s2">"application/json"</span><span class="p">,</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="nx">body</span><span class="o">:</span><span class="w"> </span><span class="kt">JSON.stringify</span><span class="p">({</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="nx">model</span><span class="o">:</span><span class="w"> </span><span class="s2">"claude-sonnet-4-20250514"</span><span class="p">,</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="nx">max_tokens</span><span class="o">:</span><span class="w"> </span><span class="kt">1024</span><span class="p">,</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="nx">messages</span><span class="o">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">"user"</span><span class="p">,</span><span class="w"> </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="s2">"你好"</span><span class="w"> </span><span class="p">}],</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">  </span><span class="p">}),</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="p">});</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="kd">const</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">resp</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
 </span></code></pre></div>
-<p><strong>这就是所有 LLM 聊天应用的底层原理。</strong> ChatGPT、Claude、Claude Code，都是这么做的。</p>
-<h3 id="agent-loop">Agent Loop 的两层结构<a class="headerlink" href="#agent-loop" title="Permanent link">&para;</a></h3>
-<p>Claude Code 的循环其实有两层：</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>外层循环（用户交互）:
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  while True:
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    user_input = 等待用户输入
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    messages.append(user_input)
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    内层循环（工具调用）:        ← Ch2 才加，本章没有
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>      response = 调用 LLM
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>      if 模型想调工具:
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>        执行工具，结果加入 messages
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>        继续循环
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>      else:
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>        输出文本
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>        break  ← 回到外层等用户
+<p>这样写<strong>完全能跑</strong>。那为什么还要 SDK？因为 SDK 帮你做了三件烦事：</p>
+<ol>
+<li><strong>拼请求</strong>：自动加正确的 header（<code>x-api-key</code>、<code>anthropic-version</code>、<code>content-type</code>），自动序列化 body。</li>
+<li><strong>解析响应</strong>：把 JSON 反序列化成 TypeScript 类型安全的对象，IDE 有自动补全。</li>
+<li><strong>错误处理</strong>：HTTP 429 限流自动重试、超时自动断开、错误码翻译成可读的 Error 对象。</li>
+</ol>
+<p><strong>一句话</strong>：SDK 就是"帮你少写 30 行样板代码的封装层"。本章用的 <code>@anthropic-ai/sdk</code> 是 Anthropic 官方维护的 npm 包，版本在 <code>package.json</code> 里锁定为 <code>^0.39.0</code>。</p>
+<blockquote>
+<p><strong>教学向提醒</strong>：理解 SDK 在做什么很重要，但<strong>不要</strong>为了"理解底层"就拒绝用 SDK。SDK 不是黑魔法，它只是 HTTP 客户端的语法糖。等你写完这一章，可以去看 SDK 的源码（<code>node_modules/@anthropic-ai/sdk/src/</code>），你会发现它本质上就是上面那段 <code>fetch</code> 加了一堆 <code>try/catch</code> 和类型定义。</p>
+</blockquote>
+<h3 id="22-messages">2.2 什么是 messages 数组<a class="headerlink" href="#22-messages" title="Permanent link">&para;</a></h3>
+<p><code>messages</code> 是一个<strong>数组</strong>，每个元素是一条<strong>消息</strong>，每条消息有两个字段：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">"user"</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s2">"assistant"</span><span class="p">,</span><span class="w">   </span><span class="c1">// 谁说的</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">ContentBlock</span><span class="p">[]</span><span class="w">  </span><span class="c1">// 说了什么</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">}</span>
 </span></code></pre></div>
-<p>本章只有外层循环。<strong>内层循环是 Ch2 的核心</strong>，那是从"聊天机器人"变成"Agent"的关键。</p>
-<h2 id="_3">代码逐行讲解<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<div class="language-typescript highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// ① 初始化 SDK 客户端</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Anthropic</span><span class="p">({</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="nx">apiKey</span><span class="o">:</span><span class="w"> </span><span class="kt">process.env.API_KEY</span><span class="p">,</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="nx">baseURL</span><span class="o">:</span><span class="w"> </span><span class="kt">process.env.BASE_URL</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="kc">undefined</span><span class="p">,</span><span class="w">  </span><span class="c1">// 留空用官方，填了切 DeepSeek</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">});</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1">// ② messages 数组 — 整个对话的"记忆"</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="kd">const</span><span class="w"> </span><span class="nx">messages</span><span class="o">:</span><span class="w"> </span><span class="kt">Anthropic.MessageParam</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[];</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="c1">// ③ readline — Node.js 内置的命令行交互</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="kd">const</span><span class="w"> </span><span class="nx">rl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">readline</span><span class="p">.</span><span class="nx">createInterface</span><span class="p">({</span><span class="w"> </span><span class="nx">input</span><span class="o">:</span><span class="w"> </span><span class="kt">process.stdin</span><span class="p">,</span><span class="w"> </span><span class="nx">output</span><span class="o">:</span><span class="w"> </span><span class="kt">process.stdout</span><span class="w"> </span><span class="p">});</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="c1">// ④ 外层循环</span>
-</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="kc">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">userInput</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">prompt</span><span class="p">(</span><span class="s2">"\n&gt; "</span><span class="p">);</span><span class="w">      </span><span class="c1">// 等用户说话</span>
-</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">  </span><span class="nx">messages</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="w"> </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">"user"</span><span class="p">,</span><span class="w"> </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="kt">userInput</span><span class="w"> </span><span class="p">});</span><span class="w">  </span><span class="c1">// 加入历史</span>
-</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>
-</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span>
-</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">    </span><span class="nx">model</span><span class="p">,</span>
-</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">    </span><span class="nx">max_tokens</span><span class="o">:</span><span class="w"> </span><span class="kt">maxTokens</span><span class="p">,</span>
-</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">    </span><span class="nx">messages</span><span class="p">,</span><span class="w">  </span><span class="c1">// ← 带上完整历史</span>
-</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">  </span><span class="p">});</span>
-</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>
-</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="w">  </span><span class="nx">messages</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="w"> </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">"assistant"</span><span class="p">,</span><span class="w"> </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="kt">response.content</span><span class="w"> </span><span class="p">});</span><span class="w">  </span><span class="c1">// 加入历史</span>
-</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">text</span><span class="p">);</span><span class="w">  </span><span class="c1">// 输出给用户</span>
-</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="p">}</span>
+<ul>
+<li><code>role: "user"</code> —— 用户说的话</li>
+<li><code>role: "assistant"</code> —— 模型回的话</li>
+</ul>
+<p>一个两轮对话的 <code>messages</code> 数组长这样：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">messages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">"user"</span><span class="p">,</span><span class="w">      </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="s2">"你好"</span><span class="w"> </span><span class="p">},</span><span class="w">           </span><span class="c1">// 第 1 轮：用户</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">"assistant"</span><span class="p">,</span><span class="w"> </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="s2">"你好！有什么可以帮你的？"</span><span class="w"> </span><span class="p">},</span><span class="w">  </span><span class="c1">// 第 1 轮：模型</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">"user"</span><span class="p">,</span><span class="w">      </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="s2">"1+1 等于几？"</span><span class="w"> </span><span class="p">},</span><span class="w">     </span><span class="c1">// 第 2 轮：用户</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">"assistant"</span><span class="p">,</span><span class="w"> </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="s2">"1+1 等于 2。"</span><span class="w"> </span><span class="p">},</span><span class="w">     </span><span class="c1">// 第 2 轮：模型</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="p">];</span>
 </span></code></pre></div>
-<p><strong>关键洞察</strong>：<code>messages</code> 数组是这个程序的<strong>唯一状态</strong>。整个对话的"记忆"就在这一个变量里。后续所有章节的复杂功能，本质上都是在操作这个数组。</p>
-<h2 id="_4">运行方式<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">cd</span><span class="w"> </span>lessons/ch01-minimal
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>npm<span class="w"> </span>install
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>cp<span class="w"> </span>.env.example<span class="w"> </span>.env
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># 编辑 .env，填入 API_KEY</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>npx<span class="w"> </span>tsx<span class="w"> </span>main.ts
-</span></code></pre></div>
-<h2 id="claude-code">与真实 Claude Code 对比<a class="headerlink" href="#claude-code" title="Permanent link">&para;</a></h2>
+<p><strong>关键点</strong>：这个数组是<strong>有序的</strong>、<strong>完整的</strong>、<strong>追加只增不删的</strong>（在本章里）。它就是对话的"完整历史记录"。</p>
+<blockquote>
+<p>第二章你会看到 <code>content</code> 不一定是字符串，也可能是 <code>ContentBlock[]</code>（包含文本块、工具调用块、工具结果块）。本章为了简化，user 的 content 是字符串，assistant 的 content 是 SDK 返回的 <code>response.content</code>（一个数组，但里面只有文本块）。</p>
+</blockquote>
+<h3 id="23">2.3 什么是"无状态"<a class="headerlink" href="#23" title="Permanent link">&para;</a></h3>
+<p><strong>无状态</strong>（stateless）是理解 LLM API 最重要的一个词。</p>
+<p>对比两种服务：</p>
 <table>
 <thead>
 <tr>
-<th>方面</th>
-<th>本章</th>
-<th>Claude Code</th>
+<th></th>
+<th>有状态服务</th>
+<th>无状态服务</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>工具调用</td>
-<td>无</td>
-<td>10+ 个工具</td>
+<td>例子</td>
+<td>数据库连接、WebSocket</td>
+<td>HTTP、LLM API</td>
 </tr>
 <tr>
-<td>流式输出</td>
-<td>无（等全部生成）</td>
-<td>流式逐字输出</td>
+<td>服务端记不记得你上一次干了啥</td>
+<td>记得</td>
+<td><strong>不记得</strong></td>
 </tr>
 <tr>
-<td>System Prompt</td>
-<td>无</td>
-<td>数千字精心设计</td>
-</tr>
-<tr>
-<td>上下文管理</td>
-<td>无限增长</td>
-<td>token 计数 + 压缩</td>
-</tr>
-<tr>
-<td>权限确认</td>
-<td>无</td>
-<td>工具执行前确认</td>
+<td>每次请求要带什么</td>
+<td>只带"这次想干什么"</td>
+<td>带"全部历史 + 这次想干什么"</td>
 </tr>
 </tbody>
 </table>
-<p><strong>但核心骨架完全一致</strong>：<code>messages</code> 数组 + <code>while</code> 循环 + <code>client.messages.create()</code>。Claude Code 的 <code>query()</code> 函数本质就是这个循环的增强版。</p>
-<h2 id="_5">下一章预告<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<p>现在模型只能"说话"，不能"做事"。下一章加入 <code>read_file</code> 和 <code>write_file</code> 两个工具，让模型能读写文件——从聊天机器人变成 Agent。关键概念是 <strong>tool_use 协议</strong> 和 <strong>内层 agentic loop</strong>。</p>
+<p><strong>LLM API 是无状态的</strong>。这意味着：</p>
+<ul>
+<li>你第一次发 <code>"你好"</code>，模型回 <code>"你好！"</code>。</li>
+<li>你第二次发 <code>"刚才我说了什么？"</code>，<strong>模型不知道你刚才说了什么</strong>。它会瞎猜。</li>
+<li>你必须在第二次请求里<strong>把第一次的对话也带上</strong>，模型才能"记得"。</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>❌ 错误的心智模型：
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>   第 1 次请求 → 模型记住了"你好"
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>   第 2 次请求 "刚才我说了什么" → 模型从记忆里取出"你好" → 回答"你说了你好"
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>✅ 正确的心智模型：
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>   第 1 次请求 [user: "你好"] → 模型回 "你好！" → 服务端立刻忘掉这次请求
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>   第 2 次请求 [user: "你好", assistant: "你好！", user: "刚才我说了什么"]
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>   → 模型看到完整历史 → 回答"你说了你好"
+</span></code></pre></div>
+<p><strong>"多轮对话"是个假象</strong>。服务端从来没有"记住"任何对话。所谓多轮对话，<strong>100% 靠客户端每次把完整历史发上去</strong>。这是本章最核心的一句话，请反复读三遍。</p>
+<blockquote>
+<p><strong>为什么 LLM API 设计成无状态？</strong> 因为无状态服务可以无限水平扩展——每个请求独立处理，不需要在服务器之间同步会话状态。Anthropic 每秒处理几十万请求，靠的就是这个。如果是有状态的，服务器要存几千万个进行中的对话，内存撑不住，也加不了机器。</p>
+</blockquote>
+<hr />
+<h2 id="3">3. 多轮对话的本质<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<h3 id="31">3.1 一个反直觉的事实<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<p>很多人第一次写 LLM 应用时会这样想：</p>
+<blockquote>
+<p>"我先调一次 API 建立会话，拿到一个 <code>session_id</code>，之后用这个 id 继续对话。"</p>
+</blockquote>
+<p><strong>完全不是这样</strong>。Anthropic 的 API <strong>没有</strong> <code>session_id</code>，<strong>没有</strong> <code>create_session()</code>，<strong>没有</strong> <code>continue_session()</code>。每次都是全新的 <code>client.messages.create()</code> 调用，唯一的"会话"就是你自己维护的 <code>messages</code> 数组。</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">// ❌ 错误想象：API 有会话</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">session</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">createSession</span><span class="p">();</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">await</span><span class="w"> </span><span class="nx">session</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s2">"你好"</span><span class="p">);</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="k">await</span><span class="w"> </span><span class="nx">session</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s2">"刚才我说了什么"</span><span class="p">);</span><span class="w">  </span><span class="c1">// 模型"记得"，因为 session 在</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="c1">// ✅ 实际情况：API 无会话，全靠 messages 数组</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="kd">const</span><span class="w"> </span><span class="nx">messages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[];</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="nx">messages</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="w"> </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">"user"</span><span class="p">,</span><span class="w"> </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="s2">"你好"</span><span class="w"> </span><span class="p">});</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span><span class="w"> </span><span class="nx">model</span><span class="p">,</span><span class="w"> </span><span class="nx">messages</span><span class="w"> </span><span class="p">});</span><span class="w">  </span><span class="c1">// 第 1 次</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="nx">messages</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="w"> </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">"user"</span><span class="p">,</span><span class="w"> </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="s2">"刚才我说了什么"</span><span class="w"> </span><span class="p">});</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span><span class="w"> </span><span class="nx">model</span><span class="p">,</span><span class="w"> </span><span class="nx">messages</span><span class="w"> </span><span class="p">});</span><span class="w">  </span><span class="c1">// 第 2 次，messages 里已经有第 1 次的历史</span>
+</span></code></pre></div>
+<h3 id="32-messages">3.2 messages 数组是唯一状态<a class="headerlink" href="#32-messages" title="Permanent link">&para;</a></h3>
+<p>看本章代码，整个程序里<strong>唯一跨循环迭代保持的变量</strong>就是 <code>messages</code>：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">messages</span><span class="o">:</span><span class="w"> </span><span class="kt">Anthropic.MessageParam</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[];</span><span class="w">  </span><span class="c1">// ← 整个程序的"记忆"</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="kc">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">userInput</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">prompt</span><span class="p">(</span><span class="s2">"\n&gt; "</span><span class="p">);</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">  </span><span class="nx">messages</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="w"> </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">"user"</span><span class="p">,</span><span class="w"> </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="kt">userInput</span><span class="w"> </span><span class="p">});</span><span class="w">      </span><span class="c1">// ← 往记忆里加</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span><span class="w"> </span><span class="nx">messages</span><span class="w"> </span><span class="p">});</span><span class="w"> </span><span class="c1">// ← 用记忆</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">  </span><span class="nx">messages</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="w"> </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">"assistant"</span><span class="p">,</span><span class="w"> </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="kt">response.content</span><span class="w"> </span><span class="p">});</span><span class="w"> </span><span class="c1">// ← 往记忆里加</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>没有数据库，没有文件，没有 Redis，没有任何持久化。<strong>整个对话的全部状态，就在内存里这一个数组里。</strong> 关掉终端，对话就没了。</p>
+<p>这是教学上的故意简化，但也是一个<strong>深刻的事实</strong>：Claude Code 真实的产品逻辑，本质上也是这样。它有更长的 system prompt、有工具调用、有上下文压缩，但"对话状态"的核心载体，<strong>仍然是一个 messages 数组</strong>，只不过那个数组会被压缩、会被序列化到磁盘、会在 token 超限时被截断。但骨架和本章一模一样。</p>
+<h3 id="33">3.3 为什么必须带完整历史<a class="headerlink" href="#33" title="Permanent link">&para;</a></h3>
+<p>因为模型是<strong>自回归</strong>（autoregressive）的：它根据前面的 token 预测下一个 token。你给它看的前面 token 越多，它"知道"的上下文就越多。</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>请求 1：messages = [user: "我叫小明"]
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>模型输出：                    "你好，小明！"
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>请求 2：messages = [user: "我叫小明", assistant: "你好，小明！", user: "我叫什么？"]
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>模型看到前面有"我叫小明"，输出： "你叫小明。"
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>请求 2'（错误）：messages = [user: "我叫什么？"]   ← 没带历史
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>模型只看到"我叫什么？"，输出：    "我不知道你叫什么。"
+</span></code></pre></div>
+<p><strong>带完整历史的代价</strong>：每次请求的 token 数会越来越大。第 1 轮 100 token，第 2 轮 200，第 10 轮可能 5000。费用线性增长，延迟也线性增长。这就是为什么后面要有"上下文压缩"（Ch5）——但那是优化，不是骨架。</p>
+<h3 id="34-agent-loop">3.4 Agent Loop 的两层结构<a class="headerlink" href="#34-agent-loop" title="Permanent link">&para;</a></h3>
+<p>Claude Code 的循环其实有<strong>两层</strong>：</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>外层循环（用户交互）:
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>  while True:
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    user_input = 等待用户输入
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    messages.append(user_input)
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>    内层循环（工具调用）:        ← Ch2 才加，本章没有
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>      response = 调用 LLM
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>      if 模型想调工具:
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>        执行工具，结果加入 messages
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>        继续循环                ← 关键：不回外层，继续调 LLM
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>      else:
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>        输出文本
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>        break  ← 回到外层等用户
+</span></code></pre></div>
+<p><strong>本章只有外层循环</strong>。模型说一句话，就直接 <code>break</code> 回外层等下一个用户输入。没有"模型想调工具"这个分支。</p>
+<p><strong>内层循环是 Ch2 的核心</strong>，那是从"聊天机器人"变成"Agent"的关键。但请注意：内层循环不是另写一个 <code>while</code>，而是<strong>同一个 <code>while</code> 里加一个 <code>if</code> 分支</strong>。骨架还是本章这个骨架。这就是为什么本章必须先看懂。</p>
+<hr />
+<h2 id="4">4. 完整代码<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<p>下面是 <code>lessons/ch01-minimal/main.ts</code> 的完整 61 行代码。先通读一遍，下一节逐行讲解。</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">Anthropic</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"@anthropic-ai/sdk"</span><span class="p">;</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">import</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">readline</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"readline"</span><span class="p">;</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="k">import</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">dotenv</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"dotenv"</span><span class="p">;</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="nx">dotenv</span><span class="p">.</span><span class="nx">config</span><span class="p">();</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="kd">const</span><span class="w"> </span><span class="nx">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Anthropic</span><span class="p">({</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">  </span><span class="nx">apiKey</span><span class="o">:</span><span class="w"> </span><span class="kt">process.env.API_KEY</span><span class="p">,</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">  </span><span class="nx">baseURL</span><span class="o">:</span><span class="w"> </span><span class="kt">process.env.BASE_URL</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="kc">undefined</span><span class="p">,</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="p">});</span>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="kd">const</span><span class="w"> </span><span class="nx">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">MODEL</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s2">"claude-sonnet-4-20250514"</span><span class="p">;</span>
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="kd">const</span><span class="w"> </span><span class="nx">maxTokens</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">MAX_TOKENS</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s2">"1024"</span><span class="p">);</span>
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>
+</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="kd">const</span><span class="w"> </span><span class="nx">messages</span><span class="o">:</span><span class="w"> </span><span class="kt">Anthropic.MessageParam</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[];</span>
+</span><span id="__span-8-16"><a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>
+</span><span id="__span-8-17"><a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="kd">const</span><span class="w"> </span><span class="nx">rl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">readline</span><span class="p">.</span><span class="nx">createInterface</span><span class="p">({</span>
+</span><span id="__span-8-18"><a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="w">  </span><span class="nx">input</span><span class="o">:</span><span class="w"> </span><span class="kt">process.stdin</span><span class="p">,</span>
+</span><span id="__span-8-19"><a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a><span class="w">  </span><span class="nx">output</span><span class="o">:</span><span class="w"> </span><span class="kt">process.stdout</span><span class="p">,</span>
+</span><span id="__span-8-20"><a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a><span class="p">});</span>
+</span><span id="__span-8-21"><a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a>
+</span><span id="__span-8-22"><a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a><span class="kd">function</span><span class="w"> </span><span class="nx">prompt</span><span class="p">(</span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-23"><a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">rl</span><span class="p">.</span><span class="nx">question</span><span class="p">(</span><span class="nx">query</span><span class="p">,</span><span class="w"> </span><span class="nx">resolve</span><span class="p">));</span>
+</span><span id="__span-8-24"><a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a><span class="p">}</span>
+</span><span id="__span-8-25"><a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a>
+</span><span id="__span-8-26"><a id="__codelineno-8-26" name="__codelineno-8-26" href="#__codelineno-8-26"></a><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-27"><a id="__codelineno-8-27" name="__codelineno-8-27" href="#__codelineno-8-27"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"=== Mini Claude Code - Ch1 (minimal) ==="</span><span class="p">);</span>
+</span><span id="__span-8-28"><a id="__codelineno-8-28" name="__codelineno-8-28" href="#__codelineno-8-28"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`模型: </span><span class="si">${</span><span class="nx">model</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span><span id="__span-8-29"><a id="__codelineno-8-29" name="__codelineno-8-29" href="#__codelineno-8-29"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'输入 "exit" 退出\n'</span><span class="p">);</span>
+</span><span id="__span-8-30"><a id="__codelineno-8-30" name="__codelineno-8-30" href="#__codelineno-8-30"></a>
+</span><span id="__span-8-31"><a id="__codelineno-8-31" name="__codelineno-8-31" href="#__codelineno-8-31"></a><span class="w">  </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="kc">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-32"><a id="__codelineno-8-32" name="__codelineno-8-32" href="#__codelineno-8-32"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">userInput</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">prompt</span><span class="p">(</span><span class="s2">"\n&gt; "</span><span class="p">);</span>
+</span><span id="__span-8-33"><a id="__codelineno-8-33" name="__codelineno-8-33" href="#__codelineno-8-33"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">userInput</span><span class="p">.</span><span class="nx">trim</span><span class="p">()</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">"exit"</span><span class="p">)</span><span class="w"> </span><span class="k">break</span><span class="p">;</span>
+</span><span id="__span-8-34"><a id="__codelineno-8-34" name="__codelineno-8-34" href="#__codelineno-8-34"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">userInput</span><span class="p">.</span><span class="nx">trim</span><span class="p">())</span><span class="w"> </span><span class="k">continue</span><span class="p">;</span>
+</span><span id="__span-8-35"><a id="__codelineno-8-35" name="__codelineno-8-35" href="#__codelineno-8-35"></a>
+</span><span id="__span-8-36"><a id="__codelineno-8-36" name="__codelineno-8-36" href="#__codelineno-8-36"></a><span class="w">    </span><span class="nx">messages</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="w"> </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">"user"</span><span class="p">,</span><span class="w"> </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="kt">userInput</span><span class="w"> </span><span class="p">});</span>
+</span><span id="__span-8-37"><a id="__codelineno-8-37" name="__codelineno-8-37" href="#__codelineno-8-37"></a>
+</span><span id="__span-8-38"><a id="__codelineno-8-38" name="__codelineno-8-38" href="#__codelineno-8-38"></a><span class="w">    </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-39"><a id="__codelineno-8-39" name="__codelineno-8-39" href="#__codelineno-8-39"></a><span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span>
+</span><span id="__span-8-40"><a id="__codelineno-8-40" name="__codelineno-8-40" href="#__codelineno-8-40"></a><span class="w">        </span><span class="nx">model</span><span class="p">,</span>
+</span><span id="__span-8-41"><a id="__codelineno-8-41" name="__codelineno-8-41" href="#__codelineno-8-41"></a><span class="w">        </span><span class="nx">max_tokens</span><span class="o">:</span><span class="w"> </span><span class="kt">maxTokens</span><span class="p">,</span>
+</span><span id="__span-8-42"><a id="__codelineno-8-42" name="__codelineno-8-42" href="#__codelineno-8-42"></a><span class="w">        </span><span class="nx">messages</span><span class="p">,</span>
+</span><span id="__span-8-43"><a id="__codelineno-8-43" name="__codelineno-8-43" href="#__codelineno-8-43"></a><span class="w">      </span><span class="p">});</span>
+</span><span id="__span-8-44"><a id="__codelineno-8-44" name="__codelineno-8-44" href="#__codelineno-8-44"></a>
+</span><span id="__span-8-45"><a id="__codelineno-8-45" name="__codelineno-8-45" href="#__codelineno-8-45"></a><span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">content</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">Anthropic</span><span class="p">.</span><span class="nx">TextBlock</span><span class="p">[])</span>
+</span><span id="__span-8-46"><a id="__codelineno-8-46" name="__codelineno-8-46" href="#__codelineno-8-46"></a><span class="w">        </span><span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">b</span><span class="p">.</span><span class="kr">type</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">"text"</span><span class="p">)</span>
+</span><span id="__span-8-47"><a id="__codelineno-8-47" name="__codelineno-8-47" href="#__codelineno-8-47"></a><span class="w">        </span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">b</span><span class="p">.</span><span class="nx">text</span><span class="p">)</span>
+</span><span id="__span-8-48"><a id="__codelineno-8-48" name="__codelineno-8-48" href="#__codelineno-8-48"></a><span class="w">        </span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s2">""</span><span class="p">);</span>
+</span><span id="__span-8-49"><a id="__codelineno-8-49" name="__codelineno-8-49" href="#__codelineno-8-49"></a>
+</span><span id="__span-8-50"><a id="__codelineno-8-50" name="__codelineno-8-50" href="#__codelineno-8-50"></a><span class="w">      </span><span class="nx">messages</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="w"> </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">"assistant"</span><span class="p">,</span><span class="w"> </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="kt">response.content</span><span class="w"> </span><span class="p">});</span>
+</span><span id="__span-8-51"><a id="__codelineno-8-51" name="__codelineno-8-51" href="#__codelineno-8-51"></a><span class="w">      </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">text</span><span class="p">);</span>
+</span><span id="__span-8-52"><a id="__codelineno-8-52" name="__codelineno-8-52" href="#__codelineno-8-52"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">err</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-53"><a id="__codelineno-8-53" name="__codelineno-8-53" href="#__codelineno-8-53"></a><span class="w">      </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="sb">`[错误] </span><span class="si">${</span><span class="nx">err</span><span class="p">.</span><span class="nx">message</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span><span id="__span-8-54"><a id="__codelineno-8-54" name="__codelineno-8-54" href="#__codelineno-8-54"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-8-55"><a id="__codelineno-8-55" name="__codelineno-8-55" href="#__codelineno-8-55"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-8-56"><a id="__codelineno-8-56" name="__codelineno-8-56" href="#__codelineno-8-56"></a>
+</span><span id="__span-8-57"><a id="__codelineno-8-57" name="__codelineno-8-57" href="#__codelineno-8-57"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"再见！"</span><span class="p">);</span>
+</span><span id="__span-8-58"><a id="__codelineno-8-58" name="__codelineno-8-58" href="#__codelineno-8-58"></a><span class="w">  </span><span class="nx">rl</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+</span><span id="__span-8-59"><a id="__codelineno-8-59" name="__codelineno-8-59" href="#__codelineno-8-59"></a><span class="p">}</span>
+</span><span id="__span-8-60"><a id="__codelineno-8-60" name="__codelineno-8-60" href="#__codelineno-8-60"></a>
+</span><span id="__span-8-61"><a id="__codelineno-8-61" name="__codelineno-8-61" href="#__codelineno-8-61"></a><span class="nx">main</span><span class="p">();</span>
+</span></code></pre></div>
+<hr />
+<h2 id="5">5. 代码逐行讲解<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<h3 id="51-import">5.1 import 三行<a class="headerlink" href="#51-import" title="Permanent link">&para;</a></h3>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">Anthropic</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"@anthropic-ai/sdk"</span><span class="p">;</span><span class="w">   </span><span class="c1">// ①</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="k">import</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">readline</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"readline"</span><span class="p">;</span><span class="w">          </span><span class="c1">// ②</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="k">import</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">dotenv</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"dotenv"</span><span class="p">;</span><span class="w">              </span><span class="c1">// ③</span>
+</span></code></pre></div>
+<p><strong>① <code>Anthropic</code></strong>：从 <code>@anthropic-ai/sdk</code> 包默认导出的类。<code>new Anthropic({...})</code> 会创建一个客户端实例，里面封装了 HTTP 调用、重试、类型定义。这个包在 <code>package.json</code> 的 <code>dependencies</code> 里，<code>npm install</code> 时会装到 <code>node_modules/</code>。</p>
+<p><strong>② <code>readline</code></strong>：Node.js <strong>内置</strong>模块，不需要 <code>npm install</code>。它提供命令行交互能力——从 <code>stdin</code> 读一行用户输入，写到 <code>stdout</code>。<code>* as</code> 是命名空间导入，用 <code>readline.createInterface()</code> 调用。</p>
+<p><strong>③ <code>dotenv</code></strong>：第三方包，把 <code>.env</code> 文件里的 <code>KEY=VALUE</code> 加载到 <code>process.env</code> 里。后面会详细讲。</p>
+<blockquote>
+<p><strong>为什么 <code>Anthropic</code> 是默认导入，<code>readline</code> 和 <code>dotenv</code> 是命名空间导入？</strong> 这是包作者的决定的导出方式，不是我们能选的。<code>@anthropic-ai/sdk</code> 用 <code>export default class Anthropic</code>，所以 <code>import Anthropic from</code>。<code>readline</code> 用 CommonJS 的 <code>module.exports</code>，所以 <code>import * as readline</code>。实际写代码时照着 IDE 自动补全来就行。</p>
+</blockquote>
+<h3 id="52-dotenvconfig">5.2 dotenv.config()<a class="headerlink" href="#52-dotenvconfig" title="Permanent link">&para;</a></h3>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nx">dotenv</span><span class="p">.</span><span class="nx">config</span><span class="p">();</span>
+</span></code></pre></div>
+<p>这一行执行后，<code>process.env</code> 里就有了 <code>.env</code> 文件中所有的变量。例如 <code>.env</code> 里有 <code>API_KEY=sk-ant-xxx</code>，之后就能用 <code>process.env.API_KEY</code> 拿到 <code>"sk-ant-xxx"</code>。</p>
+<p><strong>注意位置</strong>：必须在 <code>new Anthropic({ apiKey: process.env.API_KEY })</code> <strong>之前</strong>调用，否则 <code>process.env.API_KEY</code> 还是 <code>undefined</code>。</p>
+<p><strong>这一行没有 <code>await</code></strong>：<code>dotenv.config()</code> 是<strong>同步</strong>的，返回一个对象 <code>{ parsed: {...}, error: null }</code>，但本章代码忽略返回值。它读 <code>.env</code> 文件、按行解析、写入 <code>process.env</code>，全部同步完成。</p>
+<h3 id="53-anthropic">5.3 Anthropic 客户端初始化<a class="headerlink" href="#53-anthropic" title="Permanent link">&para;</a></h3>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Anthropic</span><span class="p">({</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">  </span><span class="nx">apiKey</span><span class="o">:</span><span class="w"> </span><span class="kt">process.env.API_KEY</span><span class="p">,</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">  </span><span class="nx">baseURL</span><span class="o">:</span><span class="w"> </span><span class="kt">process.env.BASE_URL</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="kc">undefined</span><span class="p">,</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="p">});</span>
+</span></code></pre></div>
+<p><strong><code>new Anthropic({...})</code></strong> 创建一个客户端实例。这个实例本身不发起任何 HTTP 请求，只是把配置存起来。真正的请求发生在后面 <code>client.messages.create()</code> 调用时。</p>
+<p><strong><code>apiKey</code></strong>：Anthropic 用来认证的密钥。如果没填或填错，后面调用会报 401 错误。SDK 会把这个 key 自动放到 HTTP header 的 <code>x-api-key</code> 字段里。</p>
+<p><strong><code>baseURL</code></strong>：API 的基础地址。默认是 <code>https://api.anthropic.com</code>。如果填了 <code>https://api.deepseek.com/anthropic</code>，SDK 就会去 DeepSeek 的服务器（DeepSeek 提供了 Anthropic 兼容的 API 接口）。这是本章支持"切换后端"的原理——<strong>同一份代码，改一个环境变量就能换模型供应商</strong>。</p>
+<p><strong><code>process.env.BASE_URL || undefined</code></strong> 这个写法很关键：
+- 如果 <code>.env</code> 里 <code>BASE_URL=</code>（空字符串），<code>"" || undefined</code> 等于 <code>undefined</code>，SDK 用默认值。
+- 如果 <code>.env</code> 里 <code>BASE_URL=https://api.deepseek.com/anthropic</code>，取这个值。</p>
+<p>为什么不能直接 <code>baseURL: process.env.BASE_URL</code>？因为 SDK 收到空字符串 <code>""</code> 会真的把 baseURL 设成空字符串，导致请求发到 <code>""</code> + <code>/v1/messages</code> = <code>/v1/messages</code> 这种错误地址。<code>|| undefined</code> 是把"空字符串"翻译成"没设置"。</p>
+<h3 id="54-model-maxtokens">5.4 model 与 maxTokens 常量<a class="headerlink" href="#54-model-maxtokens" title="Permanent link">&para;</a></h3>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">MODEL</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s2">"claude-sonnet-4-20250514"</span><span class="p">;</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">maxTokens</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">MAX_TOKENS</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s2">"1024"</span><span class="p">);</span>
+</span></code></pre></div>
+<p><strong><code>model</code></strong>：模型名。默认 <code>claude-sonnet-4-20250514</code>。可以通过 <code>.env</code> 的 <code>MODEL=</code> 切换。模型名是字符串字面量，写错会报 404。</p>
+<p><strong><code>maxTokens</code></strong>：模型最多生成多少 token。<strong>这是必填参数</strong>，不填 SDK 直接报错。<code>parseInt</code> 把字符串 <code>"1024"</code> 转成数字 <code>1024</code>。</p>
+<blockquote>
+<p><strong>token 是什么？</strong> 粗略理解：1 个英文单词 ≈ 1-2 token，1 个中文字 ≈ 1-2 token。<code>max_tokens: 1024</code> 意味着模型最多输出大约 500-1000 字。超过这个数，模型会被强制截断，<code>stop_reason</code> 会变成 <code>"max_tokens"</code>（后面讲）。</p>
+</blockquote>
+<h3 id="55-messages">5.5 messages 数组声明<a class="headerlink" href="#55-messages" title="Permanent link">&para;</a></h3>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">messages</span><span class="o">:</span><span class="w"> </span><span class="kt">Anthropic.MessageParam</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[];</span>
+</span></code></pre></div>
+<p><strong>这一行是整个程序的核心</strong>。</p>
+<ul>
+<li><code>Anthropic.MessageParam[]</code> 是 TypeScript 类型，表示"一个元素类型为 <code>MessageParam</code> 的数组"。<code>MessageParam</code> 是 SDK 定义的类型，等价于 <code>{ role: "user" | "assistant"; content: string | ContentBlock[] }</code>。</li>
+<li>初始为空数组 <code>[]</code>，因为对话还没开始。</li>
+<li>这个 <code>messages</code> 变量是<strong>模块级</strong>的（不在 <code>main()</code> 里），所以它在整个进程生命周期内都存在。每次 <code>while</code> 循环迭代都往里 push，<strong>永远不会被重置</strong>。</li>
+</ul>
+<p><strong>类型注解有什么用？</strong> 让 IDE 知道 <code>messages.push(...)</code> 时应该检查什么。如果你写 <code>messages.push({ role: "system", content: "..." })</code>，IDE 会报错，因为 <code>MessageParam</code> 的 <code>role</code> 不允许 <code>"system"</code>（system prompt 在 Anthropic API 里是单独的字段，不在 messages 数组里）。</p>
+<h3 id="56-readline-prompt">5.6 readline 与 prompt 函数<a class="headerlink" href="#56-readline-prompt" title="Permanent link">&para;</a></h3>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">rl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">readline</span><span class="p">.</span><span class="nx">createInterface</span><span class="p">({</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">  </span><span class="nx">input</span><span class="o">:</span><span class="w"> </span><span class="kt">process.stdin</span><span class="p">,</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">  </span><span class="nx">output</span><span class="o">:</span><span class="w"> </span><span class="kt">process.stdout</span><span class="p">,</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="p">});</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="kd">function</span><span class="w"> </span><span class="nx">prompt</span><span class="p">(</span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">rl</span><span class="p">.</span><span class="nx">question</span><span class="p">(</span><span class="nx">query</span><span class="p">,</span><span class="w"> </span><span class="nx">resolve</span><span class="p">));</span>
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong><code>readline.createInterface</code></strong> 创建一个交互接口，绑定到标准输入输出。之后 <code>rl.question("&gt; ", callback)</code> 会在终端打印 <code>"&gt; "</code>，等用户敲回车，把输入行传给 <code>callback</code>。</p>
+<p><strong><code>prompt</code> 函数</strong>：把 <code>rl.question</code> 的回调风格包装成 <code>async/await</code> 风格。<code>rl.question</code> 是 Node.js 老式回调 API：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1">// 原始回调风格</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="nx">rl</span><span class="p">.</span><span class="nx">question</span><span class="p">(</span><span class="s2">"&gt; "</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">answer</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"你输入了"</span><span class="p">,</span><span class="w"> </span><span class="nx">answer</span><span class="p">);</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="p">});</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="c1">// 包装成 Promise 风格</span>
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="kd">const</span><span class="w"> </span><span class="nx">answer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">prompt</span><span class="p">(</span><span class="s2">"&gt; "</span><span class="p">);</span>
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"你输入了"</span><span class="p">,</span><span class="w"> </span><span class="nx">answer</span><span class="p">);</span>
+</span></code></pre></div>
+<p><strong>为什么要包装？</strong> 因为我们在 <code>while</code> 循环里要 <code>await</code> 用户输入。直接用回调会让循环逻辑变成回调地狱。包装成 Promise 后就能用同步风格的 <code>await</code> 写。</p>
+<p><strong><code>new Promise((resolve) =&gt; ...)</code></strong>：创建一个 Promise，把 <code>resolve</code> 函数作为回调传给 <code>rl.question</code>。用户敲回车 → <code>rl.question</code> 调用 <code>resolve(输入行)</code> → Promise 完成 → <code>await</code> 返回输入行。</p>
+<h3 id="57-main">5.7 main 函数与欢迎语<a class="headerlink" href="#57-main" title="Permanent link">&para;</a></h3>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"=== Mini Claude Code - Ch1 (minimal) ==="</span><span class="p">);</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`模型: </span><span class="si">${</span><span class="nx">model</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'输入 "exit" 退出\n'</span><span class="p">);</span>
+</span></code></pre></div>
+<p><strong>为什么包在 <code>main()</code> 里？</strong> 顶层 <code>await</code> 在 CommonJS 里不支持，要把异步代码包进一个 <code>async function</code> 里。文件最后 <code>main();</code> 启动它。</p>
+<p><strong>欢迎语</strong>：打印程序名、当前模型、退出指令。教学向，让用户知道程序在跑、用的什么模型、怎么退出。</p>
+<h3 id="58-while">5.8 while 循环：外层骨架<a class="headerlink" href="#58-while" title="Permanent link">&para;</a></h3>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="w">  </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="kc">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">userInput</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">prompt</span><span class="p">(</span><span class="s2">"\n&gt; "</span><span class="p">);</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">userInput</span><span class="p">.</span><span class="nx">trim</span><span class="p">()</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">"exit"</span><span class="p">)</span><span class="w"> </span><span class="k">break</span><span class="p">;</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">userInput</span><span class="p">.</span><span class="nx">trim</span><span class="p">())</span><span class="w"> </span><span class="k">continue</span><span class="p">;</span>
+</span></code></pre></div>
+<p><strong><code>while (true)</code></strong>：无限循环。这是 Agent Loop 的外层。每次迭代 = 一轮用户交互。</p>
+<p><strong><code>await prompt("\n&gt; ")</code></strong>：在终端打印 <code>\n&gt;</code>（换行 + 提示符），等用户输入一行，敲回车后 <code>userInput</code> 拿到这行字符串。<code>await</code> 让程序在这里<strong>阻塞</strong>，直到用户敲回车。</p>
+<p><strong><code>if (userInput.trim() === "exit") break;</code></strong>：输入 <code>exit</code> 退出循环。<code>.trim()</code> 去掉首尾空格，所以 <code>"  exit  "</code> 也能退出。</p>
+<p><strong><code>if (!userInput.trim()) continue;</code></strong>：空输入（直接敲回车）跳过本轮，不发给 API。避免给模型发空消息。</p>
+<h3 id="59-messagespushuser">5.9 messages.push(user)<a class="headerlink" href="#59-messagespushuser" title="Permanent link">&para;</a></h3>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="w">    </span><span class="nx">messages</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="w"> </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">"user"</span><span class="p">,</span><span class="w"> </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="kt">userInput</span><span class="w"> </span><span class="p">});</span>
+</span></code></pre></div>
+<p><strong>这一行是多轮对话的关键</strong>。把用户输入追加到 <code>messages</code> 数组。注意：</p>
+<ul>
+<li><code>role: "user"</code> —— 标记这是用户说的</li>
+<li><code>content: userInput</code> —— 用户输入的字符串</li>
+<li><strong>push 而非赋值</strong> —— 数组只增不删，历史完整保留</li>
+</ul>
+<p>push 之后，<code>messages</code> 长这样：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="p">[</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="w">  </span><span class="c1">// ...之前的所有历史</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">"user"</span><span class="p">,</span><span class="w"> </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="s2">"本次用户输入"</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="p">]</span>
+</span></code></pre></div>
+<h3 id="510-clientmessagescreate">5.10 client.messages.create()<a class="headerlink" href="#510-clientmessagescreate" title="Permanent link">&para;</a></h3>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="w">    </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="w">        </span><span class="nx">model</span><span class="p">,</span>
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="w">        </span><span class="nx">max_tokens</span><span class="o">:</span><span class="w"> </span><span class="kt">maxTokens</span><span class="p">,</span>
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="w">        </span><span class="nx">messages</span><span class="p">,</span>
+</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="w">      </span><span class="p">});</span>
+</span></code></pre></div>
+<p><strong>这是真正调 API 的地方</strong>。<code>client.messages.create()</code> 发起一个 HTTP POST 请求到 <code>{baseURL}/v1/messages</code>，body 是：</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="p">{</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="w">  </span><span class="nt">"model"</span><span class="p">:</span><span class="w"> </span><span class="s2">"claude-sonnet-4-20250514"</span><span class="p">,</span>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="w">  </span><span class="nt">"max_tokens"</span><span class="p">:</span><span class="w"> </span><span class="mi">1024</span><span class="p">,</span>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="w">  </span><span class="nt">"messages"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"role"</span><span class="p">:</span><span class="w"> </span><span class="s2">"user"</span><span class="p">,</span><span class="w"> </span><span class="nt">"content"</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"role"</span><span class="p">:</span><span class="w"> </span><span class="s2">"assistant"</span><span class="p">,</span><span class="w"> </span><span class="nt">"content"</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-21-7"><a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"role"</span><span class="p">:</span><span class="w"> </span><span class="s2">"user"</span><span class="p">,</span><span class="w"> </span><span class="nt">"content"</span><span class="p">:</span><span class="w"> </span><span class="s2">"本次输入"</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-21-8"><a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="w">  </span><span class="p">]</span>
+</span><span id="__span-21-9"><a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong><code>await</code></strong>：HTTP 请求是异步的，模型生成也要时间（通常 0.5-5 秒）。<code>await</code> 让程序等响应回来再继续。</p>
+<p><strong><code>messages</code> 是引用传递</strong>：SDK 内部会 <code>JSON.stringify(messages)</code>，序列化时拿到的是当前完整数组。<strong>不要</strong>在请求未完成时修改 <code>messages</code>，否则会出竞态。本章是单线程顺序执行，不会有这个问题。</p>
+<p><strong>响应结构</strong>：<code>response</code> 是一个对象，大致长这样：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="p">{</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="w">  </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">"msg_abc123"</span><span class="p">,</span>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="w">  </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">"message"</span><span class="p">,</span>
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="w">  </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">"assistant"</span><span class="p">,</span>
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="w">  </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-22-6"><a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">"text"</span><span class="p">,</span><span class="w"> </span><span class="nx">text</span><span class="o">:</span><span class="w"> </span><span class="s2">"模型生成的文字"</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-22-7"><a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a><span class="w">  </span><span class="p">],</span>
+</span><span id="__span-22-8"><a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a><span class="w">  </span><span class="nx">model</span><span class="o">:</span><span class="w"> </span><span class="s2">"claude-sonnet-4-20250514"</span><span class="p">,</span>
+</span><span id="__span-22-9"><a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a><span class="w">  </span><span class="nx">stop_reason</span><span class="o">:</span><span class="w"> </span><span class="s2">"end_turn"</span><span class="p">,</span><span class="w">       </span><span class="c1">// ← 第 8 节详讲</span>
+</span><span id="__span-22-10"><a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a><span class="w">  </span><span class="nx">usage</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">input_tokens</span><span class="o">:</span><span class="w"> </span><span class="kt">50</span><span class="p">,</span><span class="w"> </span><span class="nx">output_tokens</span><span class="o">:</span><span class="w"> </span><span class="kt">20</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-22-11"><a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>注意 <code>content</code> 是<strong>数组</strong>，不是字符串。因为模型可能输出多种类型的块（文本块、工具调用块）。本章只有文本块，但结构上仍然是数组。</p>
+<h3 id="511">5.11 提取文本<a class="headerlink" href="#511" title="Permanent link">&para;</a></h3>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">content</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">Anthropic</span><span class="p">.</span><span class="nx">TextBlock</span><span class="p">[])</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="w">        </span><span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">b</span><span class="p">.</span><span class="kr">type</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">"text"</span><span class="p">)</span>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="w">        </span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">b</span><span class="p">.</span><span class="nx">text</span><span class="p">)</span>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="w">        </span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s2">""</span><span class="p">);</span>
+</span></code></pre></div>
+<p>因为 <code>response.content</code> 是数组，且可能包含非文本块（Ch2 会有工具调用块），所以要<strong>过滤 + 提取 + 拼接</strong>：</p>
+<ol>
+<li><code>.filter((b) =&gt; b.type === "text")</code> —— 只留文本块</li>
+<li><code>.map((b) =&gt; b.text)</code> —— 取出 <code>.text</code> 字段</li>
+<li><code>.join("")</code> —— 拼成单个字符串</li>
+</ol>
+<p><strong><code>as Anthropic.TextBlock[]</code></strong>：TypeScript 类型断言。SDK 的类型定义里 <code>content</code> 是联合类型 <code>Array&lt;TextBlock | ToolUseBlock | ...&gt;</code>，断言成 <code>TextBlock[]</code> 后 <code>.filter</code> 里访问 <code>b.text</code> 不会报错。这是教学简化，生产代码应该用类型守卫 <code>if (b.type === "text")</code> 而非断言。</p>
+<h3 id="512-messagespushassistant">5.12 messages.push(assistant)<a class="headerlink" href="#512-messagespushassistant" title="Permanent link">&para;</a></h3>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="w">      </span><span class="nx">messages</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="w"> </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">"assistant"</span><span class="p">,</span><span class="w"> </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="kt">response.content</span><span class="w"> </span><span class="p">});</span>
+</span></code></pre></div>
+<p><strong>注意</strong>：push 的是 <code>response.content</code>（原始数组），<strong>不是</strong> <code>text</code>（拼接后的字符串）。</p>
+<p>为什么？因为 <code>content</code> 是 SDK 定义的标准格式，下次请求时 SDK 能正确序列化。如果 push <code>text</code> 字符串，下次请求虽然也能跑（API 接受字符串形式），但<strong>Ch2 加工具调用后</strong>，assistant 消息里可能既有文本块又有工具调用块，必须用数组形式才能完整保留。本章养成好习惯，push 原始 <code>content</code>。</p>
+<p>push 之后，<code>messages</code> 长这样：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="p">[</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="w">  </span><span class="c1">// ...之前的历史</span>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">"user"</span><span class="p">,</span><span class="w"> </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="s2">"本次用户输入"</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">"assistant"</span><span class="p">,</span><span class="w"> </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">"text"</span><span class="p">,</span><span class="w"> </span><span class="nx">text</span><span class="o">:</span><span class="w"> </span><span class="s2">"模型回复"</span><span class="w"> </span><span class="p">}]</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="p">]</span>
+</span></code></pre></div>
+<p>下一轮循环时，这个完整历史会被发给 API。</p>
+<h3 id="513-trycatch">5.13 try/catch 错误处理<a class="headerlink" href="#513-trycatch" title="Permanent link">&para;</a></h3>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">err</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="w">      </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="sb">`[错误] </span><span class="si">${</span><span class="nx">err</span><span class="p">.</span><span class="nx">message</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="w">    </span><span class="p">}</span>
+</span></code></pre></div>
+<p><strong><code>try/catch</code></strong>：捕获 <code>await client.messages.create()</code> 抛出的异常。常见异常：</p>
+<table>
+<thead>
+<tr>
+<th>错误</th>
+<th>原因</th>
+<th>处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>401 Unauthorized</td>
+<td>API Key 错或过期</td>
+<td>检查 <code>.env</code></td>
+</tr>
+<tr>
+<td>429 Rate Limit</td>
+<td>调用太频繁</td>
+<td>等几秒重试</td>
+</tr>
+<tr>
+<td>400 Bad Request</td>
+<td>messages 格式错</td>
+<td>检查 push 的内容</td>
+</tr>
+<tr>
+<td>网络错误</td>
+<td>断网/代理问题</td>
+<td>检查网络</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>err: any</code></strong>：教学简化，实际 SDK 抛的是 <code>APIError</code> 子类，有 <code>status</code>、<code>error</code>、<code>headers</code> 等字段。生产代码应该 <code>if (err instanceof Anthropic.APIError)</code> 分支处理。</p>
+<p><strong><code>console.error</code> 而非 <code>throw</code></strong>：打印错误后<strong>继续循环</strong>，让用户能再试一次。如果 <code>throw</code>，进程会崩，对话全丢。这是 CLI 程序的常见模式：错误不致命就别崩。</p>
+<p><strong>注意 try 的范围</strong>：只包了 <code>create()</code> 和后续处理，<strong>没包</strong> <code>prompt()</code>。因为 <code>prompt</code> 出错（用户 Ctrl+C）应该让程序退出，不是"再试一次"。</p>
+<h3 id="514-main">5.14 main() 启动<a class="headerlink" href="#514-main" title="Permanent link">&para;</a></h3>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"再见！"</span><span class="p">);</span>
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="w">  </span><span class="nx">rl</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="p">}</span>
+</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>
+</span><span id="__span-27-5"><a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a><span class="nx">main</span><span class="p">();</span>
+</span></code></pre></div>
+<p><strong><code>console.log("再见！")</code></strong>：循环 <code>break</code> 后打印告别语。</p>
+<p><strong><code>rl.close()</code></strong>：关闭 readline 接口，释放 <code>stdin</code> 占用。如果不调，进程不会退出（因为 <code>stdin</code> 还开着）。Node.js 会在所有事件循环任务空了后退出，<code>rl.close()</code> 让 <code>stdin</code> 不再保持事件循环。</p>
+<p><strong><code>main()</code></strong>：在文件最外层调用，启动整个程序。因为 <code>main</code> 是 <code>async function</code>，调用它返回一个 Promise，但这里没 <code>await</code>——顶层没法 <code>await</code>（除非用 ESM top-level await，但教学向保持简单）。</p>
+<hr />
+<h2 id="6-readline-inquirer">6. 为什么用 readline 而非 inquirer<a class="headerlink" href="#6-readline-inquirer" title="Permanent link">&para;</a></h2>
+<p>Node.js 生态里有更"高级"的命令行交互库：</p>
+<ul>
+<li><strong>inquirer</strong> / <strong>prompts</strong> / <strong>enquirer</strong>：支持选择列表、多选、密码输入、自动补全等花式交互。</li>
+<li><strong>@inquirer/prompts</strong>：inquirer 的新版，模块化设计。</li>
+</ul>
+<p>它们都很好用，但本章<strong>故意</strong>用最底层的 <code>readline</code>。原因：</p>
+<h3 id="61">6.1 教学向：理解底层<a class="headerlink" href="#61" title="Permanent link">&para;</a></h3>
+<p><code>readline</code> 是 Node.js <strong>内置</strong>模块，零依赖。它的 API 暴露了"命令行交互的本质"：</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>1. 监听 stdin 的 'line' 事件
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>2. 用户敲回车 → 触发事件 → 拿到一行输入
+</span></code></pre></div>
+<p>用 <code>readline</code> 你能看清"等待用户输入"这件事到底在做什么。用 inquirer 你只能看到 <code>const answer = await input({ message: "&gt;" })</code>，背后发生了什么全是黑盒。</p>
+<h3 id="62">6.2 零依赖原则<a class="headerlink" href="#62" title="Permanent link">&para;</a></h3>
+<p>每多一个依赖就多一个：</p>
+<ul>
+<li>安装时间（<code>npm install</code> 慢一点）</li>
+<li>安全风险（供应链攻击面）</li>
+<li>维护负担（库废弃了你就得换）</li>
+</ul>
+<p>本章目标是"最小可对话 CLI"，引入 inquirer 违背"最小"原则。<code>readline</code> 是 Node.js 自带的，不增加任何依赖。</p>
+<h3 id="63-claude-code">6.3 Claude Code 真实选择<a class="headerlink" href="#63-claude-code" title="Permanent link">&para;</a></h3>
+<p>真实的 Claude Code 用的是更底层的 <code>ink</code>（React for CLI）+ 自定义输入处理。但<strong>外层骨架仍然是 while 循环 + 等待输入</strong>，和本章一样。学会 <code>readline</code> 版本后，看 ink 版本会容易得多——只是 UI 层换了，循环骨架没变。</p>
+<h3 id="64-inquirer">6.4 什么时候该换 inquirer<a class="headerlink" href="#64-inquirer" title="Permanent link">&para;</a></h3>
+<p>当你要做这些事时，readline 就不够用了：</p>
+<ul>
+<li>多选列表（让用户选几个文件）</li>
+<li>是/否确认（带默认值）</li>
+<li>密码输入（输入时不显示）</li>
+<li>自动补全</li>
+</ul>
+<p>Claude Code 在工具权限确认时就需要 yes/no，那时候再升级交互层。本章不需要，所以用最简的。</p>
+<hr />
+<h2 id="7">7. 环境变量配置原理<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
+<h3 id="71-dotenv">7.1 dotenv 做了什么<a class="headerlink" href="#71-dotenv" title="Permanent link">&para;</a></h3>
+<p><code>.env</code> 文件长这样：</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="nv">API_KEY</span><span class="o">=</span>sk-ant-xxx
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="nv">BASE_URL</span><span class="o">=</span>
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="nv">MODEL</span><span class="o">=</span>claude-sonnet-4-20250514
+</span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a><span class="nv">MAX_TOKENS</span><span class="o">=</span><span class="m">1024</span>
+</span></code></pre></div>
+<p><code>dotenv.config()</code> 做的事非常简单，伪代码：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">config</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">content</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="s2">".env"</span><span class="p">,</span><span class="w"> </span><span class="s2">"utf-8"</span><span class="p">);</span><span class="w">  </span><span class="c1">// 读文件</span>
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">line</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">content</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">"\n"</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w">           </span><span class="c1">// 逐行</span>
+</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">line</span><span class="p">.</span><span class="nx">startsWith</span><span class="p">(</span><span class="s2">"#"</span><span class="p">))</span><span class="w"> </span><span class="k">continue</span><span class="p">;</span><span class="w">               </span><span class="c1">// 跳过注释</span>
+</span><span id="__span-30-5"><a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">line</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="s2">"="</span><span class="p">))</span><span class="w"> </span><span class="k">continue</span><span class="p">;</span><span class="w">                </span><span class="c1">// 跳过空行</span>
+</span><span id="__span-30-6"><a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">key</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="nx">rest</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">line</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">"="</span><span class="p">);</span>
+</span><span id="__span-30-7"><a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">rest</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s2">"="</span><span class="p">).</span><span class="nx">trim</span><span class="p">();</span><span class="w">              </span><span class="c1">// 值可能含 =</span>
+</span><span id="__span-30-8"><a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a><span class="w">    </span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">[</span><span class="nx">key</span><span class="p">.</span><span class="nx">trim</span><span class="p">()]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">value</span><span class="p">;</span><span class="w">                  </span><span class="c1">// 写入 process.env</span>
+</span><span id="__span-30-9"><a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-30-10"><a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>就这么多。读文件、按行解析、写入 <code>process.env</code>。<strong>没有</strong>网络请求、<strong>没有</strong>加密、<strong>没有</strong>校验。</p>
+<p><strong>为什么用 <code>.env</code> 而不是直接 <code>export API_KEY=xxx</code>？</strong></p>
+<ul>
+<li>跨平台：Windows 没有 <code>export</code>，用 <code>.env</code> 文件所有系统一致。</li>
+<li>持久化：终端关了再开，环境变量没了，但 <code>.env</code> 文件还在。</li>
+<li>团队协作：<code>.env.example</code> 提交到 git，每个人复制一份填自己的 key。</li>
+<li>安全：<code>.env</code> 加进 <code>.gitignore</code>，不会误提交密钥。</li>
+</ul>
+<h3 id="72-baseurl">7.2 baseURL 切换原理<a class="headerlink" href="#72-baseurl" title="Permanent link">&para;</a></h3>
+<p>SDK 内部发起请求的代码大致是：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">create</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">baseURL</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">"/v1/messages"</span><span class="p">;</span><span class="w">  </span><span class="c1">// 拼接 URL</span>
+</span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-31-4"><a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a><span class="w">    </span><span class="nx">method</span><span class="o">:</span><span class="w"> </span><span class="s2">"POST"</span><span class="p">,</span>
+</span><span id="__span-31-5"><a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a><span class="w">    </span><span class="nx">headers</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"x-api-key"</span><span class="o">:</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">apiKey</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-31-6"><a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a><span class="w">    </span><span class="nx">body</span><span class="o">:</span><span class="w"> </span><span class="kt">JSON.stringify</span><span class="p">(</span><span class="nx">params</span><span class="p">),</span>
+</span><span id="__span-31-7"><a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a><span class="w">  </span><span class="p">});</span>
+</span><span id="__span-31-8"><a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><code>this.baseURL</code> 就是 <code>new Anthropic({ baseURL })</code> 时传的值。所以：</p>
+<ul>
+<li><code>baseURL = undefined</code> → SDK 用默认 <code>https://api.anthropic.com</code> → 请求发到 <code>https://api.anthropic.com/v1/messages</code></li>
+<li><code>baseURL = "https://api.deepseek.com/anthropic"</code> → 请求发到 <code>https://api.deepseek.com/anthropic/v1/messages</code></li>
+</ul>
+<p>DeepSeek 提供了一个 <strong>Anthropic 兼容</strong>的 API 端点，路径和参数格式跟 Anthropic 一模一样，只是域名不同。所以同一份代码，改一个环境变量就能切换供应商。这是"供应商中立的 API 设计"的一个简单例子。</p>
+<blockquote>
+<p><strong>教学提醒</strong>：不是所有模型供应商都提供 Anthropic 兼容端点。OpenAI、Google、阿里通义、智谱 GLM 都有自己的 API 格式，要换就得改代码。本章能切 DeepSeek 是因为 DeepSeek 主动做了兼容层。</p>
+</blockquote>
+<h3 id="73">7.3 为什么用环境变量而非硬编码<a class="headerlink" href="#73" title="Permanent link">&para;</a></h3>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="c1">// ❌ 硬编码</span>
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Anthropic</span><span class="p">({</span><span class="w"> </span><span class="nx">apiKey</span><span class="o">:</span><span class="w"> </span><span class="s2">"sk-ant-xxx"</span><span class="w"> </span><span class="p">});</span>
+</span><span id="__span-32-3"><a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a>
+</span><span id="__span-32-4"><a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a><span class="c1">// ✅ 环境变量</span>
+</span><span id="__span-32-5"><a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a><span class="kd">const</span><span class="w"> </span><span class="nx">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Anthropic</span><span class="p">({</span><span class="w"> </span><span class="nx">apiKey</span><span class="o">:</span><span class="w"> </span><span class="kt">process.env.API_KEY</span><span class="w"> </span><span class="p">});</span>
+</span></code></pre></div>
+<p>硬编码的问题：</p>
+<ol>
+<li><strong>安全</strong>：API Key 提交到 git 就泄露了。GitHub 有爬虫专门扫公开仓库里的 <code>sk-ant-</code> 开头字符串，扫到立刻被盗用。</li>
+<li><strong>灵活</strong>：开发用测试 key，生产用正式 key，硬编码要改代码才能切。</li>
+<li><strong>协作</strong>：每个人的 key 不同，硬编码没法多人协作。</li>
+</ol>
+<p>环境变量是 12-Factor App 的最佳实践之一，<strong>所有</strong>生产级应用都这么做。</p>
+<hr />
+<h2 id="8-stop_reason">8. stop_reason 的含义<a class="headerlink" href="#8-stop_reason" title="Permanent link">&para;</a></h2>
+<p>每次 API 响应里有个 <code>stop_reason</code> 字段，告诉客户端"模型为什么停了"。本章代码没显式读它，但理解它对 Ch2 至关重要。</p>
+<p><code>stop_reason</code> 有四个可能的值：</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>含义</th>
+<th>本章会发生吗</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>"end_turn"</code></td>
+<td>模型自然说完话了</td>
+<td>✅ 几乎总是这个</td>
+</tr>
+<tr>
+<td><code>"max_tokens"</code></td>
+<td>被 <code>max_tokens</code> 截断</td>
+<td>可能，如果输出太长</td>
+</tr>
+<tr>
+<td><code>"stop_sequence"</code></td>
+<td>遇到了自定义停止序列</td>
+<td>不会，本章没设</td>
+</tr>
+<tr>
+<td><code>"tool_use"</code></td>
+<td>模型想调工具，停下来等你执行</td>
+<td><strong>不会，本章没工具</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>本章</strong>：<code>stop_reason</code> 几乎总是 <code>"end_turn"</code>。模型说完话就停，客户端把响应加进 <code>messages</code>，回外层等下一个用户输入。</p>
+<p><strong>Ch2 之后</strong>：<code>stop_reason</code> 可能是 <code>"tool_use"</code>。这时模型<strong>没说完话</strong>，它输出的是"我想调 read_file 工具，参数是 {path: 'foo.txt'}"。客户端要：</p>
+<ol>
+<li>把模型的工具调用请求加进 <code>messages</code></li>
+<li>执行工具，拿到结果</li>
+<li>把结果加进 <code>messages</code></li>
+<li><strong>再次调 <code>client.messages.create()</code></strong>，让模型继续</li>
+</ol>
+<p>这就是内层 agentic loop 的来源——<code>stop_reason === "tool_use"</code> 时<strong>不回外层</strong>，继续调 LLM。</p>
+<p><strong>本章为什么没读 stop_reason？</strong> 因为没有工具，模型只可能 <code>end_turn</code> 或 <code>max_tokens</code>，两种情况都是"输出文本，回外层等用户"。读不读都一样。Ch2 必须读，因为要分支。</p>
+<blockquote>
+<p><strong>教学铺垫</strong>：现在记住一句话——<strong><code>stop_reason</code> 决定循环往哪走</strong>。<code>end_turn</code> 回外层，<code>tool_use</code> 留内层。这是 Agent Loop 的核心控制流。</p>
+</blockquote>
+<hr />
+<h2 id="9">9. 完整运行流程时序图<a class="headerlink" href="#9" title="Permanent link">&para;</a></h2>
+<p>下面是一次完整运行的时间线，从启动到两轮对话到退出：</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>时间 →
+</span><span id="__span-33-2"><a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>
+</span><span id="__span-33-3"><a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a>[启动]
+</span><span id="__span-33-4"><a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a>  │
+</span><span id="__span-33-5"><a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a>  ├─ dotenv.config()                    读 .env，写入 process.env
+</span><span id="__span-33-6"><a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a>  ├─ new Anthropic({apiKey, baseURL})   创建客户端（不发请求）
+</span><span id="__span-33-7"><a id="__codelineno-33-7" name="__codelineno-33-7" href="#__codelineno-33-7"></a>  ├─ messages = []                      初始化空数组
+</span><span id="__span-33-8"><a id="__codelineno-33-8" name="__codelineno-33-8" href="#__codelineno-33-8"></a>  ├─ readline.createInterface(...)      绑定 stdin/stdout
+</span><span id="__span-33-9"><a id="__codelineno-33-9" name="__codelineno-33-9" href="#__codelineno-33-9"></a>  ├─ main() 进入
+</span><span id="__span-33-10"><a id="__codelineno-33-10" name="__codelineno-33-10" href="#__codelineno-33-10"></a>  ├─ console.log(欢迎语)
+</span><span id="__span-33-11"><a id="__codelineno-33-11" name="__codelineno-33-11" href="#__codelineno-33-11"></a>  │
+</span><span id="__span-33-12"><a id="__codelineno-33-12" name="__codelineno-33-12" href="#__codelineno-33-12"></a>  ├─ while (true) ──────────────────────────────────────┐
+</span><span id="__span-33-13"><a id="__codelineno-33-13" name="__codelineno-33-13" href="#__codelineno-33-13"></a>  │                                                     │
+</span><span id="__span-33-14"><a id="__codelineno-33-14" name="__codelineno-33-14" href="#__codelineno-33-14"></a>  │  [第 1 轮]                                          │
+</span><span id="__span-33-15"><a id="__codelineno-33-15" name="__codelineno-33-15" href="#__codelineno-33-15"></a>  │   ├─ await prompt("\n&gt; ")          阻塞等用户输入   │
+</span><span id="__span-33-16"><a id="__codelineno-33-16" name="__codelineno-33-16" href="#__codelineno-33-16"></a>  │   │   └─ 用户输入 "你好" + 回车                     │
+</span><span id="__span-33-17"><a id="__codelineno-33-17" name="__codelineno-33-17" href="#__codelineno-33-17"></a>  │   ├─ userInput = "你好"                              │
+</span><span id="__span-33-18"><a id="__codelineno-33-18" name="__codelineno-33-18" href="#__codelineno-33-18"></a>  │   ├─ messages.push({role:"user", content:"你好"})   │
+</span><span id="__span-33-19"><a id="__codelineno-33-19" name="__codelineno-33-19" href="#__codelineno-33-19"></a>  │   │   messages = [ {user:"你好"} ]                  │
+</span><span id="__span-33-20"><a id="__codelineno-33-20" name="__codelineno-33-20" href="#__codelineno-33-20"></a>  │   ├─ client.messages.create({model, messages})      │
+</span><span id="__span-33-21"><a id="__codelineno-33-21" name="__codelineno-33-21" href="#__codelineno-33-21"></a>  │   │   └─ HTTP POST → Anthropic                     │
+</span><span id="__span-33-22"><a id="__codelineno-33-22" name="__codelineno-33-22" href="#__codelineno-33-22"></a>  │   │       { model, max_tokens,                     │
+</span><span id="__span-33-23"><a id="__codelineno-33-23" name="__codelineno-33-23" href="#__codelineno-33-23"></a>  │   │         messages: [{user:"你好"}] }            │
+</span><span id="__span-33-24"><a id="__codelineno-33-24" name="__codelineno-33-24" href="#__codelineno-33-24"></a>  │   │   ← 响应: { content: [{text:"你好！"}],        │
+</span><span id="__span-33-25"><a id="__codelineno-33-25" name="__codelineno-33-25" href="#__codelineno-33-25"></a>  │   │              stop_reason: "end_turn" }          │
+</span><span id="__span-33-26"><a id="__codelineno-33-26" name="__codelineno-33-26" href="#__codelineno-33-26"></a>  │   ├─ text = "你好！"                                 │
+</span><span id="__span-33-27"><a id="__codelineno-33-27" name="__codelineno-33-27" href="#__codelineno-33-27"></a>  │   ├─ messages.push({role:"assistant", content:[...]})│
+</span><span id="__span-33-28"><a id="__codelineno-33-28" name="__codelineno-33-28" href="#__codelineno-33-28"></a>  │   │   messages = [ {user:"你好"},                  │
+</span><span id="__span-33-29"><a id="__codelineno-33-29" name="__codelineno-33-29" href="#__codelineno-33-29"></a>  │   │                 {assistant:"你好！"} ]          │
+</span><span id="__span-33-30"><a id="__codelineno-33-30" name="__codelineno-33-30" href="#__codelineno-33-30"></a>  │   └─ console.log("你好！")         终端显示          │
+</span><span id="__span-33-31"><a id="__codelineno-33-31" name="__codelineno-33-31" href="#__codelineno-33-31"></a>  │                                                     │
+</span><span id="__span-33-32"><a id="__codelineno-33-32" name="__codelineno-33-32" href="#__codelineno-33-32"></a>  │  [第 2 轮]                                          │
+</span><span id="__span-33-33"><a id="__codelineno-33-33" name="__codelineno-33-33" href="#__codelineno-33-33"></a>  │   ├─ await prompt("\n&gt; ")                           │
+</span><span id="__span-33-34"><a id="__codelineno-33-34" name="__codelineno-33-34" href="#__codelineno-33-34"></a>  │   │   └─ 用户输入 "刚才我说了什么" + 回车            │
+</span><span id="__span-33-35"><a id="__codelineno-33-35" name="__codelineno-33-35" href="#__codelineno-33-35"></a>  │   ├─ messages.push({role:"user", content:"刚才..."})│
+</span><span id="__span-33-36"><a id="__codelineno-33-36" name="__codelineno-33-36" href="#__codelineno-33-36"></a>  │   │   messages = [ {user:"你好"},                  │
+</span><span id="__span-33-37"><a id="__codelineno-33-37" name="__codelineno-33-37" href="#__codelineno-33-37"></a>  │   │                 {assistant:"你好！"},           │
+</span><span id="__span-33-38"><a id="__codelineno-33-38" name="__codelineno-33-38" href="#__codelineno-33-38"></a>  │   │                 {user:"刚才我说了什么"} ]       │
+</span><span id="__span-33-39"><a id="__codelineno-33-39" name="__codelineno-33-39" href="#__codelineno-33-39"></a>  │   ├─ client.messages.create({model, messages})      │
+</span><span id="__span-33-40"><a id="__codelineno-33-40" name="__codelineno-33-40" href="#__codelineno-33-40"></a>  │   │   └─ HTTP POST → Anthropic                     │
+</span><span id="__span-33-41"><a id="__codelineno-33-41" name="__codelineno-33-41" href="#__codelineno-33-41"></a>  │   │       messages 里带完整 3 条历史                │
+</span><span id="__span-33-42"><a id="__codelineno-33-42" name="__codelineno-33-42" href="#__codelineno-33-42"></a>  │   │   ← 响应: "你说了你好"                          │
+</span><span id="__span-33-43"><a id="__codelineno-33-43" name="__codelineno-33-43" href="#__codelineno-33-43"></a>  │   ├─ messages.push({role:"assistant", ...})         │
+</span><span id="__span-33-44"><a id="__codelineno-33-44" name="__codelineno-33-44" href="#__codelineno-33-44"></a>  │   └─ console.log("你说了你好")                      │
+</span><span id="__span-33-45"><a id="__codelineno-33-45" name="__codelineno-33-45" href="#__codelineno-33-45"></a>  │                                                     │
+</span><span id="__span-33-46"><a id="__codelineno-33-46" name="__codelineno-33-46" href="#__codelineno-33-46"></a>  │  [退出]                                             │
+</span><span id="__span-33-47"><a id="__codelineno-33-47" name="__codelineno-33-47" href="#__codelineno-33-47"></a>  │   ├─ await prompt("\n&gt; ")                           │
+</span><span id="__span-33-48"><a id="__codelineno-33-48" name="__codelineno-33-48" href="#__codelineno-33-48"></a>  │   │   └─ 用户输入 "exit" + 回车                     │
+</span><span id="__span-33-49"><a id="__codelineno-33-49" name="__codelineno-33-49" href="#__codelineno-33-49"></a>  │   ├─ break                                          │
+</span><span id="__span-33-50"><a id="__codelineno-33-50" name="__codelineno-33-50" href="#__codelineno-33-50"></a>  │   └─ 跳出 while ────────────────────────────────────┘
+</span><span id="__span-33-51"><a id="__codelineno-33-51" name="__codelineno-33-51" href="#__codelineno-33-51"></a>  │
+</span><span id="__span-33-52"><a id="__codelineno-33-52" name="__codelineno-33-52" href="#__codelineno-33-52"></a>  ├─ console.log("再见！")
+</span><span id="__span-33-53"><a id="__codelineno-33-53" name="__codelineno-33-53" href="#__codelineno-33-53"></a>  ├─ rl.close()
+</span><span id="__span-33-54"><a id="__codelineno-33-54" name="__codelineno-33-54" href="#__codelineno-33-54"></a>  └─ 进程退出
+</span></code></pre></div>
+<p><strong>关键观察</strong>：</p>
+<ol>
+<li><strong>每次请求都带完整 messages</strong>：第 2 轮的 HTTP 请求 body 里有 3 条消息（1 个 user + 1 个 assistant + 1 个 user），不是只带第 2 轮的输入。</li>
+<li><strong>messages 只增不减</strong>：从 <code>[]</code> 长到 4 条（2 轮 × 2 条），从不删除。</li>
+<li><strong>客户端是单线程顺序执行</strong>：<code>await</code> 让每一步都等上一步完成，没有并发。这是教学简化，生产代码可能并发处理多个用户，但骨架一样。</li>
+</ol>
+<hr />
+<h2 id="10">10. 常见陷阱<a class="headerlink" href="#10" title="Permanent link">&para;</a></h2>
+<p>按踩坑频率从高到低排：</p>
+<h3 id="101-api-key">10.1 API Key 忘填或填错<a class="headerlink" href="#101-api-key" title="Permanent link">&para;</a></h3>
+<p><strong>症状</strong>：<code>[错误] 401 Unauthorized</code> 或 <code>[错误] Authentication failed</code>。</p>
+<p><strong>排查</strong>：</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="c1"># 1. 检查 .env 文件存在</span>
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>ls<span class="w"> </span>.env
+</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a>
+</span><span id="__span-34-4"><a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a><span class="c1"># 2. 检查 .env 内容（注意别把 key 提交到 git）</span>
+</span><span id="__span-34-5"><a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a>cat<span class="w"> </span>.env
+</span><span id="__span-34-6"><a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a><span class="c1"># 应该有：API_KEY=sk-ant-xxx（不是空的）</span>
+</span><span id="__span-34-7"><a id="__codelineno-34-7" name="__codelineno-34-7" href="#__codelineno-34-7"></a>
+</span><span id="__span-34-8"><a id="__codelineno-34-8" name="__codelineno-34-8" href="#__codelineno-34-8"></a><span class="c1"># 3. 检查 .env 在 .gitignore 里</span>
+</span><span id="__span-34-9"><a id="__codelineno-34-9" name="__codelineno-34-9" href="#__codelineno-34-9"></a>grep<span class="w"> </span><span class="s2">".env"</span><span class="w"> </span>.gitignore
+</span></code></pre></div>
+<p><strong>常见原因</strong>：</p>
+<ul>
+<li>没复制 <code>.env.example</code> 到 <code>.env</code>，直接编辑了 example 文件（dotenv 默认读 <code>.env</code>，不读 <code>.env.example</code>）。</li>
+<li><code>API_KEY=</code> 后面有空格，dotenv 把空格也算进值里。</li>
+<li>用了 DeepSeek 的 key 但 <code>BASE_URL</code> 没切，或反过来。</li>
+</ul>
+<h3 id="102-messages">10.2 messages 格式错误<a class="headerlink" href="#102-messages" title="Permanent link">&para;</a></h3>
+<p><strong>症状</strong>：<code>[错误] 400 Bad Request</code> + <code>messages: expected at least 1 message</code>。</p>
+<p><strong>原因</strong>：</p>
+<ul>
+<li><code>messages</code> 是空数组就调 <code>create()</code>。本章代码 <code>push</code> 在 <code>create</code> 之前，不会出这个错，但改代码时容易把顺序弄反。</li>
+<li><code>role</code> 拼错，如 <code>"User"</code>（大写 U）。API 严格要求小写。</li>
+<li><code>content</code> 是 <code>null</code> 或 <code>undefined</code>。空字符串 <code>""</code> 可以，但 <code>null</code> 不行。</li>
+<li>连续两条 <code>role: "user"</code> 没隔 <code>assistant</code>。API 要求 user/assistant 交替（第一条必须是 user）。</li>
+</ul>
+<h3 id="103-asyncawait">10.3 async/await 理解不到位<a class="headerlink" href="#103-asyncawait" title="Permanent link">&para;</a></h3>
+<p><strong>症状 1</strong>：<code>Promise { &lt;pending&gt; }</code> 打印出来，而不是实际值。</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="c1">// ❌ 忘了 await</span>
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">userInput</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">prompt</span><span class="p">(</span><span class="s2">"\n&gt; "</span><span class="p">);</span><span class="w">  </span><span class="c1">// 这是 Promise，不是字符串</span>
+</span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">userInput</span><span class="p">);</span><span class="w">            </span><span class="c1">// 打印 Promise { &lt;pending&gt; }</span>
+</span><span id="__span-35-4"><a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a>
+</span><span id="__span-35-5"><a id="__codelineno-35-5" name="__codelineno-35-5" href="#__codelineno-35-5"></a><span class="c1">// ✅</span>
+</span><span id="__span-35-6"><a id="__codelineno-35-6" name="__codelineno-35-6" href="#__codelineno-35-6"></a><span class="kd">const</span><span class="w"> </span><span class="nx">userInput</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">prompt</span><span class="p">(</span><span class="s2">"\n&gt; "</span><span class="p">);</span>
+</span></code></pre></div>
+<p><strong>症状 2</strong>：<code>SyntaxError: await is only valid in async functions</code>。</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="c1">// ❌ 在非 async 函数里用 await</span>
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a><span class="kd">function</span><span class="w"> </span><span class="nx">foo</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-36-3"><a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">prompt</span><span class="p">(</span><span class="s2">"&gt; "</span><span class="p">);</span><span class="w">  </span><span class="c1">// 报错</span>
+</span><span id="__span-36-4"><a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a><span class="p">}</span>
+</span><span id="__span-36-5"><a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a>
+</span><span id="__span-36-6"><a id="__codelineno-36-6" name="__codelineno-36-6" href="#__codelineno-36-6"></a><span class="c1">// ✅</span>
+</span><span id="__span-36-7"><a id="__codelineno-36-7" name="__codelineno-36-7" href="#__codelineno-36-7"></a><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">foo</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-36-8"><a id="__codelineno-36-8" name="__codelineno-36-8" href="#__codelineno-36-8"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">prompt</span><span class="p">(</span><span class="s2">"&gt; "</span><span class="p">);</span>
+</span><span id="__span-36-9"><a id="__codelineno-36-9" name="__codelineno-36-9" href="#__codelineno-36-9"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>症状 3</strong>：<code>Uncaught Promise rejection</code>，进程崩了。</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="c1">// ❌ async 函数里 throw 没 catch</span>
+</span><span id="__span-37-2"><a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-37-3"><a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a><span class="w">  </span><span class="k">throw</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="p">(</span><span class="s2">"oops"</span><span class="p">);</span><span class="w">  </span><span class="c1">// 这个错误没人接，进程崩</span>
+</span><span id="__span-37-4"><a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a><span class="p">}</span>
+</span><span id="__span-37-5"><a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a><span class="nx">main</span><span class="p">();</span>
+</span><span id="__span-37-6"><a id="__codelineno-37-6" name="__codelineno-37-6" href="#__codelineno-37-6"></a>
+</span><span id="__span-37-7"><a id="__codelineno-37-7" name="__codelineno-37-7" href="#__codelineno-37-7"></a><span class="c1">// ✅ 要么 try/catch，要么 main().catch(...)</span>
+</span><span id="__span-37-8"><a id="__codelineno-37-8" name="__codelineno-37-8" href="#__codelineno-37-8"></a><span class="nx">main</span><span class="p">().</span><span class="k">catch</span><span class="p">(</span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">);</span>
+</span></code></pre></div>
+<p>本章代码用 <code>try/catch</code> 包了 <code>create()</code>，所以 API 错误不会崩进程。但 <code>main()</code> 本身的错误（如 <code>dotenv.config()</code> 失败）没接，会崩。教学简化，生产代码应该加 <code>main().catch(...)</code>。</p>
+<h3 id="104-max_tokens">10.4 max_tokens 太小<a class="headerlink" href="#104-max_tokens" title="Permanent link">&para;</a></h3>
+<p><strong>症状</strong>：模型话说到一半被截断，<code>stop_reason: "max_tokens"</code>。</p>
+<p><strong>原因</strong>：本章默认 <code>MAX_TOKENS=1024</code>，约 500-1000 字。让模型写长文章会被截断。</p>
+<p><strong>解决</strong>：改 <code>.env</code> 里 <code>MAX_TOKENS=4096</code> 或更大。但注意：越大越贵越慢。</p>
+<h3 id="105">10.5 网络代理问题<a class="headerlink" href="#105" title="Permanent link">&para;</a></h3>
+<p><strong>症状</strong>：<code>[错误] fetch failed</code> 或超时。</p>
+<p><strong>原因</strong>：Anthropic API 在国外，国内访问可能需要代理。SDK 默认不走代理。</p>
+<p><strong>解决</strong>：设环境变量 <code>HTTPS_PROXY=http://127.0.0.1:7890</code>（或你代理的端口），SDK 底层的 fetch 会读这个变量。或者用 DeepSeek 等国内兼容端点。</p>
+<h3 id="106">10.6 中文输入乱码<a class="headerlink" href="#106" title="Permanent link">&para;</a></h3>
+<p><strong>症状</strong>：终端里中文显示成 <code>??</code> 或方块。</p>
+<p><strong>原因</strong>：Windows 默认终端编码不是 UTF-8。</p>
+<p><strong>解决</strong>：</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="c1"># PowerShell</span>
+</span><span id="__span-38-2"><a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a>chcp<span class="w"> </span><span class="m">65001</span><span class="w">  </span><span class="c1"># 切到 UTF-8</span>
+</span><span id="__span-38-3"><a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a>
+</span><span id="__span-38-4"><a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a><span class="c1"># 或在 .env 里加（如果用 cmd）</span>
+</span><span id="__span-38-5"><a id="__codelineno-38-5" name="__codelineno-38-5" href="#__codelineno-38-5"></a><span class="nv">CHCP</span><span class="o">=</span><span class="m">65001</span>
+</span></code></pre></div>
+<p>或直接用 Windows Terminal（默认 UTF-8）。</p>
+<h3 id="107-ctrlc">10.7 Ctrl+C 退出时残留<a class="headerlink" href="#107-ctrlc" title="Permanent link">&para;</a></h3>
+<p><strong>症状</strong>：Ctrl+C 退出后，终端提示符显示异常。</p>
+<p><strong>原因</strong>：<code>readline</code> 没正常关闭。</p>
+<p><strong>解决</strong>：本章代码 <code>rl.close()</code> 只在 <code>break</code> 后调，Ctrl+C 是强杀，没机会调。生产代码应该监听 <code>SIGINT</code>：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="nx">process</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">"SIGINT"</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-39-2"><a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a><span class="w">  </span><span class="nx">rl</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+</span><span id="__span-39-3"><a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a><span class="w">  </span><span class="nx">process</span><span class="p">.</span><span class="nx">exit</span><span class="p">(</span><span class="mf">0</span><span class="p">);</span>
+</span><span id="__span-39-4"><a id="__codelineno-39-4" name="__codelineno-39-4" href="#__codelineno-39-4"></a><span class="p">});</span>
+</span></code></pre></div>
+<p>教学向省略了，但要知道。</p>
+<hr />
+<h2 id="11-claude-code">11. 与真实 Claude Code 对比<a class="headerlink" href="#11-claude-code" title="Permanent link">&para;</a></h2>
+<p>真实 Claude Code 是 Anthropic 官方的 CLI Agent，本章是它的最简骨架。下表是详细对比：</p>
+<table>
+<thead>
+<tr>
+<th>方面</th>
+<th>本章（ch01）</th>
+<th>真实 Claude Code</th>
+<th>差距</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>代码行数</strong></td>
+<td>61 行</td>
+<td>数万行</td>
+<td>100×</td>
+</tr>
+<tr>
+<td><strong>工具调用</strong></td>
+<td>无</td>
+<td>10+ 个工具（Read/Write/Bash/Grep/Glob/Edit/...）</td>
+<td>Ch2 起</td>
+</tr>
+<tr>
+<td><strong>流式输出</strong></td>
+<td>无，等全部生成完再打印</td>
+<td>流式逐字输出，边生成边显示</td>
+<td>Ch3</td>
+</tr>
+<tr>
+<td><strong>System Prompt</strong></td>
+<td>无</td>
+<td>数千字精心设计，含工具说明、权限规则、风格指南</td>
+<td>Ch4</td>
+</tr>
+<tr>
+<td><strong>上下文管理</strong></td>
+<td>无限增长，直到 token 爆</td>
+<td>token 计数 + 自动压缩 + 滑动窗口</td>
+<td>Ch5</td>
+</tr>
+<tr>
+<td><strong>权限确认</strong></td>
+<td>无</td>
+<td>工具执行前问用户 yes/no</td>
+<td>Ch6</td>
+</tr>
+<tr>
+<td><strong>多行输入</strong></td>
+<td>不支持，回车即提交</td>
+<td>支持，三引号或反斜杠续行</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>历史持久化</strong></td>
+<td>无，关掉就丢</td>
+<td>可选保存到磁盘</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>错误重试</strong></td>
+<td>无，错误就跳过</td>
+<td>指数退避重试</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>并发</strong></td>
+<td>单请求</td>
+<td>多工具可并发</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>UI</strong></td>
+<td>纯文本</td>
+<td>ink + 语法高亮 + 进度条</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>配置</strong></td>
+<td><code>.env</code> 4 个变量</td>
+<td>多个配置文件 + 命令行参数</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>模型选择</strong></td>
+<td>单一模型</td>
+<td>可按任务选不同模型</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><strong>但核心骨架完全一致</strong>：</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>本章：     messages 数组 + while 循环 + client.messages.create()
+</span><span id="__span-40-2"><a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>Claude Code：messages 数组 + while 循环 + client.messages.create() + 一堆增强
+</span></code></pre></div>
+<p>Claude Code 的 <code>query()</code> 函数本质就是这个 <code>while</code> 循环的增强版。增强的是：</p>
+<ol>
+<li><strong>循环内分支多了</strong>：<code>stop_reason === "tool_use"</code> 时进内层循环，执行工具，继续调 LLM。</li>
+<li><strong>messages 操作多了</strong>：压缩、截断、序列化、反序列化。</li>
+<li><strong>请求参数多了</strong>：<code>system</code>、<code>tools</code>、<code>stream: true</code>、<code>metadata</code> 等。</li>
+<li><strong>错误处理复杂了</strong>：重试、降级、用户提示。</li>
+</ol>
+<p><strong>但骨架没变</strong>。这就是为什么这一章值得花时间彻底看懂——后面所有章节都是在<strong>这个骨架上加东西</strong>，不会推翻重来。</p>
+<blockquote>
+<p><strong>心智模型</strong>：把本章的 61 行代码想象成一个"光秃秃的衣架"。后面 Ch2 加工具是挂一件外套，Ch3 加流式是挂一条裤子，Ch4 加 system prompt 是挂一顶帽子。衣架本身不动，挂的东西越来越多。最后挂满了就是 Claude Code。</p>
+</blockquote>
+<hr />
+<h2 id="12">12. 下一章预告<a class="headerlink" href="#12" title="Permanent link">&para;</a></h2>
+<p>现在模型只能"说话"，不能"做事"。你问它"当前目录有哪些文件？"，它会<strong>编造</strong>一个答案，因为它<strong>看不到</strong>你的文件系统。</p>
+<p>下一章（Ch2）加入两个工具：<code>read_file</code> 和 <code>write_file</code>，让模型能真正读写文件——从聊天机器人变成 Agent。</p>
+<p><strong>关键概念</strong>：</p>
+<ol>
+<li><strong>tool_use 协议</strong>：模型怎么"说"它想调工具？答案是在 <code>content</code> 数组里输出一个 <code>{ type: "tool_use", name: "read_file", input: { path: "foo.txt" } }</code> 块。</li>
+<li><strong>tool_result 块</strong>：你执行完工具，要把结果以 <code>{ type: "tool_result", tool_use_id: "...", content: "文件内容" }</code> 形式加回 <code>messages</code>。</li>
+<li><strong>内层 agentic loop</strong>：<code>stop_reason === "tool_use"</code> 时不回外层，执行完工具继续调 LLM，直到 <code>stop_reason === "end_turn"</code>。</li>
+<li><strong>tools 参数</strong>：<code>client.messages.create()</code> 加一个 <code>tools</code> 参数，告诉模型有哪些工具可用、参数 schema 是什么。</li>
+</ol>
+<p>下一章代码会在本章基础上加约 50 行，达到 100 行左右。骨架完全不变，只是 <code>while</code> 循环里多一个 <code>if</code> 分支。</p>
+<hr />
+<h2 id="13">13. 动手练习<a class="headerlink" href="#13" title="Permanent link">&para;</a></h2>
+<p>按难度递增排列。建议全做完再进 Ch2。</p>
+<h3 id="15">练习 1：改欢迎语（5 分钟）<a class="headerlink" href="#15" title="Permanent link">&para;</a></h3>
+<p><strong>任务</strong>：把欢迎语从</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>=== Mini Claude Code - Ch1 (minimal) ===
+</span><span id="__span-41-2"><a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a>模型: claude-sonnet-4-20250514
+</span><span id="__span-41-3"><a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a>输入 "exit" 退出
+</span></code></pre></div>
+<p>改成</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>🤖 Mini Claude Code
+</span><span id="__span-42-2"><a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a>📌 模型: claude-sonnet-4-20250514
+</span><span id="__span-42-3"><a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a>💡 提示: 输入 exit 退出，输入 clear 清空对话
+</span></code></pre></div>
+<p><strong>目标</strong>：熟悉代码结构，找到改字符串的位置。</p>
+<p><strong>延伸</strong>：再加一个 <code>clear</code> 命令，把 <code>messages</code> 数组清空（<code>messages.length = 0</code>），实现"重新开始对话"。</p>
+<h3 id="2-token-10">练习 2：打印 token 用量（10 分钟）<a class="headerlink" href="#2-token-10" title="Permanent link">&para;</a></h3>
+<p><strong>任务</strong>：每次 API 响应后，打印本次消耗的 token 数。</p>
+<p><strong>提示</strong>：<code>response.usage</code> 是 <code>{ input_tokens, output_tokens }</code>。在 <code>console.log(text)</code> 后加：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`  [tokens: in=</span><span class="si">${</span><span class="nx">response</span><span class="p">.</span><span class="nx">usage</span><span class="p">.</span><span class="nx">input_tokens</span><span class="si">}</span><span class="sb">, out=</span><span class="si">${</span><span class="nx">response</span><span class="p">.</span><span class="nx">usage</span><span class="p">.</span><span class="nx">output_tokens</span><span class="si">}</span><span class="sb">]`</span><span class="p">);</span>
+</span></code></pre></div>
+<p><strong>目标</strong>：直观看到"带完整历史"的代价——第 N 轮的 <code>input_tokens</code> 会比第 1 轮大很多。</p>
+<p><strong>思考</strong>：跑 10 轮对话后，<code>input_tokens</code> 增长了多少倍？这就是 Ch5 上下文压缩要解决的问题。</p>
+<h3 id="3-deepseek10">练习 3：切换到 DeepSeek（10 分钟）<a class="headerlink" href="#3-deepseek10" title="Permanent link">&para;</a></h3>
+<p><strong>任务</strong>：注册一个 DeepSeek 账号（https://platform.deepseek.com），拿到 API Key，改 <code>.env</code>：</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a><span class="nv">API_KEY</span><span class="o">=</span>sk-xxx<span class="w">          </span><span class="c1"># DeepSeek 的 key</span>
+</span><span id="__span-44-2"><a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a><span class="nv">BASE_URL</span><span class="o">=</span>https://api.deepseek.com/anthropic
+</span><span id="__span-44-3"><a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a><span class="nv">MODEL</span><span class="o">=</span>deepseek-chat
+</span></code></pre></div>
+<p>跑同一份代码，验证能正常对话。</p>
+<p><strong>目标</strong>：理解 baseURL 切换原理——同一份代码，不同供应商。</p>
+<p><strong>思考</strong>：对比 Claude 和 DeepSeek 的回答风格、速度、价格。为什么 Claude Code 选择默认用 Claude？</p>
+<h3 id="4-system-prompt15">练习 4：加 system prompt（15 分钟）<a class="headerlink" href="#4-system-prompt15" title="Permanent link">&para;</a></h3>
+<p><strong>任务</strong>：在 <code>client.messages.create()</code> 调用里加一个 <code>system</code> 参数：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span>
+</span><span id="__span-45-2"><a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a><span class="w">  </span><span class="nx">model</span><span class="p">,</span>
+</span><span id="__span-45-3"><a id="__codelineno-45-3" name="__codelineno-45-3" href="#__codelineno-45-3"></a><span class="w">  </span><span class="nx">max_tokens</span><span class="o">:</span><span class="w"> </span><span class="kt">maxTokens</span><span class="p">,</span>
+</span><span id="__span-45-4"><a id="__codelineno-45-4" name="__codelineno-45-4" href="#__codelineno-45-4"></a><span class="w">  </span><span class="nx">system</span><span class="o">:</span><span class="w"> </span><span class="s2">"你是一个毒舌但有用的编程助手。每次回答前先吐槽一句，再给答案。"</span><span class="p">,</span>
+</span><span id="__span-45-5"><a id="__codelineno-45-5" name="__codelineno-45-5" href="#__codelineno-45-5"></a><span class="w">  </span><span class="nx">messages</span><span class="p">,</span>
+</span><span id="__span-45-6"><a id="__codelineno-45-6" name="__codelineno-45-6" href="#__codelineno-45-6"></a><span class="p">});</span>
+</span></code></pre></div>
+<p><strong>目标</strong>：理解 system prompt 不在 <code>messages</code> 数组里，是单独的字段。它对每次请求都生效，但不算"对话历史"。</p>
+<p><strong>思考</strong>：system prompt 会不会随着轮数增加被"忘掉"？为什么？（答：不会，因为每次请求都带同一个 system 字段，它是请求参数，不是历史的一部分。）</p>
+<h3 id="5-exit-20">练习 5：实现 "exit" 时保存对话（20 分钟）<a class="headerlink" href="#5-exit-20" title="Permanent link">&para;</a></h3>
+<p><strong>任务</strong>：用户输入 <code>exit</code> 时，把 <code>messages</code> 数组序列化成 JSON 写到 <code>conversation.json</code>：</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a><span class="k">import</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">fs</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"fs"</span><span class="p">;</span>
+</span><span id="__span-46-2"><a id="__codelineno-46-2" name="__codelineno-46-2" href="#__codelineno-46-2"></a>
+</span><span id="__span-46-3"><a id="__codelineno-46-3" name="__codelineno-46-3" href="#__codelineno-46-3"></a><span class="c1">// 在 break 之前</span>
+</span><span id="__span-46-4"><a id="__codelineno-46-4" name="__codelineno-46-4" href="#__codelineno-46-4"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">userInput</span><span class="p">.</span><span class="nx">trim</span><span class="p">()</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">"exit"</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-46-5"><a id="__codelineno-46-5" name="__codelineno-46-5" href="#__codelineno-46-5"></a><span class="w">  </span><span class="nx">fs</span><span class="p">.</span><span class="nx">writeFileSync</span><span class="p">(</span><span class="s2">"conversation.json"</span><span class="p">,</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">messages</span><span class="p">,</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">));</span>
+</span><span id="__span-46-6"><a id="__codelineno-46-6" name="__codelineno-46-6" href="#__codelineno-46-6"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"对话已保存到 conversation.json"</span><span class="p">);</span>
+</span><span id="__span-46-7"><a id="__codelineno-46-7" name="__codelineno-46-7" href="#__codelineno-46-7"></a><span class="w">  </span><span class="k">break</span><span class="p">;</span>
+</span><span id="__span-46-8"><a id="__codelineno-46-8" name="__codelineno-46-8" href="#__codelineno-46-8"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>延伸</strong>：启动时检查 <code>conversation.json</code> 是否存在，存在就加载到 <code>messages</code>，实现"继续上次对话"。</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-47-1"><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">fs</span><span class="p">.</span><span class="nx">existsSync</span><span class="p">(</span><span class="s2">"conversation.json"</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-47-2"><a id="__codelineno-47-2" name="__codelineno-47-2" href="#__codelineno-47-2"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">saved</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="s2">"conversation.json"</span><span class="p">,</span><span class="w"> </span><span class="s2">"utf-8"</span><span class="p">));</span>
+</span><span id="__span-47-3"><a id="__codelineno-47-3" name="__codelineno-47-3" href="#__codelineno-47-3"></a><span class="w">  </span><span class="nx">messages</span><span class="p">.</span><span class="nx">push</span><span class="p">(...</span><span class="nx">saved</span><span class="p">);</span>
+</span><span id="__span-47-4"><a id="__codelineno-47-4" name="__codelineno-47-4" href="#__codelineno-47-4"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`已加载 </span><span class="si">${</span><span class="nx">saved</span><span class="p">.</span><span class="nx">length</span><span class="si">}</span><span class="sb"> 条历史消息`</span><span class="p">);</span>
+</span><span id="__span-47-5"><a id="__codelineno-47-5" name="__codelineno-47-5" href="#__codelineno-47-5"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>目标</strong>：亲手验证"messages 数组就是对话的全部状态"——把它存到文件、再从文件读回来，对话能无缝继续。没有任何"会话 ID"或"服务端状态"参与。</p>
+<p><strong>思考</strong>：如果两个不同的 <code>conversation.json</code> 文件，加载不同的一个，对话内容就不同。这是不是证明了"对话状态 100% 在客户端"？</p>
+<hr />
+<h2 id="_2">附录：本章关键概念速查<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>概念</th>
+<th>一句话解释</th>
+<th>在哪节详讲</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SDK</td>
+<td>HTTP API 的语法糖封装</td>
+<td>§2.1</td>
+</tr>
+<tr>
+<td>messages 数组</td>
+<td>对话的全部状态，唯一需要维护的变量</td>
+<td>§2.2, §3.2</td>
+</tr>
+<tr>
+<td>无状态</td>
+<td>API 服务端不记得任何历史，每次请求要带完整 messages</td>
+<td>§2.3, §3.1</td>
+</tr>
+<tr>
+<td>Agent Loop 外层</td>
+<td><code>while (true)</code> 等用户输入、调 API、输出结果</td>
+<td>§3.4, §5.8</td>
+</tr>
+<tr>
+<td>Agent Loop 内层</td>
+<td><code>stop_reason === "tool_use"</code> 时执行工具继续调 LLM，Ch2 才有</td>
+<td>§3.4, §8</td>
+</tr>
+<tr>
+<td>baseURL 切换</td>
+<td>改一个环境变量换供应商，靠的是 SDK 把 baseURL 拼进请求 URL</td>
+<td>§7.2</td>
+</tr>
+<tr>
+<td>stop_reason</td>
+<td>模型为什么停，决定循环往哪走</td>
+<td>§8</td>
+</tr>
+<tr>
+<td>dotenv</td>
+<td>把 <code>.env</code> 文件读进 <code>process.env</code>，仅此而已</td>
+<td>§7.1</td>
+</tr>
+<tr>
+<td>readline</td>
+<td>Node.js 内置命令行交互，监听 stdin 的 line 事件</td>
+<td>§5.6, §6</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_3">附录：扩展阅读<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Anthropic API 文档</strong>：https://docs.anthropic.com/en/api/messages — 官方 API 参考，所有参数的权威定义。</li>
+<li><strong>Anthropic Cookbook</strong>：https://github.com/anthropics/anthropic-cookbook — 官方示例代码集，比本教程更全。</li>
+<li><strong>12-Factor App</strong>：https://12factor.net/config — 为什么用环境变量配置。</li>
+<li><strong>Node.js readline 文档</strong>：https://nodejs.org/api/readline.html — readline 的全部 API。</li>
+<li><strong>TypeScript async/await 教程</strong>：https://www.typescriptlang.org/docs/handbook/promises.html — 如果 §10.3 的陷阱你全踩了，先补这个。</li>
+</ul>
+<hr />
+<p><strong>本章结束。</strong> 如果你能合上书自己从零写出这 61 行代码，并且能解释每一行在做什么、为什么这么写，就可以进第二章了。</p>
 
 
 
