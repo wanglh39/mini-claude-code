@@ -1,0 +1,70 @@
+site_name: Mini Claude Code — 从零理解 Agent 架构
+site_description: 教学向地从零实现 Claude Code 复刻，理解设计哲学与底层原理
+site_url: https://wanglh39.github.io/mini-claude-code
+repo_url: https://github.com/wanglh39/mini-claude-code
+repo_name: wanglh39/mini-claude-code
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: 切换暗色模式
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: 切换亮色模式
+  font:
+    text: Noto Sans SC
+    code: JetBrains Mono
+
+nav:
+  - 首页: index.md
+  - 架构原理: architecture.md
+  - 第一章 - 最小CLI: ch01.md
+  - 第二章 - 工具系统: ch02.md
+  - 第三章 - 完整工具集: ch03.md
+  - 第四章 - 流式输出: ch04.md
+  - 第五章 - System Prompt: ch05.md
+  - 第六章 - 上下文管理: ch06.md
+  - 第七章 - 权限安全: ch07.md
+  - 第八章 - 子智能体: ch08.md
+  - 第九章 - 整合打包: ch09.md
+  - 与原版对比: comparison.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.emoji
+  - toc:
+      permalink: true
+  - def_list
+  - attr_list
+  - md_in_html

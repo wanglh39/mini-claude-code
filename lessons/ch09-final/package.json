@@ -1,0 +1,23 @@
+{
+  "name": "mini-claude-code",
+  "version": "1.0.0",
+  "description": "从零实现的 Claude Code 教学版",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "mini-claude-code": "./src/main.ts"
+  },
+  "scripts": {
+    "start": "tsx src/main.ts",
+    "dev": "tsx watch src/main.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0"
+  }
+}
